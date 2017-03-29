@@ -1,7 +1,10 @@
+{% assign lvl = page.url | append:'X' | split:'/' | size %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
 <head>
   <meta charset="utf-8">
   <title>CS193X: Web Programming Fundamentals</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Space+Mono:700">
-  <link rel="stylesheet" href="/css/style.css"/>
- <script src="/js/script.js" defer="true"></script>
+  <link rel="stylesheet" href="{{ relative }}css/style.css"/>
+ <script src="{{ relative }js/script.js" defer="true"></script>
 </head>

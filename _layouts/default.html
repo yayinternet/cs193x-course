@@ -1,3 +1,6 @@
+{% assign lvl = page.url | append:'X' | split:'/' | size %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
 <!DOCTYPE html>
 <html>
  {% include head.html %}
@@ -7,12 +10,12 @@
         <nav>
           <ul>
             <li {% if page.active == 'syllabus' %} class="active" {% endif %} >
-              <a href="/syllabus" class="nav">Syllabus</a>
+              <a href="{{ relative }}syllabus" class="nav">Syllabus</a>
             </li>
           </ul>
         </nav>
         <section class="contents">
-          <a href="/" class="nav">
+          <a href="{{ relative }}" class="nav">
             <h1>CS193X</h1>
             Web Programming Fundamentals
           </a>
@@ -20,10 +23,10 @@
         <nav>
           <ul>
             <li {% if page.active == 'staff' %} class="active" {% endif %} >
-              <a href="/staff" class="nav">Staff</a>
+              <a href="{{ relative }}staff" class="nav">Staff</a>
             </li>
             <li {% if page.active == 'about' %} class="active" {% endif %} >
-              <a href="/about" class="nav">About</a>
+              <a href="{{ relative }}about" class="nav">About</a>
             </li>
           </ul>
         </nav>
@@ -32,10 +35,10 @@
         <nav>
           <ul>
             <li {% if page.active == 'weeks' %} class="active" {% endif %} >
-              <a href="/weeks" class="nav">Weeks</a>
+              <a href="{{ relative }}weeks" class="nav">Weeks</a>
             </li>
             <li {% if page.active == 'homework' %} class="active" {% endif %} >
-              <a href="/homework" class="nav">Homework</a>
+              <a href="{{ relative }}homework" class="nav">Homework</a>
             </li>
           </ul>
         </nav>
