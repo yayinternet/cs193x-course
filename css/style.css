@@ -56,11 +56,17 @@ a:not(.nav):hover:after {
 #container > section.head {
   background-image: url('../images/background.png');
   color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 40%;
+  position: relative;
+}
+
+@media (min-width: 54em) {
+  #container > section.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+  }
 }
 
 #container > section.head * {
@@ -77,8 +83,10 @@ a:not(.nav):hover:after {
   right: 0;
 }
 
-#container > section.main {
-  margin-left: 40%;
+@media (min-width: 54em) {
+  #container > section.main {
+    margin-left: 40%;
+  }
 }
 
 #container > section > nav > ul {
@@ -120,9 +128,11 @@ a:not(.nav):hover:after {
   flex-direction: column;
 }
 
-#container > section.main > nav > ul {
-  padding-left: 8em;
-  padding-right: 8em;
+@media (min-width: 54em) {
+  #container > section.main > nav > ul {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
 }
 
 #container > section.head section.contents {
@@ -163,7 +173,14 @@ ul.post-list {
 
 article {
   margin: 0;
-  padding: 2em 4em;
+  padding: 2em 1em;
+}
+
+@media (min-width: 54em) {
+  article {
+    margin: 0;
+    padding: 2em 4em;
+  }
 }
 
 article h1 {
