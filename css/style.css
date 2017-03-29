@@ -1,2 +1,98 @@
 body {
+  background-color: #f8f9f9;
+  font-family: 'Inconsolata', monospace;
+  font-feature-settings: 'liga' 0;
+  line-height: 1.6;
+  font-size: 18.4px;
+  margin: 0;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+}
+
+#container > section.head {
+  background-image: url('../images/background.png');
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+}
+
+#container > section.head * {
+  z-index: 1;
+}
+
+#container > section.head::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#container > section.main {
+  margin-left: 40%;
+}
+
+#container > section > header > ul {
+  align-content: center;
+  display: flex;
+  font-family: 'Space Mono', monospace;
+  justify-content: space-around;
+}
+#container > section > header > ul li {
+  display: block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#container > section.head {
+  display: flex;
+  flex-direction: column;
+}
+
+#container > section.head > header > ul {
+  padding: 0;
+}
+
+#container > section.main > header > ul {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+#container > section.head section.contents {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container > section.head section.contents h1 {
+  font-size: 3em;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+}
+
+ul.post-list {
+  margin: 0;
+  padding: 2em 4em;
+  list-style: none;
+}
+
+article h1 {
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+article header time {
+  font-family: "Space Mono",monospace;
 }

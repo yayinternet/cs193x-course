@@ -2,25 +2,35 @@
 <html>
  {% include head.html %}
   <body>
-    <section>
-      <header>
-        <ul>
-          <li>Basics</li>
-          <li>Syllabus</li>
-        </ul>
-      </header>
-      <h1>CS193X: Web Programming Fundamentals</h1>
-    </section>
-    <section>
-      <header>
-        <ul>
-          <li>Weeks</li>
-          <li>Homework</li>
-        </ul>
-      </header>
-      <section>
-        {{ content }}
+    <div id="container">
+      <section class="head">
+        <header>
+          <ul>
+            <li>Syllabus</li>
+          </ul>
+        </header>
+        <section class="contents">
+          <h1>CS193X</h1>
+        </section>
+        <header>
+          <ul>
+            <li>Staff</li>
+            <li>Etc</li>
+          </ul>
+        </header>
       </section>
-    </section>
+      <section class="main">
+        <header>
+          <ul>
+            <li>Weeks</li>
+            <li>Homework</li>
+          </ul>
+        </header>
+        <section>
+          {{ content }}
+        </section>
+      </section>
+
+    </div>
   </body>
 </html>
