@@ -47,6 +47,7 @@ body {
   justify-content: space-around;
 }
 #container > section > header > ul li {
+  cursor: pointer;
   display: block;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -67,6 +68,7 @@ body {
 }
 
 #container > section.head section.contents {
+  flex-direction: column;
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -75,6 +77,8 @@ body {
 
 #container > section.head section.contents h1 {
   font-size: 3em;
+  margin: 0;
+  line-height: 1.1;
 }
 
 h1 {
