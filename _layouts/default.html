@@ -4,28 +4,29 @@
   <body>
     <div id="container">
       <section class="head">
-        <header>
+        <nav>
           <ul>
             <li>Syllabus</li>
           </ul>
-        </header>
+        </nav>
         <section class="contents">
           <h1>CS193X</h1>
+          Web Programming Fundamentals
         </section>
-        <header>
+        <nav>
           <ul>
             <li>Staff</li>
             <li>Etc</li>
           </ul>
-        </header>
+        </nav>
       </section>
       <section class="main">
-        <header>
+        <nav>
           <ul>
-            <li>Weeks</li>
+            <li {% if page.active == 'weeks' %} class="active" {% endif %} >Weeks</li>
             <li>Homework</li>
           </ul>
-        </header>
+        </nav>
         <section>
           {{ content }}
         </section>

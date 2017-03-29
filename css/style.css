@@ -1,10 +1,38 @@
 body {
   background-color: #f8f9f9;
+  color: black;
   font-family: 'Inconsolata', monospace;
   font-feature-settings: 'liga' 0;
-  line-height: 1.6;
   font-size: 18.4px;
+  line-height: 1.6;
   margin: 0;
+}
+
+a {
+  color: #1228e2;
+  position: relative;
+  padding-bottom: 0.15em;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #fe6993;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  border-bottom: 1px solid #fe6993;
+  transition: opacity 0.4s ease-in-out;
+}
+
+a:hover:after {
+  opacity: 1;
 }
 
 #container {
@@ -40,17 +68,39 @@ body {
   margin-left: 40%;
 }
 
-#container > section > header > ul {
+#container > section > nav > ul {
   align-content: center;
   display: flex;
   font-family: 'Space Mono', monospace;
   justify-content: space-around;
+  padding: 1em;
 }
-#container > section > header > ul li {
+
+#container > section > nav > ul li {
   cursor: pointer;
   display: block;
   letter-spacing: 0.1em;
+  padding-bottom: 0.1em;
+  position: relative;
   text-transform: uppercase;
+}
+
+#container > section > nav > ul li.active {
+  border-bottom: 3px solid #fe6993;
+}
+
+#container > section > nav > ul li:not(.active)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 3px solid #fe6993;
+  transition: width 0.4s ease-in-out;
+}
+
+#container > section > nav > ul li:not(.active):hover:after {
+  width: 100%;
 }
 
 #container > section.head {
@@ -58,11 +108,7 @@ body {
   flex-direction: column;
 }
 
-#container > section.head > header > ul {
-  padding: 0;
-}
-
-#container > section.main > header > ul {
+#container > section.main > nav > ul {
   padding-left: 8em;
   padding-right: 8em;
 }
@@ -81,14 +127,23 @@ body {
   line-height: 1.1;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Mono', monospace;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style-type: circle;
 }
 
 ul.post-list {
+  list-style: none;
+}
+
+article {
   margin: 0;
   padding: 2em 4em;
-  list-style: none;
 }
 
 article h1 {
@@ -97,6 +152,30 @@ article h1 {
   margin-bottom: 0.5em;
 }
 
-article header time {
+article h2 {
+  margin-top: 2em;
+}
+
+article header h2 {
   font-family: "Space Mono",monospace;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+span.label:before,
+span.label:after {
+  content: '\00a0';
+}
+
+span.label {
+  background-color: rgba(254, 105, 147, 0.1);
+  border-radius: 3px;
+  color: #fe6993;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.3em 0;
+  line-height: 1em;
+  margin: 0;
+  font-size: 85%;
 }
