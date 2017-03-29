@@ -92,22 +92,22 @@ a:not(.nav):hover:after {
 #container > section > nav > ul li {
   display: block;
   letter-spacing: 0.1em;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.2em;
   position: relative;
   text-transform: uppercase;
 }
 
-#container > section > nav > ul li.active {
+#container > section > nav > ul li:after {
   border-bottom: 3px solid #fe6993;
-}
-
-#container > section > nav > ul li:not(.active)::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+}
+
+#container > section > nav > ul li:not(.active)::after {
   width: 0%;
-  border-bottom: 3px solid #fe6993;
   transition: width 0.4s ease-in-out;
 }
 
