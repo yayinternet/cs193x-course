@@ -6,32 +6,44 @@
       <section class="head">
         <nav>
           <ul>
-            <li>Syllabus</li>
+            <li {% if page.active == 'syllabus' %} class="active" {% endif %} >
+              <a href="/syllabus" class="nav">Syllabus</a>
+            </li>
           </ul>
         </nav>
         <section class="contents">
-          <h1>CS193X</h1>
-          Web Programming Fundamentals
+          <a href="/" class="nav">
+            <h1>CS193X</h1>
+            Web Programming Fundamentals
+          </a>
         </section>
         <nav>
           <ul>
-            <li>Staff</li>
-            <li>Etc</li>
+            <li {% if page.active == 'staff' %} class="active" {% endif %} >
+              <a href="/staff" class="nav">Staff</a>
+            </li>
+            <li {% if page.active == 'about' %} class="active" {% endif %} >
+              <a href="/about" class="nav">About</a>
+            </li>
           </ul>
         </nav>
       </section>
       <section class="main">
         <nav>
           <ul>
-            <li {% if page.active == 'weeks' %} class="active" {% endif %} >Weeks</li>
-            <li>Homework</li>
+            <li {% if page.active == 'weeks' %} class="active" {% endif %} >
+              <a href="/weeks" class="nav">Weeks</a>
+            </li>
+            <li {% if page.active == 'homework' %} class="active" {% endif %} >
+              <a href="/homework" class="nav">Homework</a>
+            </li>
           </ul>
         </nav>
         <section>
           {{ content }}
         </section>
+       {% include foot.html %}
       </section>
-
     </div>
   </body>
 </html>

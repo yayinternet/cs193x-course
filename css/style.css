@@ -8,7 +8,20 @@ body {
   margin: 0;
 }
 
-a {
+a.nav {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section.head a.nav {
+  color: white;
+}
+
+section.main a.nav {
+  color: black;
+}
+
+a:not(.nav) {
   color: #1228e2;
   position: relative;
   padding-bottom: 0.15em;
@@ -16,11 +29,11 @@ a {
   transition: color 0.2s ease-in-out;
 }
 
-a:hover {
+a:not(.nav):hover {
   color: #fe6993;
 }
 
-a:after {
+a:not(.nav):after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -31,7 +44,7 @@ a:after {
   transition: opacity 0.4s ease-in-out;
 }
 
-a:hover:after {
+a:not(.nav):hover:after {
   opacity: 1;
 }
 
@@ -77,7 +90,6 @@ a:hover:after {
 }
 
 #container > section > nav > ul li {
-  cursor: pointer;
   display: block;
   letter-spacing: 0.1em;
   padding-bottom: 0.1em;
@@ -114,17 +126,25 @@ a:hover:after {
 }
 
 #container > section.head section.contents {
+  display: flex;
   flex-direction: column;
   flex-grow: 1;
-  display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #container > section.head section.contents h1 {
   font-size: 3em;
   margin: 0;
   line-height: 1.1;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  padding: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {

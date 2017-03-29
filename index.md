@@ -16,5 +16,9 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 
 ## Course Staff
 - Victoria Kirst, instructor (vrk@)
+- Amy Xu, TA (xuamyj@)
+- Cindy Lin, TA (cinlin@)
 - Helen Fang, TA (hfang9@)
 - Zach Maurer, TA (zmaurer@)
+
+See [staff page](/staff) for office hours. All email addresses are @stanford.edu.
