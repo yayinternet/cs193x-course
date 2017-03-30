@@ -1,0 +1,33 @@
+---
+layout: article 
+---
+
+{{ content }}
+
+{% assign weekInQuarter = 0 %}
+{% for post in site.posts reversed %}
+
+  {% assign weekInYear = post.date | date: "%W" %}
+  {% if weekInYear != currentWeek %}
+    <!-- Create week if new week -->
+    {% assign currentWeek = weekInYear %}
+    <!-- Increment displayed week -->
+    {% assign weekInQuarter = weekInQuarter | plus: 1 %}
+    <!-- Close previous week, if exists -->
+    {% unless forloop.first %}
+    </div>
+    {% endunless %}
+    <!-- Display week header -->
+    <div class="week">
+      <h2>Week {{weekInQuarter}}</h2>
+  {% endif %}
+
+      <!-- Print week excerpt -->
+      <h3>{{ post.title }}</h3>
+      {{ post.excerpt }}
+
+  {% if forloop.last %}
+    </div>
+  {% endif %}
+
+{% endfor %}

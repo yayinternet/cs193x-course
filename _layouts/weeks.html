@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: page
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      {{ post }}
-    </li>
-  {% endfor %}
-</ul>
+{{ content }}
+
+{% for post in site.posts reversed %}
+  <h3>{{ post.title }}</h3>
+  {{ post.excerpt }}
+{% endfor %}

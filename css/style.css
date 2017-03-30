@@ -173,13 +173,19 @@ ul.post-list {
 
 article {
   margin: 0;
-  padding: 2em 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+article > * {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media (min-width: 54em) {
-  article {
-    margin: 0;
-    padding: 2em 4em;
+  article > * {
+    padding-left: 4em;
+    padding-right: 4em;
   }
 }
 
@@ -189,7 +195,8 @@ article h1 {
   margin-bottom: 0.5em;
 }
 
-article h2 {
+article h2,
+article h3 {
   margin-top: 2em;
 }
 
@@ -215,4 +222,39 @@ span.label {
   line-height: 1em;
   margin: 0;
   font-size: 85%;
+}
+
+div.week:nth-of-type(2n+1) {
+  background-color: #f8f9f9;
+}
+
+div.week:nth-of-type(2) {
+  background-color: white;
+}
+
+div.week h1,
+div.week h2,
+div.week h3 {
+  margin: 0;
+}
+
+div.week h1,
+div.week h2 {
+  margin-bottom: 1em;
+}
+
+div.week h3 {
+  margin-top: 1em;
+}
+
+div.week {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 54em) {
+  div.week {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 }

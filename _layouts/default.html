@@ -12,6 +12,9 @@
             <li {% if page.active == 'syllabus' %} class="active" {% endif %} >
               <a href="{{ relative }}syllabus" class="nav">Syllabus</a>
             </li>
+            <li {% if page.active == 'info' %} class="active" {% endif %} >
+              <a href="{{ relative }}info" class="nav">Info</a>
+            </li>
           </ul>
         </nav>
         <section class="contents">
@@ -25,17 +28,14 @@
             <li {% if page.active == 'staff' %} class="active" {% endif %} >
               <a href="{{ relative }}staff" class="nav">Staff</a>
             </li>
-            <li {% if page.active == 'about' %} class="active" {% endif %} >
-              <a href="{{ relative }}about" class="nav">About</a>
-            </li>
           </ul>
         </nav>
       </section>
       <section class="main">
         <nav>
           <ul>
-            <li {% if page.active == 'weeks' %} class="active" {% endif %} >
-              <a href="{{ relative }}weeks" class="nav">Weeks</a>
+            <li {% if page.active == 'lectures' %} class="active" {% endif %} >
+              <a href="{{ relative }}lectures" class="nav">Lectures</a>
             </li>
             <li {% if page.active == 'homework' %} class="active" {% endif %} >
               <a href="{{ relative }}homework" class="nav">Homework</a>
