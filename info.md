@@ -38,7 +38,7 @@ Note that the lateness policy only applies to homework. **The final project must
 
 ## Honor code
 
-The web is an unusual platform in that you can view the source code for every website that you visit. A common (and encouraged) way to improving your web programming skills is to view the source and inspect the code of interesting websites on the internet.
+The web is an unusual platform in that you can view the source code for every website that you visit. A common and encouraged way to improve your web programming skills is to view the source and inspect the code of interesting websites on the internet.
 
 With that in mind, here are a few specific guidelines for viewing and sharing code in this class:
 

@@ -13,6 +13,9 @@
             <li {% if page.active == 'info' %} class="active" {% endif %} >
               <a href="{{ relative }}info" class="nav">Info</a>
             </li>
+            <li {% if page.active == 'staff' %} class="active" {% endif %} >
+              <a href="{{ relative }}staff" class="nav">Staff</a>
+            </li>
           </ul>
         </nav>
         <section class="contents">
@@ -23,8 +26,8 @@
         </section>
         <nav>
           <ul>
-            <li {% if page.active == 'staff' %} class="active" {% endif %} >
-              <a href="{{ relative }}staff" class="nav">Staff</a>
+            <li>
+              <a href="" class="nav">Piazza</a>
             </li>
           </ul>
         </nav>
