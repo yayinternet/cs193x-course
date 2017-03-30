@@ -25,7 +25,7 @@ Regular **Homework** assignments will be distributed and turned in via Github Cl
 
 There are no exams or quizzes in this course, meaning there is no midterm or final exam.
 
-## Lateness Policy
+## Lateness policy
 In general, homework is allowed to be submitted up to 48 hours after the deadline. Homework submitted on time will receive a small bonus to their homework score.
 
 - Each homework writeup will indicate the deadline for on-time submission.
@@ -36,7 +36,7 @@ In general, homework is allowed to be submitted up to 48 hours after the deadlin
 Note that the lateness policy only applies to homework. **The final project must be turned in on time** or it will not get credit.
 
 
-## Honor Code
+## Honor code
 
 The web is an unusual platform in that you can view the source code for every website that you visit. A common (and encouraged) way to improving your web programming skills is to view the source and inspect the code of interesting websites on the internet.
 

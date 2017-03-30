@@ -14,11 +14,11 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 
 **CS193X is limited enrollment.** This is the first offering of CS193X, so enrollment is limited and by application only. It will be offered again sometime in the 2017-2018 school year.
 
-## Course Staff
+## Course staff
 - Victoria Kirst, instructor (vrk@)
 - Amy Xu, TA (xuamyj@)
 - Cindy Lin, TA (cinlin@)
 - Helen Fang, TA (hfang9@)
 - Zach Maurer, TA (zmaurer@)
 
-See [staff page](/staff) for office hours. All email addresses are @stanford.edu.
+See [staff page]({{ relative }}staff) for office hours. All email addresses are @stanford.edu.
