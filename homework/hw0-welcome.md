@@ -3,6 +3,7 @@ layout: article-nosidebar
 title: 'Welcome to 193X'
 subtitle: 'Homework 0'
 permalink: /homework/0-welcome
+parent: homework
 active: 'homework'
 ---
 
@@ -11,6 +12,13 @@ active: 'homework'
 Welcome to CS193X! This assignment is designed to help you get set up with your development environment and with our homework turn-in system. It also gives us a chance to get to know you a little better, too!
 
 This is not intended to take a very long time to complete, but please get started sooner rather than later so we can fix any issues before the first real homework assignment.
+
+<span class="label">Due Date:</span> Fri, Apr 8, 2017 at 11:59pm _(late cutoff: Sun, Apr 10, 2017 at 11:59pm)_  
+<span class="label">Turn-in Link:</span> [Submission Form](https://goo.gl/forms/I2Lkt1RSNcIyAuIF3)
+
+---
+
+
 
 * TOC
 {:toc}
@@ -22,11 +30,11 @@ We will be using GitHub Classroom for homework distribution and turn-in. This wi
 
 **If you are familiar with GitHub, skip to Part 2.**
 
-### 0. What is Git and GitHub?
+### Q: What is Git and GitHub?
 {:.no_toc}
 
 - **Git** is a [version control system](https://www.atlassian.com/git/tutorials/what-is-version-control), which is a program that developers use to track and manage changes to source code over time.
-- GitHub is a company that provides hosting for code that is managed by the Git version control system.
+- **GitHub** is a company that provides hosting for code that is managed by the Git version control system.
 
 Git and GitHub are sophisticated tools for collaborative software development, used by millions of software developers worldwide. Git is incredibly powerful, but it has a somewhat notoriously steep learning curve.
 
@@ -61,7 +69,7 @@ In CS193X, we will be using GitHub for the following purposes:
 ### 1. Accept the HW0 assignment
 {:.no_toc}
 
-- [Follow this link](https://classroom.github.com/assignment-invitations/13dc240372627c7d0cf1f6c8739ee539), where HW0 is stored on GitHub Classroom.
+- [Follow this link](https://classroom.github.com/assignment-invitations/24a7b13fe5e817ecc496544de9182f8b), where HW0 is stored on GitHub Classroom.
 - Click the green "Accept this assignment" button.
 <a href="screenshot-accept.png">
   <img src="screenshot-accept.png" class="screenshot"/>
@@ -136,8 +144,10 @@ Unlike CS106A and 106B, though, it is not very important for you to use Atom if 
 <a href="screenshot-hw0-solved.png">
   <img src="screenshot-hw0-solved.png" class="screenshot"/>
 </a>
+- If you'd like, you can further style, decorate, or modify your page to your liking. This is not required, however.
 
 </section>
+
 
 <section class="part" markdown="1">
 
@@ -152,7 +162,7 @@ Now that you've completed the homework, you should upload your files back to you
 > - If you cloned your repository via git, just commit all changes and push them to the repository on GitHub.
 > - You can now skip to Part 5.
 
-- Navigate to your `hw0-welcome-`(username) repository on GitHub (i.e. <a href="your-github-repo.png">this screen</a>).
+- Navigate to your Homework 0 repository on GitHub (i.e. <a href="your-github-repo.png">this screen</a>).
 - Click the "Upload files" button.
 <a href="screenshot-upload.png">
   <img src="screenshot-upload.png" class="screenshot"/>
@@ -161,23 +171,53 @@ Now that you've completed the homework, you should upload your files back to you
 <a href="screenshot-uploaded.png">
   <img src="screenshot-uploaded.png" class="screenshot"/>
 </a>
-  - (You actually don't have to upload `style.css` again since you didn't modify it.)
+  - (You actually don't have to upload `style.css` again if you didn't modify it.)
 - Scroll to the bottom of the screen and click the green "Commit changes" button. You don't need to fill out any of the form.
 <a href="screenshot-commit.png">
   <img src="screenshot-commit.png" class="screenshot"/>
 </a>
+- You should be redirected to the main repository screen again. The existing files should be updated and your new files should be uploaded.
 
 </section>
 
 <section class="part" markdown="1">
 
 ## Part 5: Publish your GitHub Page
+You will now publish your website as a GitHub page. This will make your website publicly accessible on the internet. (Please remember the Honor Code section of the [Course Info]({{redirect}}/info) page.)
+
+- Navigate to your Homework 0 repository on GitHub. (You should already be on this page.)
+- Click the "Settings" button.
+<a href="screenshot-settings.png">
+  <img src="screenshot-settings.png" class="screenshot"/>
+</a>
+- On the Settings page, scroll down near the bottom to the "GitHub Pages" section. Under "Source", click the button that's currently set to "None"...
+<a href="screenshot-ghpage.png">
+  <img src="screenshot-ghpage.png" class="screenshot"/>
+</a>
+- ... and change it to "master branch":
+<a href="screenshot-master-branch.png">
+  <img src="screenshot-master-branch.png" class="screenshot"/>
+</a>
+- Then click "Save":
+<a href="screenshot-page-save.png">
+  <img src="screenshot-page-save.png" class="screenshot"/>
+</a>
+- The page will reload and you will be taken back to the top of the Settings screen.
+- Scroll back down to the "GitHub Pages" section, and you should now see a link to your published GitHub page.
+<a href="screenshot-published-link.png">
+  <img src="screenshot-published-link.png" class="screenshot"/>
+</a>
+- Click your link to verify it is working as expected.
+- Note that this is a publicly accessible link. You can send it to your friends if you want to show it off!
+
+Note: You may notice that on the Settings page, there is an option to make the repository public. Please do not do this.
 
 </section>
 
 <section class="part" markdown="1">
 ## Part 6: Submit
 
-Finally, you can submit your assignment
+Finally, turn in the link to your GitHub repository and a link to your completed web page via this form:
+- [Turn in Homework 0](https://goo.gl/forms/I2Lkt1RSNcIyAuIF3)
 
 </section>

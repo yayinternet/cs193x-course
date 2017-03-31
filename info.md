@@ -29,7 +29,7 @@ There are no exams or quizzes in this course, meaning there is no midterm or fin
 In general, homework is allowed to be submitted up to 48 hours after the deadline. Homework submitted on time will receive a small bonus to their homework score.
 
 - Each homework writeup will indicate the deadline for on-time submission.
-- Submitting by the deadline earns an on-time bonus, typically a ~5% perk.
+- Submitting by the deadline earns an on-time bonus, typically a 1-2 point bonus.
 - If you miss the deadline, there is a 48 hour grace period. You can make a late submission up to the end of the grace period. These late submissions are not penalized, but do not earn the on-time bonus.
 - Submissions are **not accepted beyond the grace period**. The grace period is strictly enforced.
 
@@ -45,8 +45,9 @@ With that in mind, here are a few specific guidelines for viewing and sharing co
 - You **may not** look at the source of a CS193X solution before turning in that assignment.
 - You **may not** copy the source of someone else's CS193X solution and turn it in as your own.
 - You **may** look at the source code of other websites for help when writing your homework solutions.
-- You **may not** publish the homework you write in this class for the purpose of allowing other people to copy your code.
-- You **may** publish the homework you write in this class for the purpose of showing off the web page itself.
+- You **may not** publish the web pages you write in this class for the purpose of allowing other people to copy your homework solutions.
+- You **may** publish the web pages you write in this class for the purpose of showing off the web page itself.
+- You **may not** make your GitHub repositories public.
 - You **may** use StackOverflow, Mozilla Developer Network, etc as online resources for your homework.
 
 All students are expected to follow the [honor code](https://ed.stanford.edu/academics/masters-handbook/honor-code), to act with integrity, and to "take an active part in seeing to it that others as well as themselves uphold the spirit and letter of the Honor Code." Contact the course staff with any questions.

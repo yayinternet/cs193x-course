@@ -359,3 +359,11 @@ blockquote p,
 blockquote h3 {
   margin: 0;
 }
+
+hr {
+  border: 0;
+  box-sizing: border-box;
+  height: 3px;
+  background-color: rgba(27,31,35,0.08);
+  width: 75%;
+}
