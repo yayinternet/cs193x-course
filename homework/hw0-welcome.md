@@ -7,7 +7,8 @@ parent: homework
 active: 'homework'
 ---
 
-
+{% assign lvl = page.url | append:'X' | split:'/' | size %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
 Welcome to CS193X! This assignment is designed to help you get set up with your development environment and with our homework turn-in system. It also gives us a chance to get to know you a little better, too!
 
@@ -183,7 +184,7 @@ Now that you've completed the homework, you should upload your files back to you
 <section class="part" markdown="1">
 
 ## Part 5: Publish your GitHub Page
-You will now publish your website as a GitHub page. This will make your website publicly accessible on the internet. (Please remember the Honor Code section of the [Course Info]({{redirect}}/info) page.)
+You will now publish your website as a GitHub page. This will make your website publicly accessible on the internet. (Please remember the Honor Code section of the [Course Info]({{ relative }}info) page.)
 
 - Navigate to your Homework 0 repository on GitHub. (You should already be on this page.)
 - Click the "Settings" button.
