@@ -1,5 +1,5 @@
 ---
-layout: syllabus 
+layout: syllabus
 title: Syllabus
 permalink: /syllabus/
 active: 'syllabus'

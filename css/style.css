@@ -13,6 +13,10 @@ a.nav {
   text-decoration: none;
 }
 
+li a.nav {
+  font-weight: bold;
+}
+
 section.head a.nav {
   color: white;
 }
@@ -60,7 +64,7 @@ a:not(.nav):hover:after {
 }
 
 @media (min-width: 54em) {
-  #container > section.head {
+  #container.sidebar > section.head {
     position: fixed;
     top: 0;
     left: 0;
@@ -84,7 +88,7 @@ a:not(.nav):hover:after {
 }
 
 @media (min-width: 54em) {
-  #container > section.main {
+  #container.sidebar > section.main {
     margin-left: 40%;
   }
 }
@@ -150,6 +154,63 @@ a:not(.nav):hover:after {
   line-height: 1.1;
 }
 
+#container.full section.head nav ul {
+  justify-content: flex-start;
+}
+
+#container.full,
+#container.full article h1,
+#container.full article h2,
+#container.full article h3,
+#container.full article h4,
+#container.full article h5,
+#container.full article h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+#container.full article {
+  margin: 1em 0;
+  padding: 0;
+}
+@media (min-width: 54em) {
+  #container.full article {
+    margin: 4em 0;
+  }
+}
+
+#container.full header {
+  padding: 1em;
+}
+
+#container.full header h1 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+#container.full header h2 {
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 1.25em;
+  font-family: 'Inconsolata', monospace;
+}
+
+@media (min-width: 54em) {
+  #container.full header {
+    padding: 4em 8em;
+  }
+
+  #container.full header h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 54em) {
+  #container.full article > * {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+
 footer {
   background-color: black;
   color: white;
@@ -203,7 +264,6 @@ article h3 {
 article header h2 {
   font-family: "Space Mono",monospace;
   font-size: 1em;
-  font-weight: normal;
   margin: 0;
 }
 
@@ -224,12 +284,27 @@ span.label {
   font-size: 85%;
 }
 
+section.part:nth-of-type(2n+1),
 div.week:nth-of-type(2n+1) {
   background-color: #f8f9f9;
 }
 
-div.week:nth-of-type(2) {
+section.part:nth-of-type(2n),
+div.week:nth-of-type(2n) {
   background-color: white;
+}
+
+#container.full #markdown-toc {
+  margin: 1.5em;
+}
+
+section.part {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+section.part h2 {
+  margin: 0;
 }
 
 div.week h1,
@@ -257,4 +332,30 @@ div.week {
     padding-top: 2em;
     padding-bottom: 2em;
   }
+}
+
+img.screenshot {
+  display: block;
+  max-width: 100%;
+  margin: 0.5em 0;
+  border: 1px solid lightgray;
+  padding: 2px;
+  box-sizing: border-box;
+}
+@media (min-width: 54em) {
+  img.screenshot {
+    max-width: 30em;
+  }
+}
+
+blockquote {
+  background-color: rgba(27,31,35,0.08);
+  border-radius: 5px;
+  padding: .5em;
+  font-size: .8em;
+}
+
+blockquote p,
+blockquote h3 {
+  margin: 0;
 }

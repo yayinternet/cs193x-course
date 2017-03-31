@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-nosidebar
 title: Course info
 permalink: /info/
 active: 'info'

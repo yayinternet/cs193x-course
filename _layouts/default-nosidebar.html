@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ {% include head.html %}
+  <body>
+    <div id="container" class="full">
+      <section class="head">
+        <nav>
+          <ul>
+            <li>
+              <a href="{{ relative }}{{ page.parent }}" class="nav">Back to {{ page.parent_title }}</a>
+            </li>
+          </ul>
+        </nav>
+        <header>
+          {% if page.subtitle %}
+          <h2>
+            {{ page.subtitle }}
+          </h2>
+          {% endif %}
+          <h1>{{ page.title | escape }}</h1>
+        </header>
+      </section>
+      <section class="main">
+        <section>
+          {{ content }}
+        </section>
+       {% include foot.html %}
+      </section>
+    </div>
+  </body>
+</html>
