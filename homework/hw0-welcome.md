@@ -13,7 +13,7 @@ Welcome to CS193X! This assignment is designed to help you get set up with your 
 
 This is not intended to take a very long time to complete, but please get started sooner rather than later so we can fix any issues before the first real homework assignment.
 
-<span class="label">Due Date:</span> Fri, Apr 8, 2017 at 11:59pm _(late cutoff: Sun, Apr 10, 2017 at 11:59pm)_  
+<span class="label">Due Date:</span> Fri, Apr 7, 2017 at 11:59pm _(late cutoff: Sun, Apr 9, 2017 at 11:59pm)_  
 <span class="label">Turn-in Link:</span> [Submission Form](https://goo.gl/forms/I2Lkt1RSNcIyAuIF3)
 
 ---

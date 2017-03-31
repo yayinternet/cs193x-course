@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Apr 3: Course overview and basic HTML/CSS"
+title: 'Apr 3: Course overview and basic HTML/CSS <span class="label">HW0 assigned</span>'
 date: 2017-04-03
 ---
 

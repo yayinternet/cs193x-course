@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Apr 10: Mobile web; em; misc interesting CSS'
+title:  'Apr 10: Mobile web; em; misc interesting CSS <span class="label">HW1 assigned</span>'
 date:   2017-04-10
 ---
 
