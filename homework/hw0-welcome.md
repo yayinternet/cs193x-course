@@ -85,7 +85,7 @@ In CS193X, we will be using GitHub for the following purposes:
 {:.no_toc}
 
 Technically, your newly created assignment is a "GitHub repository."
-- This is a private repository, meaning only you (and the course staff) can view website created at this link.
+- This is a private repository, meaning only you (and the course staff) can access it.
 - This is basically a private online folder where you will ultimately store your finished homework files. Right now, though, it contains the starter code for the assignment.
 
 At this point, you want to download the files in this repository.
