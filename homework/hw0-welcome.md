@@ -29,7 +29,7 @@ This is not intended to take a very long time to complete, but please get starte
 ## Part 1: Getting started with GitHub
 We will be using GitHub Classroom for homework distribution and turn-in. This will lead you getting started with GitHub and Git.
 
-**If you are familiar with GitHub, skip to Part 2.**
+**If you are familiar with GitHub and have an account, [skip to Part 2](#part-2-get-the-hw0-code).**
 
 ### Q: What is Git and GitHub?
 {:.no_toc}
@@ -97,7 +97,7 @@ At this point, you want to download the files in this repository.
 > _(Please **ignore this box entirely** if you've never used git before.)_
 > - The "assignment" created for you through the GitHub Classroom UI is a private GitHub repository like any other private GitHub repo you would own.
 > - You can **clone**, **push**, and **pull** to this repository using the command-line or whatever UI you prefer.
-> - If you want to use git to manage your assignment (as opposed to the GitHub web UI), just **clone** your assignment repository and skip to Part 3.
+> - If you want to use git to manage your assignment (as opposed to the GitHub web UI), just **clone** your assignment repository and [skip to Part 3](#part-3-edit-the-hw0-code).
 
 To download the starter code via the GitHub UI:
 - In your homework repository (i.e. <a href="your-github-repo.png">this screen</a>), click the green "Clone or download" button.
@@ -161,7 +161,7 @@ Now that you've completed the homework, you should upload your files back to you
 >
 > _(Please **ignore this box entirely** if you've never used git before.)_
 > - If you cloned your repository via git, just commit all changes and push them to the repository on GitHub.
-> - You can now skip to Part 5.
+> - You can now [skip to Part 5](#part-5-publish-your-github-page).
 
 - Navigate to your Homework 0 repository on GitHub (i.e. <a href="your-github-repo.png">this screen</a>).
 - Click the "Upload files" button.

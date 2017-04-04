@@ -14,6 +14,9 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 
 **CS193X is limited enrollment.** This is the first offering of CS193X, so enrollment is limited and by application only. It will be offered again sometime in the 2017-2018 school year.
 
+## Announcements
+- [4/3] [Homework 0](homework/0-welcome) is released and is due **Fri, Apr 7 at 11:59pm**.
+
 ## Course staff
 - Victoria Kirst, instructor (vrk@)
 - Amy Xu, TA (xuamyj@)
