@@ -367,3 +367,17 @@ hr {
   background-color: rgba(27,31,35,0.08);
   width: 75%;
 }
+
+#goog-calendar-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+}
+
+#goog-calendar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
