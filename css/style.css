@@ -378,6 +378,7 @@ hr {
   position: absolute;
   left: 0;
   top: 0;
+  max-height: 600px;
   height: 100%;
   width: 100%;
 }
