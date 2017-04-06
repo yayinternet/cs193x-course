@@ -12,6 +12,7 @@ active: 'staff'
 - Cindy Lin, TA (cinlin@)
 - Helen Fang, TA (hfang9@)
 - Zach Maurer, TA (zmaurer@)
+- Everyone: cs193x-spr1617-staff@
 
 All email addresses are @stanford.edu.
 
