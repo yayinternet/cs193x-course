@@ -23,5 +23,11 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 - Cindy Lin, TA (cinlin@)
 - Helen Fang, TA (hfang9@)
 - Zach Maurer, TA (zmaurer@)
+- Everyone: cs193x-spr1617-staff@
 
 See [staff page]({{ relative }}staff) for office hours. All email addresses are @stanford.edu.
+
+## Feedback
+We would love your feedback on the course! To give feedback on homework, please use the feedback form attached to to the submission form. (Will be available on HW1 onward.)
+
+For all other feedback, send an email to the course staff with your suggestions: cs193x-spr1617-staff@stanford.edu. If you'd prefer to stay anonymous, you can also message us via our [sayatme link](https://sayat.me/cs193xsp2017). Hope to hear from you soon!
