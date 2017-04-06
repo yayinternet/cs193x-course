@@ -79,6 +79,7 @@ We have provided a development guide for this homework, which we've hidden by de
 </span>
 <section id="dev-guide" markdown="1" class="hidden">
 #### Getting started
+{:.no_toc}
 
 </section>
 
