@@ -19,6 +19,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - Block vs inline
   - `div` and `span`
   - `class`es and `id`s
+- Code: [Course webpage](http://codepen.io/bee-arcade/pen/a3dbe970375f87f8330bfb2c303e5cc8/)
 
 ### Apr 3: Course overview and basic HTML/CSS
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/16Cx_pRg9a4stSVlhH1HcwXMaQwYm0-GtxuGhLi18m-s/edit#slide=id.p) / [lecture01.pdf](01/lecture01.pdf)
