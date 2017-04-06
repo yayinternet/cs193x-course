@@ -54,7 +54,6 @@ For Part 1, you will create a listicle web page that describes the "4 on-campus 
 ### 2. Appearance and behavior details
 {:.no_toc}
 
-- **Match the given appearance as closely as possible.** It's fine if your web page is off from our description by a few pixels here and there, but noticeable differences may result in a lower homework score.
 
 ### 3. HTML and CSS style requirements
 {:.no_toc}
@@ -63,15 +62,17 @@ For full credit, please abide by the following rules:
 
 - **Do not use an ordered list element (`ol`) to create the list layout.** There's nothing wrong with doing this, per se, but it involves some fairly esoteric CSS that we did not cover in class. We recommend you write out the numbers "1.", "2.", etc. in the HTML instead of using `ol`.
 - **Follow the best practices** that were described in lecture and in the mini-homework.
+- **Match the given appearance as closely as possible.** It's fine if your web page is off from our description by a few pixels here and there, but noticeable differences may result in a lower homework score.
 
 ---
 
 ### Development guide
 
-We have provided a development guide for this homework, which we've hidden by default.
+We have provided a development guide for this homework below, which we've hidden by default.
 
 - Using (or not using) the development guide has no effect on your homework score.
-- If you would like more of a challenge, we encourage you to first try to complete the homework without using the development guide. Refer to the guide only when you get stuck or after you've completed the homework as a way to check your work.
+- If you would like more of a challenge, we encourage you to first try to complete the homework without using the development guide. Refer to the guide only when you get stuck or after you've completed the homework to check your work.
+- However, if you are pressed for time, new to web programming, or otherwise would like more assistance, use the development guide to make sure you are on the right track.
 
 <span id="dev-guide-link">
   <i class="fa fa-angle-right" aria-hidden="true"></i>
