@@ -19,9 +19,6 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - Block vs inline
   - `div` and `span`
   - `class`es and `id`s
-  - Combining selectors; cascading; inheritance
-  - Box model
-  - Debugging with Chrome Inspector
 
 ### Apr 3: Course overview and basic HTML/CSS
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/16Cx_pRg9a4stSVlhH1HcwXMaQwYm0-GtxuGhLi18m-s/edit#slide=id.p) / [lecture01.pdf](01/lecture01.pdf)

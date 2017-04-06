@@ -4,6 +4,8 @@ title:  'Apr 10: Mobile web; em; misc interesting CSS <span class="label">HW1 as
 date:   2017-04-10
 ---
 
+- Centering stuff; making fluid layouts
+- `position`
 - `meta` tag; `@media`
 - `:before`, `:after`
 - `background` magic; gradients
