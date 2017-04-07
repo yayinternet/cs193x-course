@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'Apr 17: Animations <span class="label">HW2 assigned</span>'
+title: 'Apr 17: More Amateur JavaScript <span class="label">HW2 assigned</span>'
 date:   2017-04-17
 ---
 
-- CSS animations
-- JavaScript animations
-- `requestAnimationFrame`
-- `template` tag
+- The JavaScript event loop
+- `setTimeout`
+- DOM traversal and its mostly-unimportance
+- Browser extensions
+- Case study: Adblock-block-block
 - <span class="label">HW1 DUE</span> **HW1 due at 11:59pm**
-
 <!--more-->
 
 ## Slides:

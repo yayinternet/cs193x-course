@@ -13,8 +13,16 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### Apr 7: More CSS; CSS Box Model
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1w3q6g-gJ_DeBZCUzz6E0VBQ9fVzJk7wYC5ouU6fX0KU/edit#slide=id.p) / [lecture03.pdf](03/lecture03.pdf)
+  - HTML history and standard HTML
+  - Combining selectors; cascading; inheritance
+  - Box model
+  - Debugging with Chrome Inspector
+  - **Case study:** Squarespace layout
+- <span class="label">HW0 DUE</span> **[HW0 due]({{relative}}homework/0-welcome) at 11:59pm**
 
-### Apr 5: Course overview and basic HTML/CSS
+### Apr 5:
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1OGSEAeWlZ9CSUi5xr73dnx3esIPS_FV4xtsBThmcV2I/edit#slide=id.p) / [lecture02.pdf](02/lecture02.pdf)
   - Block vs inline
   - `div` and `span`
