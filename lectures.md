@@ -18,8 +18,6 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - HTML history and standard HTML
   - Combining selectors; cascading; inheritance
   - Box model
-  - Debugging with Chrome Inspector
-  - **Case study:** Squarespace layout
 - <span class="label">HW0 DUE</span> **[HW0 due]({{relative}}homework/0-welcome) at 11:59pm**
 
 ### Apr 5: Block vs inline; classes and ids
