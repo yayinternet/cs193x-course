@@ -22,7 +22,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - **Case study:** Squarespace layout
 - <span class="label">HW0 DUE</span> **[HW0 due]({{relative}}homework/0-welcome) at 11:59pm**
 
-### Apr 5:
+### Apr 5: Block vs inline; classes and ids
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1OGSEAeWlZ9CSUi5xr73dnx3esIPS_FV4xtsBThmcV2I/edit#slide=id.p) / [lecture02.pdf](02/lecture02.pdf)
   - Block vs inline
   - `div` and `span`

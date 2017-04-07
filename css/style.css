@@ -55,6 +55,7 @@ a:not(.nav):hover:after {
 #container {
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
 }
 
 #container > section.head {
