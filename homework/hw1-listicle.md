@@ -41,26 +41,36 @@ In this homework, you will be practicing the HTML and CSS that we learned in lec
 
 
 <section class="part" markdown="1">
-## Part 1: Beverage Listicle
+## Part 1: Beverage Listicle: `listicle.html`
 
 A [listicle](https://en.wikipedia.org/wiki/Listicle) is a somewhat trendy type of article that uses a list as its thematic structure.
 
-For Part 1, you will create a listicle web page that describes the "4 on-campus beverages you should be drinking" at Stanford.
+For Part 1, you will create a listicle web page that describes the "4 on-campus beverages you should be drinking" at Stanford. You should create the web page in `listicle.html` with styles defined in `listicle-style.css`.
 
-### 1. Overall appearance and behavior
+### 1. Overall appearance
 {:.no_toc}
 
-A screenshot of the entire page (with a screen width of 1280px) is linked below:
+Here is a miniature screenshot of the website you need recreate in this homework:
+
+<div id="page-screenshot-view">
+  <img src="images/hw1-fullpage.png" />
+</div>
+
+A full-size screenshot of the entire page (with a screen width of 1280px) is linked below:
 - [Full-size screenshot](images/hw1-fullpage.png)
 
-You should recreate the web page in the screenshot above.
-
-- **You do not have to type in the contents of the page.** The text of the article is contained within `listicle-content.txt`, which is included in your Homework 1 starter code. Copy and paste the text of `listicle-content.txt` into your `listicle.html` file, then add the HTML tags necessary to style the page.
+**Note that you do not have to type in the contents of the page.**
+- The text of the article is contained within `listicle-content.txt`, which is included in your Homework 1 starter code.
+- Copy and paste the text of `listicle-content.txt` into your `listicle.html` file, then add the HTML tags necessary to style the page.
 - The images are also in the `images/` directory of the Homework 1 starter code.
 
-The sections below will describe the details of the web page.
+### 2. Section measurements
+{:.no_toc}
 
-### 2. Font faces, sizes, and colors
+<img src="images/hw1-measurements.png" />
+
+### 3. Font faces, sizes, and colors
+{:.no_toc}
 
 **Page Title:**
 <img src="images/hw1-title.png" class="screenshot" />
@@ -101,7 +111,9 @@ The sections below will describe the details of the web page.
   - The phrase "Recommendation:" is `bold`.
 
 
-### 3. Links
+### 4. Links
+{:.no_toc}
+
 Here is a description of how links should work on your page:
 
 - Each address of the page is a link. The URL for each link is listed in `listicle-content.txt`.
@@ -112,34 +124,50 @@ Here is a description of how links should work on your page:
   - To remove an underline, you can use CSS property `text-decoration: none;`
   - To add an underline, you can use CSS property `text-decoration: underline;`
 
-### 4. Images
-
-### 5. Section measurements
+### 5. Images
 {:.no_toc}
 
+- Header image
+  - The header is a background image (`images/header.jpg`).
+  - The background does not repeat.
+  - The background's size is set to `cover`.
+  - The background position is anchored to the `top`.
+  - Its height is `500px`.
+  - There is a semi-transparent color overlay on top of the header image, which is `rgba(0, 0, 0, .3)`   
+    - **Note:** You can achieve this using the following CSS rule:  
+      `background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/header.jpg);`
+- Profile image
+  - The profile image is `images/vrk.png`
+  - Its width is `100px`.
+  - It has rounded corners with radius `100%`.
+  - It has a `white` border that is `1px` thick.
 
+---
 
-<img src="images/hw1-measurements.png" />
-
-
-### 3. HTML and CSS style requirements
+## HTML and CSS style requirements
 {:.no_toc}
 
-For full credit, please abide by the following rules:
+For full credit, please abide by the following:
 
 - **Do not use an ordered list element (`ol`) to create the list layout.** There's nothing wrong with doing this, per se, but it involves some fairly esoteric CSS that we did not cover in class. We recommend you write out the numbers "1.", "2.", etc. in the HTML instead of using `ol`.
 - **Follow the best practices** that were described in lecture and in the mini-homework.
+- **Reduce redundancy in CSS.** Try not to have too many redundant styles, if there are ways to use inheritance or special selectors to concisely define style rules.
 - **Match the given appearance as closely as possible.** It's fine if your web page is off from our description by a few pixels here and there, but noticeable differences may result in a lower homework score.
-
-
-</section>
+- **Use descriptive names, consistent spacing,** and otherwise follow good code hygiene.
 
 </section>
 
 <section class="part" markdown="1">
-## Part 2: Creative: Your Listicle
+## Part 2: Your Listicle: `my-list.html`
 
-Design your own listicle!
+Design your own listicle! You should write the content in `my-list.html` and the style in `my-list-style.css`.
+
+For full credit, please abide by the following:
+- Cannot be a copy of `listicle.html`
+- Must have at least 3 items in your list
+- Must correctly use `display: flex` at least once.
+- You can, but do not have to, refer to `listicle-style.css`.
+
 </section>
 
 <section class="part" markdown="1">
