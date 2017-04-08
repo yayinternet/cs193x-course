@@ -2,7 +2,7 @@
 layout: article-nosidebar
 title: 'Listicle'
 subtitle: 'Homework 1'
-permalink: /homework/1-listicle
+permalink: /homework/__NOT_READY_YET__1-listicle
 parent: homework
 active: 'homework'
 ---
@@ -12,10 +12,14 @@ active: 'homework'
 {% assign lvl = page.url | append:'X' | split:'/' | size %}
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
-In this homework, you will be practicing the HTML and CSS that we learned in lecture. For **Part 1**, you are given screenshots and a description of a specific web page to replicate. You will recreate the web page exactly as shown in the provided screenshots. For **Part 2**, you will create your own list-based article with any styling you'd like.
+In this homework, you will be practicing the HTML and CSS that we learned in lecture.  
+
+For **Part 1**, you are given screenshots and a description of a specific web page to replicate. You will recreate the web page exactly as shown in the provided screenshots.  
+
+For **Part 2**, you will create your own list-based article with any styling you'd like.
 
 <span class="label">Due Date:</span> Mon, Apr 17, 2017 at 11:59pm _(late cutoff: Wed, Apr 19, 2017 at 11:59pm)_  
-<span class="label">HW1 Mini:</span> Mini-Homework  
+<span class="label">HW1 Mini:</span> Mini-Homework (**TODO(vrk):** Create and link Mini-Homework)  
 <span class="label">HW1 Turn-in:</span> [Submission Form](https://goo.gl/forms/lK8Me9DqLTWtEOZA3)
 
 ---
@@ -29,12 +33,12 @@ In this homework, you will be practicing the HTML and CSS that we learned in lec
 ### 1. Mini-Homework
 {:.no_toc}
 
-- Complete the Mini-Homework to review the key concepts needed to complete this homework.
+- Complete the Mini-Homework to review the key concepts needed to complete this homework. **TODO(vrk):** Create and link Mini-Homework
 
 ### 2. Accept the HW1 assignment
 {:.no_toc}
 
-- Follow this link, where HW1 is stored on GitHub Classroom.
+- [Follow this link](https://classroom.github.com/assignment-invitations/7267dc1a9dd07336dad75191c11919f5), where HW1 is stored on GitHub Classroom.
 - Accept the homework and download the starter code as you did in [Homework 0]({{relative}}/homework/hw0-welcome).
 
 </section>
@@ -173,6 +177,8 @@ For full credit, please abide by the following:
 <section class="part" markdown="1">
 
 ## Submit
+
+Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}/homework/hw0-welcome).
 
 Turn in the link to your GitHub repository and links to your two completed web pages via this form:
 - [Turn in Homework 1](https://goo.gl/forms/lK8Me9DqLTWtEOZA3)
