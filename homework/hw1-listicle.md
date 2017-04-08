@@ -95,7 +95,7 @@ The sections below will describe the details of the web page.
   - The font size is `18px`.
   - The line height `32px`.
   - The font color is `rgb(51, 51, 51)`.
-  
+
 <img src="images/hw1-rec.png" class="screenshot" />
 - Recommendation
   - The phrase "Recommendation:" is `bold`.
@@ -131,23 +131,6 @@ For full credit, please abide by the following rules:
 - **Follow the best practices** that were described in lecture and in the mini-homework.
 - **Match the given appearance as closely as possible.** It's fine if your web page is off from our description by a few pixels here and there, but noticeable differences may result in a lower homework score.
 
----
-
-### Development guide
-
-We have provided a development guide for this homework below, which we've hidden by default.
-
-- Using (or not using) the development guide has no effect on your homework score.
-- If you would like more of a challenge, we encourage you to first try to complete the homework without using the development guide. Refer to the guide only when you get stuck or after you've completed the homework to check your work.
-- However, if you are pressed for time, new to web programming, or otherwise would like more assistance, use the development guide to make sure you are on the right track.
-
-<span id="dev-guide-link">
-  <i class="fa fa-angle-right" aria-hidden="true"></i>
-  <a>Click to view the development guide:</a>
-</span>
-<section id="dev-guide" markdown="1" class="hidden">
-#### Getting started
-{:.no_toc}
 
 </section>
 
