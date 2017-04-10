@@ -2,7 +2,7 @@
 layout: article-nosidebar
 title: 'Listicle'
 subtitle: 'Homework 1'
-permalink: /homework/__NOT_READY_YET__1-listicle
+permalink: /homework/1-listicle
 parent: homework
 active: 'homework'
 ---
@@ -19,7 +19,7 @@ For **Part 1**, you are given screenshots and a description of a specific web pa
 For **Part 2**, you will create your own list-based article with any styling you'd like.
 
 <span class="label">Due Date:</span> Mon, Apr 17, 2017 at 11:59pm _(late cutoff: Wed, Apr 19, 2017 at 11:59pm)_  
-<span class="label">HW1 Mini:</span> Mini-Homework (**TODO(vrk):** Create and link Mini-Homework)  
+<span class="label">HW1 Mini:</span> [Mini-Homework #1](https://goo.gl/forms/h2bwjcItyCCdMXS12)
 <span class="label">HW1 Turn-in:</span> [Submission Form](https://goo.gl/forms/lK8Me9DqLTWtEOZA3)
 
 ---
@@ -33,7 +33,7 @@ For **Part 2**, you will create your own list-based article with any styling you
 ### 1. Mini-Homework
 {:.no_toc}
 
-- Complete the Mini-Homework to review the key concepts needed to complete this homework. **TODO(vrk):** Create and link Mini-Homework
+- [Complete the Mini-Homework](https://goo.gl/forms/h2bwjcItyCCdMXS12) to review some of the concepts needed to complete this homework.
 
 ### 2. Accept the HW1 assignment
 {:.no_toc}
@@ -153,6 +153,9 @@ Here is a description of how links should work on your page:
 
 For full credit, please abide by the following:
 
+- **Use HTML and CSS we've learned in class.** You should be able to complete this homework using HTML and CSS we've  learned in class through lecture 5 / Apr 12. While you are not strictly forbidden from using HTML/CSS we haven't talked about in class, if you use it incorrectly or if you make poor stylistic choices.
+- **Do not use JavaScript**. There's no need to use JavaScript in this assignment.
+- **Respect Separation of Concerns**. Your HTML should describe the content of your page, and your CSS should describe your page's appearance.
 - **Do not use an ordered list element (`ol`) to create the list layout.** There's nothing wrong with doing this, per se, but it involves some fairly esoteric CSS that we did not cover in class. We recommend you write out the numbers "1.", "2.", etc. in the HTML instead of using `ol`.
 - **Follow the best practices** that were described in lecture and in the mini-homework.
 - **Reduce redundancy in CSS.** Try not to have too many redundant styles, if there are ways to use inheritance or special selectors to concisely define style rules.

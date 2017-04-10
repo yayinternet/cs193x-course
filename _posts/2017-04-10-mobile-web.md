@@ -10,7 +10,6 @@ date:   2017-04-10
   - `display: flex;`
   - Google Fonts
   - Background images
-- `position`
 
 <!--more-->
 
