@@ -19,7 +19,7 @@ For **Part 1**, you are given screenshots and a description of a specific web pa
 For **Part 2**, you will create your own list-based article with any styling you'd like.
 
 <span class="label">Due Date:</span> Mon, Apr 17, 2017 at 11:59pm _(late cutoff: Wed, Apr 19, 2017 at 11:59pm)_  
-<span class="label">HW1 Mini:</span> [Mini-Homework #1](https://goo.gl/forms/h2bwjcItyCCdMXS12)
+<span class="label">HW1 Mini:</span> [Mini-Homework #1](https://goo.gl/forms/h2bwjcItyCCdMXS12)  
 <span class="label">HW1 Turn-in:</span> [Submission Form](https://goo.gl/forms/lK8Me9DqLTWtEOZA3)
 
 ---
@@ -28,7 +28,7 @@ For **Part 2**, you will create your own list-based article with any styling you
 {:toc}
 
 <section class="part" markdown="1">
-## Part 0: Mini-Homework
+## Part 0: Getting started
 
 ### 1. Mini-Homework
 {:.no_toc}

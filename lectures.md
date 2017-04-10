@@ -14,13 +14,14 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 ---
 ### Apr 10: Flexbox
-- Finish up Box Model
-- Debugging with Chrome Inspector:
-- **Case study:** Squarespace layout continued
-  - `display: flex;`
-  - Google Fonts
-  - Background images
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1-RHZWIQ4kORqgVdXoYqbu2RseSZqznQLqHGXE7C4fk8/edit#slide=id.p) / [lecture04.pdf](04/lecture04.pdf)
+  - Finish up Box Model
+  - Debugging with Chrome Inspector
+  - **Case study:** Squarespace layout
+    - `display: flex;`
+    - Google Fonts
+    - Background images
+- [Homework 1]({{ relative }}homework/1-listicle) <span class="label">HW1 assigned</span>
 
 ### Apr 7: More CSS; CSS Box Model
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1w3q6g-gJ_DeBZCUzz6E0VBQ9fVzJk7wYC5ouU6fX0KU/edit#slide=id.p) / [lecture03.pdf](03/lecture03.pdf)
