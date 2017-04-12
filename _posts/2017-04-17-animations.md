@@ -1,15 +1,17 @@
 ---
 layout: post
-title: 'Apr 17: More Amateur JavaScript <span class="label">HW2 assigned</span>'
+title: 'Apr 17: More Amateur JavaScript'
 date:   2017-04-17
 ---
 
-- The JavaScript event loop
-- `setTimeout`
-- DOM traversal and its mostly-unimportance
-- Browser extensions
-- Case study: Adblock-block-block
-- <span class="label">HW1 DUE</span> **HW1 due at 11:59pm**
+- Start JavaScript
+  - How to connect to HTML (`<script defer>`)
+- Functions as first-class citizens; scope basics (`var`, `const`, `let`)
+- DOM and document.querySelector
+- Events
+- Add/remove classes
+- Add and remove elements to/from DOM
+- Some form elements (`input`, `textarea`) and maybe how to style them
 <!--more-->
 
 ## Slides:

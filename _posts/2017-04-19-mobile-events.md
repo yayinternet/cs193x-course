@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Apr 19: Mobile Events'
+title: 'Apr 19: More Amateur JavaScript <span class="label">HW2 assigned</span>'
 date: 2017-04-19
 ---
 
-- CSS animations
-- JavaScript animations
-- `requestAnimationFrame`
-- `template` tag
-- Handling touch and drag
-- `Pointer` events
-- Polyfill libraries
+- The JavaScript event loop
+- `setTimeout`
+- DOM traversal and its mostly-unimportance
+- Browser extensions
+- Case study: Adblock-block-block
+- <span class="label">HW1 DUE</span> **HW1 due at 11:59pm**
 
 <!--more-->
 

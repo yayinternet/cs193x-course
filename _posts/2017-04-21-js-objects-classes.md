@@ -1,15 +1,17 @@
 ---
 layout: post
-title: 'Apr 21: JS Objects and Classes'
+title: 'Apr 21: Mobile events'
 date: 2017-04-21
 ---
 
-- Objects and lists in JavaScript: `{}` and `[]`
-- Equality in JavaScript
-  ES6 classes
-- `this` keyword / `bind()``
-- `Symbol`s / enums
 
+- CSS animations
+- JavaScript animations
+- `requestAnimationFrame`
+- `template` tag
+- Handling touch and drag
+- `Pointer` events
+- Polyfill libraries
 <!--more-->
 
 ## Slides:
