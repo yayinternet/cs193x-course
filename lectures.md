@@ -13,6 +13,16 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### Apr 12: More flexbox and layout
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/11hBjf4dq1WMdAgyM4-p0xPOo2geGble7yy_R6NXmde4/edit?usp=sharing) / [lecture05.pdf](05/lecture05.pdf)
+  - More flexbox: shrink and grow
+  - `height`/`width` percentage quirks: `vh`/`vw` and `box-sizing`
+  - `position`
+  - Useful `background-image` properties
+- [Block vs inline guide](05/block-inline): review if necessary
+- **Code:**
+  - [squarespace.html](05/squarespace.html) / [css](05/style.css): A rough copy of the [Bedford](https://bedford-demo.squarespace.com) Squarespace template. Be sure to inspect elements and view the source to see how it works!
+
 ### Apr 10: Flexbox
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1-RHZWIQ4kORqgVdXoYqbu2RseSZqznQLqHGXE7C4fk8/edit#slide=id.p) / [lecture04.pdf](04/lecture04.pdf)
   - Finish up Box Model
@@ -35,6 +45,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - Block vs inline
   - `div` and `span`
   - `class`es and `id`s
+  - [Block vs inline guide](05/block-inline)
 - Code: [Course webpage](http://codepen.io/bee-arcade/pen/a3dbe970375f87f8330bfb2c303e5cc8/)
 
 ### Apr 3: Course overview and basic HTML/CSS

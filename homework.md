@@ -9,7 +9,7 @@ Listed below are the released assignments for CS193X. More will be posted here a
 
 ## Homework 1
 - [Homework 1: Listicle](1-listicle)
-- Due **Mon, Apr 17 2017** at 11:59pm
+- Due **Wed, Apr 19 2017** at 11:59pm
 - HW1 Mini: [Mini-Homework](https://goo.gl/forms/h2bwjcItyCCdMXS12)
 - HW1 Turn-in: [Submission Form](https://goo.gl/forms/lK8Me9DqLTWtEOZA3)
 

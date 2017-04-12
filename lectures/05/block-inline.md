@@ -1,10 +1,22 @@
 ---
 layout: article-nosidebar
-title: 'Block, inline, and inline-block'
+title: 'Block and inline'
 subtitle: 'Review'
 parent: lectures
 active: 'lectures'
 ---
+
+{% assign lvl = page.url | append:'X' | split:'/' | size %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
+This is a review of the block vs inline rules we learned in [Lecture 2]({{relative}}/lectures#apr-5-block-vs-inline-classes-and-ids).
+
+**This is arguably the most important rule to understand in CSS.** Please make sure this concept is crystal clear!
+
+---
+
+* TOC
+{:toc}
 
 <section class="part" markdown="1">
 
@@ -41,7 +53,7 @@ If there is no height and width set in CSS, no content in the element, and no bo
 <p data-height="265" data-theme-id="dark" data-slug-hash="LWwwXJ" data-default-tab="html,result" data-user="bee-arcade" data-embed-version="2" data-pen-title="Block example: No content, no border" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/bee-arcade/pen/LWwwXJ/">Block example: No content, no border</a> by vrk (<a href="http://codepen.io/bee-arcade">@bee-arcade</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-### Top-to-bottom flow:
+### Top-to-bottom flow
 Each element is laid out one on top of the other, regardless of the white space in HTML, and regardless of the size of the element:
 
 <p data-height="265" data-theme-id="dark" data-slug-hash="YZmmeJ" data-default-tab="css,result" data-user="bee-arcade" data-embed-version="2" data-pen-title="Block example 1: Top to bottom flow" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/bee-arcade/pen/YZmmeJ/">Block example 1: Top to bottom flow</a> by vrk (<a href="http://codepen.io/bee-arcade">@bee-arcade</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -78,7 +90,7 @@ If there is no content and no border to your inline elements, nothing will be sh
 
 <p data-height="350" data-theme-id="dark" data-slug-hash="XRrrbE" data-default-tab="css,result" data-user="bee-arcade" data-embed-version="2" data-pen-title="Inline example: Spans without content" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/bee-arcade/pen/XRrrbE/">Inline example: Spans without content</a> by vrk (<a href="http://codepen.io/bee-arcade">@bee-arcade</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
-Recall that the exact same CSS applies to a *&block element**, such as `<p>`, **does** respect the height and width:
+Recall that the exact same CSS applies to a **block element**, such as `<p>`, **does** respect the height and width:
 
 <p data-height="265" data-theme-id="dark" data-slug-hash="ZKzzbv" data-default-tab="css,result" data-user="bee-arcade" data-embed-version="2" data-pen-title="Block example: blockss- without content" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/bee-arcade/pen/ZKzzbv/">Block example: blockss- without content</a> by vrk (<a href="http://codepen.io/bee-arcade">@bee-arcade</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
