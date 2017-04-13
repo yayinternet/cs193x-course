@@ -153,7 +153,7 @@ Here is a description of how links should work on your page:
 
 For full credit, please abide by the following:
 
-- **Use HTML and CSS we've learned in class.** You should be able to complete this homework using HTML and CSS we've  learned in class through lecture 5 / Apr 12. While you are not strictly forbidden from using HTML/CSS we haven't talked about in class, if you use it incorrectly or if you make poor stylistic choices.
+- **Use HTML and CSS we've learned in class.** You should be able to complete this homework using HTML and CSS we've  learned in class through lecture 6 / Apr 14. While you are not strictly forbidden from using HTML/CSS we haven't talked about in class, if you use it incorrectly or if you make poor stylistic choices, you may be marked down.
 - **Do not use JavaScript**. There's no need to use JavaScript in this assignment.
 - **Respect Separation of Concerns**. Your HTML should describe the content of your page, and your CSS should describe your page's appearance.
 - **Do not use an ordered list element (`ol`) to create the list layout.** There's nothing wrong with doing this, per se, but it involves some fairly esoteric CSS that we did not cover in class. We recommend you write out the numbers "1.", "2.", etc. in the HTML instead of using `ol`.
