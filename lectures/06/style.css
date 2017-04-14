@@ -1,0 +1,43 @@
+a {
+  color: deeppink;
+}
+
+article {
+  margin: 0 15%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 40px;
+}
+
+header h2 {
+  font-size: 15px;
+}
+
+.label {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.label:after {
+  content: ':';
+}
