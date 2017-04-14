@@ -6,6 +6,12 @@ article {
   margin: 0 15%;
 }
 
+@media (max-width: 500px) {
+  article {
+    margin: 0 2px;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -13,7 +19,6 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
