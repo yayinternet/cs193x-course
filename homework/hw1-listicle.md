@@ -139,7 +139,7 @@ Here is a description of how links should work on your page:
   - Its height is `500px`.
   - There is a semi-transparent color overlay on top of the header image, which is `rgba(0, 0, 0, .3)`   
     - **Note:** You can achieve this using the following CSS rule:  
-      `background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/header.jpg);`
+      `background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/header.jpg);`
 - Profile image
   - The profile image is `images/vrk.png`
   - Its width is `100px`.
