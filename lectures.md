@@ -13,12 +13,20 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### Apr 14: `position`; Mobile web
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.p) / [lecture06.pdf](06/lecture06.pdf)
+  - `position`
+  - Useful `background-image` properties
+  - `em` and `rem`
+  - Mobile CSS
+- **Code:**
+  - [mobile.html](06/mobile.html) / [css](06/style.css): Our first mobile web example.
+  - [squarespace-mobile.html](06/squarespace-mobile.html) / [css](06/squarespace-mobile-style.css): The mobile version of our Squarespace layout.
+
 ### Apr 12: More flexbox and layout
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/11hBjf4dq1WMdAgyM4-p0xPOo2geGble7yy_R6NXmde4/edit?usp=sharing) / [lecture05.pdf](05/lecture05.pdf)
   - More flexbox: shrink and grow
   - `height`/`width` percentage quirks: `vh`/`vw` and `box-sizing`
-  - `position`
-  - Useful `background-image` properties
 - [Block vs inline guide](05/block-inline): review if necessary
 - **Code:**
   - [squarespace.html](05/squarespace.html) / [css](05/style.css): A rough copy of the [Bedford](https://bedford-demo.squarespace.com) Squarespace template. Be sure to inspect elements and view the source to see how it works!
