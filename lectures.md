@@ -13,12 +13,20 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### Apr 17: Introduction to JavaScript
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1gc1ef_r_DCPWCXe_AS3czzstk6d5U9yLB3YeqWmXVhQ/edit#slide=id.p) / [lecture07.pdf](07/lecture07.pdf)
+  - What is JavaScript?
+  - Language feature tour
+  - Basic event handling
+- **Code:**
+  - [first-js.html](07/first-js.html) / [script.js](07/script.js): A button with a simple event handler.
+
 ### Apr 14: `position`; Mobile web
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.p) / [lecture06.pdf](06/lecture06.pdf)
   - `position`
   - Useful `background-image` properties
-  - `em` and `rem`
   - Mobile CSS
+  - **Skipped but useful:** `em` and `rem`
 - **Code:**
   - [mobile.html](06/mobile.html) / [css](06/style.css): Our first mobile web example.
   - [squarespace-mobile.html](06/squarespace-mobile.html) / [css](06/squarespace-mobile-style.css): The mobile version of our Squarespace layout.
