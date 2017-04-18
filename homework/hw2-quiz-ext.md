@@ -195,10 +195,14 @@ The `RESULT_MAP` is defined in `constants.js` and the images are saved in the `i
 **Title**
 <img src="images/hw2-title.png" class="screenshot" />
 
+- There's `18px` of space between each element
 - Pick A Dog...
   - Font size is `42px`
   - Font weight is bold
-  - There's `18px` of space between each element
+- This is your...
+  - Font size is `18px`
+- By Amy Xu and Zach Maurer
+  - Font size is `14px`
 
 **Quiz header**
 <img src="images/hw2-quiz-header.png" class="screenshot" />
@@ -207,7 +211,7 @@ The `RESULT_MAP` is defined in `constants.js` and the images are saved in the `i
   - Height is `425px`
   - Width is `100%` of the parent element's width
   - Background image is `images/background.gif`
-- Quiz prompt
+- Pick a pup
   - Font is `'Pangolin'` with fallback fonts `'Trebuchet MS'` and `cursive`
   - Font size is `60px`
   - Semi-transparent white rectangle behind the text is `rgba(255,255,255, 0.9);`
@@ -270,12 +274,12 @@ Please see April 14 Slides for details on how to implement and test your homewor
 
 The next two parts of the assignment involve writing Chrome extensions.
 
-The first extension is called "Evil extension." When you install it, all instances of "there/their/they're" on the page change to the wrong spelling.
+The first extension is called "Evil extension." When you install it, all instances of "there", "their", and "they're" on the page are changed to the wrong spelling in the following way:
 - "there" changes to "their"
 - "their" changes to "there"
 - "they're" also changes to "there"
 
-This mapping (along with a few case-related variations) is stored in the `MATCH_LIST` object at the top of the file.
+This mapping (along with a few case-related variations) is stored in the `MATCH_LIST` object at the top of the file. Use this mapping to complete the extension.
 
 ### 1. Install Chrome
 {:.no_toc}
@@ -293,7 +297,7 @@ In the URL bar, type in `chrome://extensions` and hit enter. This will bring you
 
 <img src="images/hw2-extensions.png" class="screenshot" />
 
-**Check "Developer Mode"**
+**Check "Developer mode"**
 
 In the upper right corner, there is a check box that says "Developer mode." Check this box.
 
