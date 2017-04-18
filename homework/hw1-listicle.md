@@ -170,10 +170,18 @@ For full credit, please abide by the following:
 Design your own listicle! You should write the content in `my-list.html` and the style in `my-list-style.css`.
 
 For full credit, please abide by the following:
-- Cannot be a copy of `listicle.html`
+- Cannot be an exact line-for-line copy of `listicle.html`
 - Must have at least 3 items in your list
 - Must correctly use `display: flex` at least once.
 - You can, but do not have to, refer to `listicle-style.css`.
+
+You can spend as much or as little time on this part as you want, provided that your page does fall within the guidelines above.
+
+### Ideas
+
+- **"Parallax" Effect:** This is a trendy style where the background of a page is moved at a different speed than the foreground content while scrolling. In its simplest form, the background image stays in the same place as the page scrolls. Try implementing the parallax effect using CSS! You can check out this [W3Schools demo](https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm) to see how it works. Inspect the elements to see what CSS they use to get this effect.
+  - Note: The example linked above is simple but not actually best practice. You can check out [this article](https://developers.google.com/web/updates/2016/12/performant-parallaxing) to try a more sophisticated implementation.
+- **CSS animations:** When the real [Squarespace demo](https://bedford-demo.squarespace.com) loads, notice how the text animates in. We haven't talked about how to do that yet. We will talk about CSS animations in class in a few weeks, but if you want to get a head start, try experimenting with some CSS animations on your page.
 
 </section>
 
