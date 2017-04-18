@@ -266,7 +266,129 @@ Please see April 14 Slides for details on how to implement and test your homewor
 </section>
 
 <section class="part" markdown="1">
-## Part 2: Chrome extensions
+## Part 2: Evil extension
+
+The next two parts of the assignment involve writing Chrome extensions.
+
+The first extension is called "Evil extension." When you install it, all instances of "there/their/they're" on the page change to the wrong spelling.
+- "there" changes to "their"
+- "their" changes to "there"
+- "they're" also changes to "there"
+
+This mapping (along with a few case-related variations) is stored in the `MATCH_LIST` object at the top of the file.
+
+### 1. Install Chrome
+{:.no_toc}
+
+This is the only assignment in the quarter where you **must** use Chrome. Please [download and install Chrome](https://www.google.com/chrome/) if you haven't already.
+
+### 2. Install the Evil Extension
+{:.no_toc}
+
+The HW2 starter code comes with the starter code for the Evil Extension.
+
+**Open chrome://extensions**
+
+In the URL bar, type in `chrome://extensions` and hit enter. This will bring you to Chrome's extensions settings page.
+
+<img src="images/hw2-extensions.png" class="screenshot" />
+
+**Check "Developer Mode"**
+
+In the upper right corner, there is a check box that says "Developer mode." Check this box.
+
+<img src="images/hw2-dev-mode.png" class="screenshot" />
+
+**Click "Load unpacked extension"**
+
+<img src="images/hw2-unpacked-extension.png" class="screenshot" />
+
+
+**Navigate to the "evil-ext" directory"**
+
+In the file chooser window that pops up, you should navigate to the `evil-ext` directory included in the starter code.
+
+<img src="images/hw2-select-dir.png" class="screenshot" />
+
+You should now see the Evil Extension in the list of extensions.
+
+<img src="images/hw2-evil-loaded.png" class="screenshot" />
+
+### 3. Verify Evil Extension is loaded
+{:.no_toc}
+
+The Evil Extension contains a print statement in `page.js`. Because this is a Chrome extension, this print statement will not show up in the usual Web Console. The following steps will show you how to view this print statement.
+
+**Navigate to a test file**
+
+You can actually do this from any page, but we're using a test file for simplicity.
+
+Open the following link in a new tab:
+- [simple-test.html](hw2/simple-test.html)
+
+**Open the Web Console**
+
+On the [simple-test](hw2/simple-test.html) page, open the Web Console. You should see the debug print statement:
+
+<img src="images/hw2-evil-debug-message.png" class="screenshot" />
+
+**Make a change to `script.js`**
+
+Every time you make a change to the extension, you will need to refresh the `chrome://extensions` page.
+
+Try making a change and verify it shows up in the console:
+- Add a second `console.log` statement at the bottom of `script.js`, such as `console.log('Extension updated');`
+- Navigate to chrome://extensions in a new tab, and either click "Reload" or press command-R (ctrl-R on Windows)
+- Navigate to [simple-test.html](hw2/simple-test.html) and view the Web Console.
+
+You should see your second print statement in the Web Console:
+
+<img src="images/hw2-ext-updated.png" class="screenshot" />
+
+
+**Debugging the script**
+
+You will probably want to debug your extension's JavaScript using the [Chrome Debugger](https://developers.google.com/web/tools/chrome-devtools/javascript/reference). You can find the JavaScript files from this extension by navigating to:
+- Sources -> Content Scripts -> Top -> Evil Extension -> page.js
+
+<img src="images/hw2-debug-content-script.png" class="screenshot" />
+
+You can then set breakpoints in this view.
+
+
+### 4. Implement `transformTextNodes`
+{:.no_toc}
+
+The `transformTextNodes` function should recursively walk the DOM tree and modify the `textContents` of each text node that contains a "there", "their", or "they're" as necessary:
+- "there" changes to "their"
+- "their" changes to "there"
+- "they're" also changes to "there"
+
+These rules (along with a few case shifts) are contained by `MATCH_LIST`.
+
+The `transformTextNodes` function takes a DOM node reference as a parameter. At the bottom of `page.js`, there's an initial call to the function: `transformTextNodes(document.body)`. You should not have to change this function call.
+
+**Note:** You may not use the `TreeWalker` JavaScript API to solve this, only because we want you to get a deeper understanding of the DOM through walking the tree manually. However, if you were implementing something like this outside of 193X, you should use `TreeWalker` instead of manually walking the tree.
+
+**TODO(vrk):** Add more hints for this.
+
+### 5. Evil Extension test files
+{:.no_toc}
+
+You should verify your Evil Extension works on the following files:
+- [simple-test.html](hw2/simple-test.html)
+- [NYT article](https://www.nytimes.com/2017/04/18/dining/halal-cart-food-vendor-new-york-city.html)
+- TODO(vrk): Add more test files
+
+**Your extension does NOT have to work on files other than the ones listed.**
+- One example in particular: Your extension will NOT work on CodePen links. This is because CodePen loads code dynamically in an `iframe`, which means content scripts cannot run in the output windows of CodePen.
+
+
+</section>
+
+<section class="part" markdown="1">
+## Part 3: Twitter gardener
+
 
 </section>
 
