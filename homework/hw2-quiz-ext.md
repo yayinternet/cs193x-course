@@ -14,7 +14,9 @@ In this homework, you will be practicing the HTML, CSS, and JavaScript that we l
 
 For **Part 1**, you are given screenshots and a description of a specific web page to replicate. You will recreate the web page exactly as shown in the provided screenshots.  
 
-For **Part 2**, you will finish two partially-implemented Chrome extensions. Unsurprisingly, you will need to use [Chrome](google.com/chrome) for this part of the assignment.
+For **Part 2**, you will finish a partially-implemented Chrome extension. Unsurprisingly, you will need to use [Chrome](google.com/chrome) for this part of the assignment.
+
+**Part 3** is **optional** and can be completed for extra credit. Part 3 involves implementing a second Chrome extension.
 
 <span class="label">Due Date:</span> Wed, Apr 26, 2017 at 11:59pm _(late cutoff: Fri, Apr 28, 2017 at 11:59pm)_  
 <span class="label">HW2 Mini:</span> [Mini-Homework #2]()  
@@ -382,16 +384,19 @@ The `transformTextNodes` function takes a DOM node reference as a parameter. At 
 You should verify your Evil Extension works on the following files:
 - [simple-test.html](hw2/simple-test.html)
 - [NYT article](https://www.nytimes.com/2017/04/18/dining/halal-cart-food-vendor-new-york-city.html)
-- TODO(vrk): Add more test files
+- **TODO(vrk):** Add more test files
 
 **Your extension does NOT have to work on files other than the ones listed.**
 - One example in particular: Your extension will NOT work on CodePen links. This is because CodePen loads code dynamically in an `iframe`, which means content scripts cannot run in the output windows of CodePen.
 
-
 </section>
 
 <section class="part" markdown="1">
-## Part 3: Twitter gardener
+## Part 3: OPTIONAL: Twitter gardener
+
+This part is **entirely optional** and can be completed for extra credit.
+
+**TODO(vrk):** Finish describing this part!
 
 
 </section>
