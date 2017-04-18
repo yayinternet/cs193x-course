@@ -396,10 +396,18 @@ hr {
   width:750px;
 }
 
+#mobile-screenshot-view img,
 #page-screenshot-view img {
   padding: 10px;
   width: 100%;
   margin: auto;
   display: block;
   box-sizing: border-box;
+}
+
+#mobile-screenshot-view {
+  background-color: gainsboro;
+  height: 500px;
+  overflow-y:scroll;
+  width: 281px;
 }

@@ -133,15 +133,17 @@ Here is a description of how links should work on your page:
 
 - Header image
   - The header is a background image (`images/header.jpg`).
+    - **Note:** To reference the image from the css/ folder, the path needs to be `../images/header.jpg`
   - The background does not repeat.
   - The background's size is set to `cover`.
   - The background position is anchored to the `top`.
   - Its height is `500px`.
   - There is a semi-transparent color overlay on top of the header image, which is `rgba(0, 0, 0, .3)`   
     - **Note:** You can achieve this using the following CSS rule:  
-      `background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/header.jpg);`
+      `background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/header.jpg);`
 - Profile image
   - The profile image is `images/vrk.png`
+    - **Note:** To reference the image from the css/ folder, the path needs to be `../images/vrk.png`
   - Its width is `100px`.
   - It has rounded corners with radius `100%`.
   - It has a `white` border that is `1px` thick.
