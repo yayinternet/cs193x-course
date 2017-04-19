@@ -39,7 +39,7 @@ For **Part 2**, you will create your own list-based article with any styling you
 {:.no_toc}
 
 - [Follow this link](https://classroom.github.com/assignment-invitations/7267dc1a9dd07336dad75191c11919f5), where HW1 is stored on GitHub Classroom.
-- Accept the homework and download the starter code as you did in [Homework 0]({{relative}}/homework/hw0-welcome).
+- Accept the homework and download the starter code as you did in [Homework 0]({{relative}}/homework/0-welcome).
 
 </section>
 
@@ -191,7 +191,7 @@ You can spend as much or as little time on this part as you want, provided that 
 
 ## Submit
 
-Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}/homework/hw0-welcome).
+Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}/homework/0-welcome).
 
 Turn in the link to your GitHub repository and links to your two completed web pages via this form:
 - [Turn in Homework 1](https://goo.gl/forms/lK8Me9DqLTWtEOZA3)
