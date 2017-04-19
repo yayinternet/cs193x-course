@@ -7,6 +7,13 @@ active: 'homework'
 
 Listed below are the released assignments for CS193X. More will be posted here as the quarter comes out. Go to lecture and check the home page for new homework announcements.
 
+## Homework 2
+- [Homework 2: Quiz and Extension](2-quiz-ext)
+- Due **Wed, Apr 26 2017** at 11:59pm
+- HW2 Mini: None this time!
+- HW2 Turn-in: [Submission Form](https://goo.gl/forms/p10BEbVMZ1ODqZn03)
+
+
 ## Homework 1
 - [Homework 1: Listicle](1-listicle)
 - Due **Wed, Apr 19 2017** at 11:59pm

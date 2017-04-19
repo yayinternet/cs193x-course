@@ -19,8 +19,8 @@ For **Part 2**, you will finish a partially-implemented Chrome extension. Unsurp
 **Part 3** is **optional** and can be completed for extra credit. Part 3 involves implementing a second Chrome extension.
 
 <span class="label">Due Date:</span> Wed, Apr 26, 2017 at 11:59pm _(late cutoff: Fri, Apr 28, 2017 at 11:59pm)_  
-<span class="label">HW2 Mini:</span> None!
-<span class="label">HW2 Turn-in:</span> **Submission Form** coming soon!
+<span class="label">HW2 Mini:</span> None!  
+<span class="label">HW2 Turn-in:</span> [Submission Form](https://goo.gl/forms/p10BEbVMZ1ODqZn03)  
 
 ---
 
@@ -246,9 +246,9 @@ In the upper right corner, there is a check box that says "Developer mode." Chec
 <img src="images/hw2-unpacked-extension.png" class="screenshot" />
 
 
-**Navigate to the "evil-ext" directory"**
+**Navigate to the "evil-extension" directory"**
 
-In the file chooser window that pops up, you should navigate to the `evil-ext` directory included in the starter code.
+In the file chooser window that pops up, you should navigate to the `evil-extension` directory included in the starter code.
 
 <img src="images/hw2-select-dir.png" class="screenshot" />
 
@@ -390,6 +390,6 @@ You should implement the `onMessage` function in `page.js`, as well as any helpe
 Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}homework/0-welcome).
 
 Turn in the link to your GitHub repository and links to your two completed web pages via this form:
-- **Submission form coming soon!**
+- [Submission Form](https://goo.gl/forms/p10BEbVMZ1ODqZn03)
 
 </section>
