@@ -25,7 +25,7 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 - Cindy Lin, TA (cinlin@)
 - Helen Fang, TA (hfang9@)
 - Zach Maurer, TA (zmaurer@)
-- Everyone: cs193x-spr1617-staff@
+- Everyone: cs193x-spr1617-staff@lists.stanford.edu
 
 See [staff page]({{ relative }}staff) for office hours. All email addresses are @stanford.edu.
 
