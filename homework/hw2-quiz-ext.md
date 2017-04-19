@@ -2,7 +2,7 @@
 layout: article-nosidebar
 title: 'Quiz and Extensions'
 subtitle: 'Homework 2'
-permalink: /homework/2-quiz-ext
+permalink: /homework/2-quiz-ext-DRAFT
 parent: homework
 active: 'homework'
 ---

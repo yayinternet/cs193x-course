@@ -13,13 +13,21 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+
+### Apr 19: DOM and events
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1FO1B6oVLYazYFFBV-EREdX9MVhp3w-wFJC5lk3LlaHQ/edit#slide=id.p) / [lecture08.pdf](08/lecture08.pdf)
+  - Finish language feature tour
+  - DOM: Document Object Model
+  - Basic event handling
+
 ### Apr 17: Introduction to JavaScript
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1gc1ef_r_DCPWCXe_AS3czzstk6d5U9yLB3YeqWmXVhQ/edit#slide=id.p) / [lecture07.pdf](07/lecture07.pdf)
   - What is JavaScript?
   - Language feature tour
-  - Basic event handling
 - **Code:**
   - [first-js.html](07/first-js.html) / [script.js](07/script.js): A button with a simple event handler.
+
+---
 
 ### Apr 14: `position`; Mobile web
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.p) / [lecture06.pdf](06/lecture06.pdf)
@@ -48,6 +56,8 @@ This page will contain the slides, notes, and example code pertaining to lecture
     - Google Fonts
     - Background images
 - [Homework 1]({{ relative }}homework/1-listicle) <span class="label">HW1 assigned</span>
+
+---
 
 ### Apr 7: More CSS; CSS Box Model
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1w3q6g-gJ_DeBZCUzz6E0VBQ9fVzJk7wYC5ouU6fX0KU/edit#slide=id.p) / [lecture03.pdf](03/lecture03.pdf)
