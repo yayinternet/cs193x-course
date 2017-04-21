@@ -12,7 +12,7 @@ active: 'homework'
 
 In this homework, you will be practicing the HTML, CSS, and JavaScript that we learned in lecture.
 
-For **Part 1**, you will be implementing a [Buzzfeed](https://www.buzzfeed.com/)-style personality quiz. Unlike Homework 1, a lot of the HTML and CSS is already implemented for you, but you will still need to make some HTML and CSS modificatiosn to complete the assignment. None of the JavaScript has been implemented for you, other than `constants.js` that constants the quiz result information.
+For **Part 1**, you will be implementing a [Buzzfeed](https://www.buzzfeed.com/)-style personality quiz. Unlike Homework 1, a lot of the HTML and CSS is already implemented for you, but you will still need to make some HTML and CSS modifications to complete the assignment. None of the JavaScript has been implemented for you, other than `constants.js` that constants the quiz result information.
 
 For **Part 2**, you will finish a partially-implemented Chrome extension. Unsurprisingly, you will need to use [Chrome](google.com/chrome) for this part of the assignment.
 
@@ -389,7 +389,7 @@ You should implement the `onMessage` function in `page.js`, as well as any helpe
 
 Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}homework/0-welcome).
 
-Turn in the link to your GitHub repository and links to your two completed web pages via this form:
+Turn in the link to your GitHub repository and the link to your completed personality quiz page via this form:
 - [Submission Form](https://goo.gl/forms/p10BEbVMZ1ODqZn03)
 
 </section>
