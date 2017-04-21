@@ -274,12 +274,12 @@ On the [simple-test](hw2/simple-test.html) page, open the Web Console. You shoul
 
 <img src="images/hw2-evil-debug-message.png" class="screenshot" />
 
-**Make a change to `script.js`**
+**Make a change to `page.js`**
 
 Every time you make a change to the extension, you will need to refresh the `chrome://extensions` page.
 
 Try making a change and verify it shows up in the console:
-- Add a second `console.log` statement at the bottom of `script.js`, such as `console.log('Extension updated');`
+- Add a second `console.log` statement at the bottom of `page.js`, such as `console.log('Extension updated');`
 - Navigate to chrome://extensions in a new tab, and either click "Reload" or press command-R (ctrl-R on Windows)
 - Navigate to [simple-test.html](hw2/simple-test.html) and view the Web Console.
 
@@ -310,17 +310,46 @@ These rules (along with a few case shifts) are contained by `MATCH_LIST`.
 
 The `transformTextNodes` function takes a DOM node reference as a parameter. At the bottom of `page.js`, there's an initial call to the function: `transformTextNodes(document.body)`. You should not have to change this function call.
 
+**Limitations:**  
+It is OK if your extension has the following limitations:
+- Your transformation only has to work on the variants of "there" as defined in `MATCH_LIST`. For example, your function does *not* have to change `thERE` or `ThEy'Re`.
+- Your transformation only has to work on exactly matches to `MATCH_LIST` and not substring matches. For example, For example, your function does *not* have to change instances of "there" with punctuation, like `"There," she said.` or words where "there" is a substring like "therefore"
+
 **Note:** You may not use the `TreeWalker` JavaScript API to solve this, only because we want you to get a deeper understanding of the DOM through walking the tree manually. However, if you were implementing something like this outside of 193X, you should use `TreeWalker` instead of manually walking the tree.
 
-**TODO(vrk):** Add more hints for this.
+**Helpful `Node` properties**
+- These are also defined in the [Apr 21 slides]({{relative}}lectures/):
+  - `childNodes`: list of the children of a given node ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes))
+  - `textContent`: the text content of the node and all of its descendants ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent))
+  - `nodeType`: the type of the node, such as `Node.TEXT_NODE` or `Node.ELEMENT_NODE` [mdn](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodetype)
+  - `nodeName`: the name of the node: will print out the tag name if an `Element` ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodename))
+
+**Hint: Skip `SCRIPT` and `STYLE` elements**
+- You should not examine the `textContent` of `<script>` and `<style>` tags, as this might affect the JavaScript / CSS of a web page if that page is embedding JavaScript or CSS directly in the HTML via those tags.
+
+**Implementation hints**
+- The [Apr 21 coding examples]({{lectures/}}) include `dom-walk-script.js`, which may be useful to you. This example both:
+  - Recursively walks the entire DOM
+  - Finds the `Text` nodes of the tree and prints them out
+- As explained at the end of the [Apr 21 slides]({{relative}}lectures/), all text content of an HTML page is contained in a `Text` node. These text nodes are always leafs in the tree.
+  - Here's an [interactive example](https://javascript.info/dom-nodes#other-node-types) of the nodes within the DOM
+- The `textContent` property of each DOM Node represents the text content of the node itself along with the text content of any descendants ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)).
+  - `textContent` is both a readable and writeable property
+    - You can view the text content of an element and its descendants like `console.log(element.textContent);`
+    - You can modify the text content of an element and its descendants by assigning the property to a new value, like `element.textContent = 'hello';`
+    - If you edit the `textContent` of any element that's not a `Text` node, you may strip inline tags: [See this example](https://codepen.io/bee-arcade/pen/4d90a7fd410d1da9f836a502ff2374ae?editors=1010)
+    - Therefore if you are trying to write an extension to manipulate text (such as for Part 2 of this assignment), you **must** operate on the `textContent` of Text nodes, and **not** the `textContent` of Element nodes
+
 
 ### 5. Evil Extension test files
 {:.no_toc}
 
 You should verify your Evil Extension works on the following files:
 - [simple-test.html](hw2/simple-test.html)
+- [inline1.html](hw2/inline1.html)
+- [inline2.html](hw2/inline2.html)
+- [nested-test.html](hw2/nested-test.html)
 - [NYT article](https://www.nytimes.com/2017/04/18/dining/halal-cart-food-vendor-new-york-city.html)
-- **TODO(vrk):** Add more test files
 
 <!--
 **Your extension does NOT have to work on files other than the ones listed.**
