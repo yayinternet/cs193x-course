@@ -14,6 +14,15 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 ---
 
+### Apr 21: More DOM; case study
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1MZ6TMztOyLP000b6VlHjLTVLOAXCPfiCoXPAxZ6q0DQ/edit#slide=id.g1dd384a22c_0_101) / [lecture09.pdf](09/lecture09.pdf)
+  - Adding and removing elements from DOM
+  - Case Study: tic-tac-toe
+  - Traversing the DOM
+- **Code:**
+  - [dom-walk-script.js](09/dom-walk-script.js) / [html](09/dom-walk.html): Recursively prints out every DOM element of the HTML page.
+  - [tictactoe.js](09/tictactoe.js) / [html](09/tictactoe.html) / [css](09/tictactoe.css): Simple tic-tac-toe game
+
 ### Apr 19: DOM and events
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1FO1B6oVLYazYFFBV-EREdX9MVhp3w-wFJC5lk3LlaHQ/edit#slide=id.p) / [lecture08.pdf](08/lecture08.pdf)
   - Finish language feature tour
