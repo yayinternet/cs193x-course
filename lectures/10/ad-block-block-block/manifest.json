@@ -1,0 +1,18 @@
+{
+  "name": "Ad block block block",
+  "version": "1.0",
+  "description": "Ad block blocker blocker for OnDemandKorea",
+  "content_scripts": [
+    {
+      "matches": ["*://www.ondemandkorea.com/*"],
+      "run_at": "document_end",
+      "js": ["page.js"]
+    }
+  ],
+  "icons": {
+    "16": "angel.png",
+    "48": "angel.png",
+    "128": "angel.png"
+  },
+  "manifest_version": 2
+}

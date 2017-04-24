@@ -4,11 +4,9 @@ title: 'Apr 19: More Amateur JavaScript <span class="label">HW2 assigned</span>'
 date: 2017-04-19
 ---
 
-- The JavaScript event loop
-- `setTimeout`
-- DOM traversal and its mostly-unimportance
-- Browser extensions
-- Case study: Adblock-block-block
+- Finish language features
+- Beginning JavaScript events
+- Introducing the DOM: Document Object Model
 - <span class="label">HW1 DUE</span> **HW1 due at 11:59pm**
 
 <!--more-->

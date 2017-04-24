@@ -14,6 +14,19 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 ---
 
+### Apr 24: More JavaScript events
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1UWuchBk2aU1Qvq6VjW-AQAuFXs0XYHK2T1cVA_8v7Bo/edit#slide=id.p) / [lecture10.pdf](09/lecture10.pdf)
+  - Event propagation: bubbling and capturing
+  - Finish case study
+  - `data-*` attributes
+  - Mischief and hacks
+- **Code:**
+  - [empty-extension.zip](10/empty-extension.zip): Empty extension that does nothing but print a log message
+  - [quora-extension.zip](10/quora-extension.zip): Extension that removes the Quora login nag screen
+  - [adblock-block-block.zip](10/adblock-block-block.zip): Extension that unblocks [Adblock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom) on [OnDemandKorea](www.ondemandkorea.com)
+
+---
+
 ### Apr 21: More DOM; case study
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1MZ6TMztOyLP000b6VlHjLTVLOAXCPfiCoXPAxZ6q0DQ/edit#slide=id.g1dd384a22c_0_101) / [lecture09.pdf](09/lecture09.pdf)
   - Adding and removing elements from DOM

@@ -1,0 +1,17 @@
+{
+  "name": "Empty Chrome Extension",
+  "version": "1.0",
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["page.js"]
+    }
+  ],
+  "icons": {
+    "16": "pizza.png",
+    "48": "pizza.png",
+    "128": "pizza.png"
+  },
+  "manifest_version": 2
+}

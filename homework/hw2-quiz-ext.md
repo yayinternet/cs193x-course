@@ -78,6 +78,12 @@ Much of the CSS has already been completed for you, but you need to finish styli
   - Width of the element **including** the border is `32.5%`
     - **Hint:** The `box-sizing` CSS property might be helpful. See April 12 slides.
   - Space between the border and the content of the element is `10px`.
+- Choice image (i.e. dog, house, or toy image)
+  - **Hints:** We did not tell you the width or height of the image intentionally, as we want you figure out how to get it to behave like this. There are many ways to get the images to "shrink" inside its container
+    - The [tic-tac-toe example]({{relative}}lectures/09/tictactoe.html) has almost the same layout, and fits the X and O images into the invisible `<div>` containers. Take a look at the CSS for this example.
+    - The beverage image of HW1 also had similar behavior. Recall what dimensions we gave you for the beverage image.
+    - You are allowed to modify the HTML if you'd like (but you don't necessarily have to if you choose a different approach)
+    - You might also find [`:first-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) pseudo-selector helpful (but you don't necessarily have to if you choose a different approach)
 - Checkbox
   - The unchecked image is `images/unchecked.png`
   - The height and width is of the image is `20px`
@@ -107,6 +113,8 @@ Please see April 14 Slides for details on how to implement and test your homewor
 This web page is a 3-question personality quiz. Write the code necessary to implement the quiz behavior as detailed below.
 
 Even though you will mostly be writing JavaScript for this part, you may need to also update the HTML or CSS in order to implement the behavior as described.
+
+**Hint:** Aspects of the quiz are quite similar in behavior to the [tic-tac-toe.html example]({{relative}}lectures/09/tictactoe.html) discussed in lecture.
 
 **Dataset Attributes**
 
@@ -326,6 +334,10 @@ It is OK if your extension has the following limitations:
 
 **Hint: Skip `SCRIPT` and `STYLE` elements**
 - You should not examine the `textContent` of `<script>` and `<style>` tags, as this might affect the JavaScript / CSS of a web page if that page is embedding JavaScript or CSS directly in the HTML via those tags.
+
+**Hint: String manipulation**
+- You may need to use JavaScript string methods that we did not cover in class, as they are pretty universal to most programming languages. See MDN for a list of available string methods.
+  - [MDN string reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_unrelated_to_HTML)
 
 **Implementation hints**
 - The [Apr 21 coding examples]({{lectures/}}) include `dom-walk-script.js`, which may be useful to you. This example both:

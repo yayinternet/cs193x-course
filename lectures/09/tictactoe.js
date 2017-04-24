@@ -11,7 +11,7 @@ function assignSpace(space, owner) {
 }
 
 function changeToX(event) {
-  assignSpace(event.target, 'x');
+  assignSpace(event.currentTarget, 'x');
 
   if (isGameOver()) {
     displayWinner();

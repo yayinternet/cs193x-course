@@ -1,17 +1,13 @@
 ---
 layout: post
-title: 'Apr 21: Mobile events'
+title: 'Apr 21: More JavaScript events and DOM'
 date: 2017-04-21
 ---
 
 
-- CSS animations
-- JavaScript animations
-- `requestAnimationFrame`
-- `template` tag
-- Handling touch and drag
-- `Pointer` events
-- Polyfill libraries
+- Adding/removing elements from the DOM
+- Example: Tic-Tac-Toe
+- More practice with `Event`s
 <!--more-->
 
 ## Slides:

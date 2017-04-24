@@ -1,0 +1,17 @@
+{
+  "name": "Quora Chrome Extension",
+  "version": "1.0",
+  "description": "Removes login nag screen from Quora pages",
+  "content_scripts": [
+    {
+      "matches": ["*://www.quora.com/*"],
+      "js": ["page.js"]
+    }
+  ],
+  "icons": {
+    "16": "bear.png",
+    "48": "bear.png",
+    "128": "bear.png"
+  },
+  "manifest_version": 2
+}
