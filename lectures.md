@@ -15,12 +15,14 @@ This page will contain the slides, notes, and example code pertaining to lecture
 ---
 
 ### Apr 24: More JavaScript events
-- **Slides:** [Google slides](https://docs.google.com/presentation/d/1UWuchBk2aU1Qvq6VjW-AQAuFXs0XYHK2T1cVA_8v7Bo/edit#slide=id.p) / [lecture10.pdf](09/lecture10.pdf)
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1UWuchBk2aU1Qvq6VjW-AQAuFXs0XYHK2T1cVA_8v7Bo/edit#slide=id.p) / [lecture10.pdf](10/lecture10.pdf)
   - Event propagation: bubbling and capturing
   - Finish case study
   - `data-*` attributes
   - Mischief and hacks
 - **Code:**
+  - [display-toggle.html](10/display-toggle.html): Display toggle. Shows how clicking an inner element fires the click event on the outer element. 
+  - [bubbling.html](10/bubbling.html): Event bubbling example. See slides for more variants.
   - [empty-extension.zip](10/empty-extension.zip): Empty extension that does nothing but print a log message
   - [quora-extension.zip](10/quora-extension.zip): Extension that removes the Quora login nag screen
   - [adblock-block-block.zip](10/adblock-block-block.zip): Extension that unblocks [Adblock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom) on [OnDemandKorea](www.ondemandkorea.com)

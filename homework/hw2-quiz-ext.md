@@ -18,7 +18,7 @@ For **Part 2**, you will finish a partially-implemented Chrome extension. Unsurp
 
 **Part 3** is **optional** and can be completed for extra credit. Part 3 involves implementing a second Chrome extension.
 
-<span class="label">Due Date:</span> Wed, Apr 26, 2017 at 11:59pm _(late cutoff: Fri, Apr 28, 2017 at 11:59pm)_  
+<span class="label">Due Date:</span> Fri, Apr 28, 2017 at 11:59pm _(late cutoff: Sun, Apr 30, 2017 at 11:59pm)_  
 <span class="label">HW2 Mini:</span> None!  
 <span class="label">HW2 Turn-in:</span> [Submission Form](https://goo.gl/forms/p10BEbVMZ1ODqZn03)  
 

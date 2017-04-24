@@ -1,0 +1,27 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.details li {
+  margin: 0.5em 0;
+}
+
+.show-details {
+  align-items: center;
+  background-color: lavender;
+  border: 1px solid darkslateblue;
+  border-radius: 3px;
+  color: darkslateblue;
+  display: flex;
+  height: 2em;
+  font-weight: bold;
+}
+
+.show-details img {
+  height: 50%;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}

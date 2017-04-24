@@ -1,0 +1,25 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+div {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#outer {
+  background-color: thistle;
+}
+
+#outer.selected {
+  background-color: hotpink;
+}
+
+#inner {
+  background-color: lavender;
+}
+
+#inner.selected {
+  background-color: pink;
+}
