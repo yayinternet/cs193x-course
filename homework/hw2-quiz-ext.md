@@ -336,7 +336,7 @@ It is OK if your extension has the following limitations:
 - You should not examine the `textContent` of `<script>` and `<style>` tags, as this might affect the JavaScript / CSS of a web page if that page is embedding JavaScript or CSS directly in the HTML via those tags.
 
 **Hint: String manipulation**
-- You may need to use JavaScript string methods that we did not cover in class, as they are pretty universal to most programming languages. See MDN for a list of available string methods.
+- You may need to use JavaScript string methods that we did not cover in class. You can see the [MDN string reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_unrelated_to_HTML) for the complete list of operations. Particularly `split`, `join`, and `trim` may be helpful.
   - [MDN string reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_unrelated_to_HTML)
 
 **Implementation hints**
