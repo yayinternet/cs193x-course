@@ -8,6 +8,9 @@ function onThumbnailClick(event) {
   currentIndex = event.currentTarget.dataset.index;
   const image = createImage(event.currentTarget.src);
   modalView.appendChild(image);
+
+  document.body.classList.add('no-scroll');
+  modalView.style.top = window.pageYOffset + 'px';
   modalView.classList.remove('hidden');
 
   document.addEventListener('keydown', nextPhoto);
@@ -18,6 +21,7 @@ function onModalClick() {
 }
 
 function hideModal() {
+  document.body.classList.remove('no-scroll');
   modalView.classList.add('hidden');
   modalView.innerHTML = '';
   document.removeEventListener('keydown', nextPhoto);
