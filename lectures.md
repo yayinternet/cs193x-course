@@ -14,6 +14,17 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 ---
 
+### Apr 26: Keyboard, Mouse, and Touch events
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/19I7jtXPQGfOYBRc7PdwpaTWVqOgclNHCE2odkd9-gGQ/edit#slide=id.p) / [lecture11.pdf](11/lecture11.pdf)
+  - Keyboard events
+  - Pointer events
+  - Animations
+- **Code:**
+  - [key-events.html](11/key-events.html): Prints out keyboard events in the Web Console.
+  - [photos-start.html](11/photos-start.html): Starter code for our photos example.
+  - [photos-desktop-finished.html](11/photos-desktop-finished.html): Finished photo album example with keyboard navigation
+  - [photos-mobile-finished.html](11/photos-mobile-finished.html): Finished photo album example with swipe left/right navigation
+
 ### Apr 24: More JavaScript events
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1UWuchBk2aU1Qvq6VjW-AQAuFXs0XYHK2T1cVA_8v7Bo/edit#slide=id.p) / [lecture10.pdf](10/lecture10.pdf)
   - Event propagation: bubbling and capturing
@@ -21,7 +32,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - `data-*` attributes
   - Mischief and hacks
 - **Code:**
-  - [display-toggle.html](10/display-toggle.html): Display toggle. Shows how clicking an inner element fires the click event on the outer element. 
+  - [display-toggle.html](10/display-toggle.html): Display toggle. Shows how clicking an inner element fires the click event on the outer element.
   - [bubbling.html](10/bubbling.html): Event bubbling example. See slides for more variants.
   - [empty-extension.zip](10/empty-extension.zip): Empty extension that does nothing but print a log message
   - [quora-extension.zip](10/quora-extension.zip): Extension that removes the Quora login nag screen
