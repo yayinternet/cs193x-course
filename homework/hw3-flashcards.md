@@ -1,6 +1,6 @@
 ---
 layout: article-nosidebar
-title: 'Flashcard'
+title: 'Flashcards'
 subtitle: 'Homework 3'
 permalink: /homework/3-flashcards-DRAFT
 parent: homework
