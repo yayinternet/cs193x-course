@@ -340,7 +340,7 @@ It is OK if your extension has the following limitations:
   - [MDN string reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods_unrelated_to_HTML)
 
 **Implementation hints**
-- The [Apr 21 coding examples]({{lectures/}}) include `dom-walk-script.js`, which may be useful to you. This example both:
+- The [Apr 21 coding examples]({{relative}}lectures/) include `dom-walk-script.js`, which may be useful to you. This example both:
   - Recursively walks the entire DOM
   - Finds the `Text` nodes of the tree and prints them out
 - As explained at the end of the [Apr 21 slides]({{relative}}lectures/), all text content of an HTML page is contained in a `Text` node. These text nodes are always leafs in the tree.
