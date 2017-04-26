@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica, sans-s  erif;
+  font-family: Helvetica, sans-serif;
 }
 
 #album-view img {
@@ -31,4 +31,8 @@ body {
 
 #modal-view.hidden {
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

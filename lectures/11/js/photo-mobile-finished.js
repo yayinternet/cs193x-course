@@ -6,13 +6,16 @@ function createImage(src) {
 
 function onThumbnailClick(event) {
   currentIndex = event.currentTarget.dataset.index;
-  showFullsizeImage(event.currentTarget.src);
+  const image = createImage(event.currentTarget.src);
+  showFullsizeImage(image);
+  document.body.classList.add('no-scroll');
+  modalView.style.top = window.pageYOffset + 'px';
   modalView.classList.remove('hidden');
 }
 
-function showFullsizeImage(src) {
+function showFullsizeImage(image) {
   modalView.innerHTML = '';
-  const image = createImage(src);
+
   image.addEventListener('pointerdown', startDrag);
   image.addEventListener('pointermove', duringDrag);
   image.addEventListener('pointerup', endDrag);
@@ -26,14 +29,15 @@ function startDrag(event) {
   event.stopPropagation();
 
   originX = event.clientX;
-  event.currentTarget.setPointerCapture(event.pointerId);
+  event.target.setPointerCapture(event.pointerId);
 }
 
 function duringDrag(event) {
   if (originX) {
     const currentX = event.clientX;
     const delta = currentX - originX;
-    event.currentTarget.style.transform = 'translateX(' + delta + 'px)';
+    const element = event.currentTarget;
+    element.style.transform = 'translateX(' + delta + 'px)';
   }
 }
 
@@ -63,15 +67,22 @@ function endDrag(event) {
   }
 
   const photoSrc = PHOTO_LIST[nextIndex];
-  showFullsizeImage(photoSrc);
+  const image = createImage(photoSrc);
+  if (delta < 0) {
+    image.classList.add('animate-next');
+  } else {
+    image.classList.add('animate-prev');
+  }
+  showFullsizeImage(image);
   currentIndex = nextIndex;
 }
 
 function onModalClick() {
-  hidemodalView();
+  hideModalView();
 }
 
-function hidemodalView() {
+function hideModalView() {
+  document.body.classList.remove('no-scroll');
   modalView.classList.add('hidden');
   modalView.innerHTML = '';
 }
