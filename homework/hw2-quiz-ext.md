@@ -171,11 +171,11 @@ Here is the description of how the personality results should look:
 
 **Scoring the quiz**
 
-The `data-choice-id` for each answer choice maps to the key name for each possible result in `RESULT_MAP`, stored in `constants.js`. You can access `RESULT_MAP` in `script.js` because `constants.js` is included before `script.js` in `index.html`.
+The `data-choice-id` for each answer choice maps to the key name for each possible result in `RESULTS_MAP`, stored in `constants.js`. You can access `RESULTS_MAP` in `script.js` because `constants.js` is included before `script.js` in `index.html`.
 
-When the quiz is complete, you can score the quiz by tallying the `data-choice-id`s from each answer. For example, if a user chooses `blepdog.jpg`, `sleepybed.jpg`, and `bleptoy.jpg`, you should show the title and contents from `RESULT_MAP['blep']`.
+When the quiz is complete, you can score the quiz by tallying the `data-choice-id`s from each answer. For example, if a user chooses `blepdog.jpg`, `sleepybed.jpg`, and `bleptoy.jpg`, you should show the title and contents from `RESULTS_MAP['blep']`.
 
-If there is a tie, i.e. if someone chooses all unique `data-choice-id`s, the answer to the first question should win. For example, if a user chooses `burgerdog.jpg`,  `nerdbed.jpg`, and `shydog.jpg`, you should show the title and contents from `RESULT_MAP['burger']`.
+If there is a tie, i.e. if someone chooses all unique `data-choice-id`s, the answer to the first question should win. For example, if a user chooses `burgerdog.jpg`,  `nerdbed.jpg`, and `shydog.jpg`, you should show the title and contents from `RESULTS_MAP['burger']`.
 
 **Resetting the quiz**
 
@@ -189,7 +189,7 @@ If the user clicks the "Restart quiz" button, the page should reset to its origi
   - You can call `element.scrollIntoView();` to do this. See [mdn](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView) for more details.
 
 **`constants.js`**
-- This file contains the definition of the object `RESULT_MAP`, which maps the dog type to its result title and description.
+- This file contains the definition of the object `RESULTS_MAP`, which maps the dog type to its result title and description.
 - Because this variable is declared in the global scope, you can access this variable in `script.js`.
 - You should **not** have to modify this file to solve the homework.
 
@@ -199,17 +199,17 @@ If the user clicks the "Restart quiz" button, the page should reset to its origi
 
 **Image to personality mapping**
 
-The `RESULT_MAP` is defined in `constants.js` and the images are saved in the `images/` directory.
+The `RESULTS_MAP` is defined in `constants.js` and the images are saved in the `images/` directory.
 
-- `blep{dog,bed,toy}.jpg` corresponds to `blep` in `RESULT_MAP`
-- `happy{dog,bed,toy}.jpg` corresponds to `happy` in `RESULT_MAP`
-- `sleeping{dog,bed,toy}.jpg` corresponds to `sleeping` in `RESULT_MAP`
-- `dopey{dog,bed,toy}.jpg` corresponds to `dopey` in `RESULT_MAP`
-- `burger{dog,bed,toy}.jpg` corresponds to `burger` in `RESULT_MAP`
-- `cart{dog,bed,toy}.jpg` corresponds to `cart` in `RESULT_MAP`
-- `nerd{dog,bed,toy}.jpg` corresponds to `nerd` in `RESULT_MAP`
-- `shy{dog,bed,toy}.jpg` corresponds to `shy` in `RESULT_MAP`
-- `sleepy{dog,bed,toy}.jpg` corresponds to `sleepy` in `RESULT_MAP`
+- `blep{dog,bed,toy}.jpg` corresponds to `blep` in `RESULTS_MAP`
+- `happy{dog,bed,toy}.jpg` corresponds to `happy` in `RESULTS_MAP`
+- `sleeping{dog,bed,toy}.jpg` corresponds to `sleeping` in `RESULTS_MAP`
+- `dopey{dog,bed,toy}.jpg` corresponds to `dopey` in `RESULTS_MAP`
+- `burger{dog,bed,toy}.jpg` corresponds to `burger` in `RESULTS_MAP`
+- `cart{dog,bed,toy}.jpg` corresponds to `cart` in `RESULTS_MAP`
+- `nerd{dog,bed,toy}.jpg` corresponds to `nerd` in `RESULTS_MAP`
+- `shy{dog,bed,toy}.jpg` corresponds to `shy` in `RESULTS_MAP`
+- `sleepy{dog,bed,toy}.jpg` corresponds to `sleepy` in `RESULTS_MAP`
 
 **NOTE**: To make this easier to test, the items for each question are in the order displayed above, i.e. the first answer of every question maps to `blep`, the second answer of every question maps to `happy`, etc. **You should not rely on this ordering for your homework solution.** Instead, use the dataset attributes as described at the top of this section.
 
