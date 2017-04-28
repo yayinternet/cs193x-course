@@ -2,7 +2,7 @@
 layout: article-nosidebar
 title: 'Flashcards'
 subtitle: 'Homework 3'
-permalink: /homework/3-flashcards-DRAFT
+permalink: /homework/3-flashcards
 parent: homework
 active: 'homework'
 ---
@@ -199,7 +199,7 @@ Here are a few terms we will be using:
     - If the user drags the card (100px, -25px) from origin: rotation is still `20deg`, since you should only calculate based on the x-value.
     - If the user drags the card (-50px, -30px) from origin: rotation is `-10deg`
 - **HINT**
-  - You should use the `transform` CSS property with the `translate` and `rotate` functions. See [examples](https://codepen.io/bee-arcade/pen/196d0c2483e15da3f2a888a199569fa6) and [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform?v=example) 
+  - You should use the `transform` CSS property with the `translate` and `rotate` functions. See [examples](https://codepen.io/bee-arcade/pen/196d0c2483e15da3f2a888a199569fa6) and [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform?v=example)
 
 **Drag right (correct answer)**
 <video src="videos/hw3-drag-right.mp4" controls autoplay loop></video>
@@ -282,10 +282,11 @@ There are two buttons displayed at the end of the flashcard session. The first b
 
 ## Style requirements
 
-**You are allowed, encouraged, and required** to make significant changes to the JavaScript files / code we've provided. You may have to do things such as:
+**You are allowed, encouraged, and required** to make significant changes to the JavaScript files / code we've provided. You may want to or have to do things such as:
 - Add constructor parameters
 - Delete lines of code we wrote in the starter code
 - Add your own fields and methods to the classes
+- Add your own class(es)
 
 You will not be graded on OO-design skills, so do not worry too much about having perfectly composed classes.
 

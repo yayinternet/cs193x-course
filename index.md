@@ -15,6 +15,7 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 **CS193X is limited enrollment.** This is the first offering of CS193X, so enrollment is limited and by application only. It will be offered again sometime in the 2017-2018 school year.
 
 ## Announcements
+- [4/28] [Homework 3](homework/3-flashcards) is released and is due **Fri, May 5 at 11:59pm**
 - [4/19] [Homework 2](homework/2-quiz-ext) is released and is due **Fri, Apr 28 at 11:59pm** (<em>was: Apr 26, but extended to the 28</em>)
 - [4/10] [Homework 1](homework/1-listicle) is released and is due **Wed, Apr 19 at 11:59pm** (<em>was: Apr 17, but extended to the 19</em>).
 - [4/3] [Homework 0](homework/0-welcome) is released and is due **Fri, Apr 7 at 11:59pm**.
