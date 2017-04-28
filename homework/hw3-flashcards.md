@@ -198,6 +198,8 @@ Here are a few terms we will be using:
     - If the user drags the card (100px, 30px) from the origin of the drag, then the rotation should be 0.2 * 100 = `20deg`.
     - If the user drags the card (100px, -25px) from origin: rotation is still `20deg`, since you should only calculate based on the x-value.
     - If the user drags the card (-50px, -30px) from origin: rotation is `-10deg`
+- **HINT**
+  - You should use the `transform` CSS property with the `translate` and `rotate` functions. See [examples](https://codepen.io/bee-arcade/pen/196d0c2483e15da3f2a888a199569fa6) and [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform?v=example) 
 
 **Drag right (correct answer)**
 <video src="videos/hw3-drag-right.mp4" controls autoplay loop></video>
@@ -280,9 +282,18 @@ There are two buttons displayed at the end of the flashcard session. The first b
 
 ## Style requirements
 
+**You are allowed, encouraged, and required** to make significant changes to the JavaScript files / code we've provided. You may have to do things such as:
+- Add constructor parameters
+- Delete lines of code we wrote in the starter code
+- Add your own fields and methods to the classes
+
+You will not be graded on OO-design skills, so do not worry too much about having perfectly composed classes.
+
+Here are some more details on what we are looking for in terms of style:
+
 - **No additional global variables:** For full credit, you may **not** add any additional global variables to the Flashcard app, other than the existing `app` variable defined in `main.js` and the `FLASHCARD_DECKS` in `constants.js`.
 - **Use ES6 classes:** To complete this assignment, you do not need to know about other ways of creating objects, such as via `prototype`. You should practice using `class`es as described in lecture.
-- **OO-design:** We are **not** going to grade on object-oriented design. We may award bonus points for particularly well-decomposed apps, but your main concern should be to get the functionality working.
+- **OO-design:** We are **not** going to grade on object-oriented design. We may award bonus points for particularly well-composed apps, but your main concern should be to get the functionality working.
 - **Comments, variable names, etc.:** We are also **not** grading on general good coding style, such as having comments or using good variable names. However, we encourage you to practice good coding style for your TAs' sake! We will only dock style points if someone's code is so extremely difficult to read that it impedes your TA's ability to grade your assignment.
 
 </section>

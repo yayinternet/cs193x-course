@@ -14,6 +14,17 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 ---
 
+### Apr 28: CSS Animations; ES6 classes
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1vIHDuMfLgeXWDlHy3SrZn2YDaqHwP4l2RhWHAk_jUq8/edit#slide=id.p) / [lecture12.pdf](12/lecture12.pdf)
+  - Keyboard events
+  - Pointer events
+  - Animations
+- **Code:** (see more in slide deck)
+  - [Dragon walk](https://codepen.io/bee-arcade/pen/dd65e0fc478dac692c0874618eab9d36?editors=1011): Codepen example of dragging a dragon along the x-axis
+  - [OO present with bind](https://codepen.io/bee-arcade/project/editor/ZBEqmD/) / [live](https://codepen.io/bee-arcade/project/live/ZBEqmD/): Object-oriented Present example
+  - [OO photo album](https://codepen.io/bee-arcade/project/editor/AbJmLA/) / [live](https://codepen.io/bee-arcade/project/live/AbJmLA/): Object-oriented Photo Album example
+
+
 ### Apr 26: Keyboard, Mouse, and Touch events
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/19I7jtXPQGfOYBRc7PdwpaTWVqOgclNHCE2odkd9-gGQ/edit#slide=id.p) / [lecture11.pdf](11/lecture11.pdf)
   - Keyboard events

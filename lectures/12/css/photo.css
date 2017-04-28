@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+#album-view img {
+  border: 1px solid slategray;
+  margin: 5px;
+  padding: 5px;
+  height: 150px;
+}
+
+#modal-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-view img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#modal-view.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
