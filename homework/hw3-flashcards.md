@@ -179,24 +179,63 @@ This behavior is already implemented for you, but you may have to modify your co
 ### Drag flashcard
 {:.no_toc}
 
-There are several aspects to dragging, broken down below:
+There are several aspects to dragging, broken down below.
+
+Here are a few terms we will be using:
+- **origin**: The initial point where the drag begins. This is the (x, y) coordinates of the mouse (specifically the `clientX` and `clientY` values) when the user first clicks down or touches down on the flashcard to begin the drag.
+- **positive direction**: This indicates "positive" direction from the _origin_ as defined above, meaning e.g. (currentX - originX) > 0.
+- **negative direction**: This indicates "negative" direction from the _origin_ as defined above, meaning e.g. (currentX - originX) < 0
 
 **General drag properties**
 - Dragging the flashcard should make it move along both the x- and y-axis, following the pointer as it moves around the screen.
 - Dragging should only occur when the user is clicking down on desktop or touching the screen on mobile. When the user releases the click or stops touching the screen, the drag should end.
+- The drag behavior is the same regardless of whether the word or definition side of the card is showing.
+- **Rotate**
+  - The flashcard rotates as it moves away from the origin.
+  - The rotation is calculated by this formula, in degrees: **0.2 * (distanceFromOriginX)**.
+  - This rotation is based distance from the origin in the x-direction only.
+  - Examples:
+    - If the user drags the card (100px, 30px) from the origin of the drag, then the rotation should be 0.2 * 100 = `20deg`.
+    - If the user drags the card (100px, -25px) from origin: rotation is still `20deg`, since you should only calculate based on the x-value.
+    - If the user drags the card (-50px, -30px) from origin: rotation is `-10deg`
 
 **Drag right (correct answer)**
 <video src="videos/hw3-drag-right.mp4" controls autoplay loop></video>
+- If the user drags the card **150px or more* in the positive x-direction, two things should happen:
+  - The background color of the app changes to `#97b7b7`
+  - The number in the status box counting how many you got "right" should increase by 1
+- If the user drags the card back to the middle area (i.e. less than 150px from origin in the x-direction), then both of these changes should revert back:
+  - The background color should go back to `#d0e6df`
+  - The number in the status box counting how many you got "right" return to its original value
 
 **Drag left (incorrect answer)**
 <video src="videos/hw3-drag-left.mp4" controls autoplay loop></video>
+- If the user drags the card **150px or more* in the negative x-direction, two things should happen:
+  - The background color of the app changes to `#97b7b7`
+  - The number in the status box counting how many you got "wrong" should increase by 1
+- If the user drags the card back to the middle area (i.e. less than 150px from origin in the x-direction), then both of these changes should revert back:
+  - The background color should go back to `#d0e6df`
+  - The number in the status box counting how many you got "wrong" return to its original value
 
 ### Release flashcard
 {:.no_toc}
 
+
 **Release middle (no answer)**
+<iframe src="https://drive.google.com/file/d/0BxtKIz3gISundmJ1WVJ0blA2RUk/preview" width="640" height="360"></iframe>
+- If the user drags the card less than 150px in the positive or negative x-direction and releases, the card should return back to its original position.
+- This transition should not be immediate: the card should move back to its original position in around `0.6s`.
 
 **Release left or right**
+<iframe src="https://drive.google.com/file/d/0BxtKIz3gISunQjdTSjRqb0dsYm8/preview" width="640" height="360"></iframe>
+- If the user drags the card more than 150px in the **positive** x-direction and releases, this indicates that the user has gotten the answer **correct**:
+  - The number in the status box counting how many you got "right" should increase by 1
+  - The card you were dragging should immediately disappear.
+  - The next card in the deck should animate into view, or the user should be shown the Result screen if it is the last card in the deck.
+- If the user drags the card more than 150px in the **negative** x-direction and releases, this indicates that the user has gotten the answer **wrong**:
+  - The number in the status box counting how many you got "wrong" should increase by 1
+  - The card you were dragging should immediately disappear.
+  - The next card in the deck should animate into view, or the user should be shown the Result screen if it is the last card in the deck.
 
 </section>
 
@@ -241,7 +280,10 @@ There are two buttons displayed at the end of the flashcard session. The first b
 
 ## Style requirements
 
-- **TODO(vrk):** finish
+- **No additional global variables:** For full credit, you may **not** add any additional global variables to the Flashcard app, other than the existing `app` variable defined in `main.js` and the `FLASHCARD_DECKS` in `constants.js`.
+- **Use ES6 classes:** To complete this assignment, you do not need to know about other ways of creating objects, such as via `prototype`. You should practice using `class`es as described in lecture.
+- **OO-design:** We are **not** going to grade on object-oriented design. We may award bonus points for particularly well-decomposed apps, but your main concern should be to get the functionality working.
+- **Comments, variable names, etc.:** We are also **not** grading on general good coding style, such as having comments or using good variable names. However, we encourage you to practice good coding style for your TAs' sake! We will only dock style points if someone's code is so extremely difficult to read that it impedes your TA's ability to grade your assignment.
 
 </section>
 
