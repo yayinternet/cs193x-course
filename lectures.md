@@ -21,6 +21,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - Animations
 - **Code:** (see more in slide deck)
   - [Dragon walk](https://codepen.io/bee-arcade/pen/dd65e0fc478dac692c0874618eab9d36?editors=1011): Codepen example of dragging a dragon along the x-axis
+  - [2D dragon walk](https://codepen.io/bee-arcade/pen/6a7de5577263dfc389605d19b33881f1)
   - [OO present with bind](https://codepen.io/bee-arcade/project/editor/ZBEqmD/) / [live](https://codepen.io/bee-arcade/project/live/ZBEqmD/): Object-oriented Present example
   - [OO photo album](https://codepen.io/bee-arcade/project/editor/AbJmLA/) / [live](https://codepen.io/bee-arcade/project/live/AbJmLA/): Object-oriented Photo Album example
 
