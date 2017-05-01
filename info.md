@@ -15,11 +15,8 @@ _If you are not OK with this_, please consider the taking the next offering of t
 Each assignment will be graded **individually** and will be scored on both functionality and style. Check the course website frequently for new assignments and course announcements.
 
 Grades will be calculated as follows:
-- **Homework:** 60%
-- **Mini-HWs:** 5%
+- **Homework:** 65%
 - **Final Project:** 35%
-
-**Mini-Homeworks** are multiple-choice quizzes you are asked to complete before starting the regular assignment. You can retry as many times as you want without penalty.
 
 Regular **Homework** assignments will be distributed and turned in via Github Classroom.
 
