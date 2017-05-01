@@ -13,12 +13,24 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### Apr 28: More ES6 classes; `this` and `bind`
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1E2CvOxrtxF9clb3xqlyWAVX1x5q0YNk6t08Iteb9W_Y/edit#slide=id.g1ddf57744b_0_410) / [lecture13.pdf](13/lecture13.pdf)
+  - More ES6 classes
+  - `this` keyword / `bind()`
+  - Communicating between classes
+    - Custom events
+    - Callbacks
+  - First-class functions
+  - JavaScript application architecture
+
+---
 
 ### Apr 28: CSS Animations; ES6 classes
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1vIHDuMfLgeXWDlHy3SrZn2YDaqHwP4l2RhWHAk_jUq8/edit#slide=id.p) / [lecture12.pdf](12/lecture12.pdf)
   - Keyboard events
   - Pointer events
   - Animations
+  - Intro ES6 classes
 - **Code:** (see more in slide deck)
   - [Dragon walk](https://codepen.io/bee-arcade/pen/dd65e0fc478dac692c0874618eab9d36?editors=1011): Codepen example of dragging a dragon along the x-axis
   - [2D dragon walk](https://codepen.io/bee-arcade/pen/6a7de5577263dfc389605d19b33881f1)

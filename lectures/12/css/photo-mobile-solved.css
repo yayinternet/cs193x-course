@@ -1,0 +1,38 @@
+#album-view img {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-prev {
+  animation: slide-from-left 0.5s;
+}
+
+@keyframes slide-from-left {
+  from {
+    margin-left: -200%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+.animate-next {
+  animation: slide-from-right 0.5s;
+}
+
+@keyframes slide-from-right {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0;
+  }
+}

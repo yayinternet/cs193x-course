@@ -16,7 +16,7 @@ We are providing several stub JavaScript classes to help you finish this assignm
 
 Note that we will _not_ grade on having good OO design; you just need to get the app working without using global variables.
 
-<span class="label">Due Date:</span> Fri, May 5, 2017 at 11:59pm _(late cutoff: Sun, May 7, 2017 at 11:59pm)_  
+<span class="label">Due Date:</span> Mon, May 8, 2017 at 11:59pm _(late cutoff: Wed, May 10, 2017 at 11:59pm)_  
 <span class="label">HW3 Turn-in:</span> [Submission Form](https://goo.gl/forms/mijI69Hxz3Fh2NQY2)  
 
 ---

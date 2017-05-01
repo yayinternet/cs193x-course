@@ -87,49 +87,55 @@ the further from present the topic is, the more likely it is to change.
 - `data-*` attributes
 - Mischief and hacks
 
-### Apr 26: Mobile events and animations
+### Apr 26: Keyboard and Mobile events
+- Keyboard events
 - Pointer events; handling touch and drag
-- CSS animations
-- JavaScript animations
-  - `requestAnimationFrame`
 - Polyfill libraries
-- `template` tag
 
 ### Apr 28: Classes in JS <span class="label">HW3 assigned</span>
--  ES6 classes
-- `this` keyword / `bind()``
-- `Symbol`s / enums
-- JavaScript application architecture
-- <span class="label">HW1 DUE</span> **HW2 due at 11:59pm**
+- Finish Pointer events
+- CSS animations
+- Intro ES6 classes
+- <span class="label">HW2 DUE</span> **HW2 due at 11:59pm**
 </div>
 
 <div class="week" markdown="1">
   <h2>Week 5</h2>
 
-### May 1: Functional JavaScript
-- Import / export JavaScript modules
-- Lambdas / anonymous functions
-- Currying
-- fat arrow `=>`
-- Map/filter
+### May 1: Finish classes in JS
+- More ES6 classes
+- `this` keyword / `bind()`
+- Communicating between classes
+  - Custom events
+  - Callbacks
+- First-class functions
+- JavaScript application architecture
 
-### May 3: Asynchronous data
+### May 3: Async JavaScript
 - JSON
 - fetch for JSON files
 - Using Promises
 - Querying 3rd party REST APIs
 
-### May 5: REST APIs; media <span class="label">HW4 assigned</span>
+### May 5: REST APIs; media
 - Media in JavaScript (preloading images, audio)
+  - `requestAnimationFrame`
 - Creating Promises
 - Using closures
-- <span class="label">HW3 DUE</span> **HW3 due at 11:59pm**
 </div>
 
 <div class="week" markdown="1">
-  <h2>Week 6</h2>
+<h2>Week 6</h2>
 
-### May 8: Intro to Servers
+### Functional Javascript <span class="label">HW4 assigned</span>
+- Import / export JavaScript modules
+- Lambdas / anonymous functions
+- Currying
+- fat arrow `=>`
+- Map/filter
+- <span class="label">HW3 DUE</span> **HW3 due at 11:59pm**
+
+###  May 8: Intro to Servers
 - What is a server
 - localhost / ports
 - npm
@@ -144,30 +150,26 @@ the further from present the topic is, the more likely it is to change.
 - Connecting to your backend
 - CORS
 
-### May 12: Saving data files <span class="label">HW5 assigned</span>
-- Forms and validation
-- Writing files to a server
-- Uploading / storing media
-- <span class="label">HW4 DUE</span> **HW4 due at 11:59pm**
-
 </div>
 
 <div class="week" markdown="1">
   <h2>Week 7</h2>
 
-### May 15: Intro to Databases
+### May 15: Saving data files
+- Forms and validation
+- Writing files to a server
+- Uploading / storing media
+
+### May 17: Intro to Databases <span class="label">HW5 assigned</span>
 - What is a database
 - Intro to MongoDb
 - Intro to Mongoose
+- <span class="label">HW4 DUE</span> **HW4 due at 11:59pm**
 
-### May 17: Routing; `async`/`await`
+### May 19: Routing; `async`/`await`
 - MongoDb single collection writes
 - Routing via Express parameters
 - `async` / `await`
-
-### May 19: Database case study <span class="label">HW6 assigned</span>
-- Case study: Plantastic
-- <span class="label">HW5 DUE</span> **HW4 due at 11:59pm**
 
 </div>
 
@@ -186,7 +188,7 @@ the further from present the topic is, the more likely it is to change.
 - Sockets / DataChannel
 - Signaling
 - WebRTC
-- <span class="label">HW6 DUE</span> **HW6 due at 11:59pm**
+- <span class="label">HW5 DUE</span> **HW5 due at 11:59pm**
 
 </div>
 
@@ -217,5 +219,9 @@ the further from present the topic is, the more likely it is to change.
 
 ### June 7: Wrap-up
 - Last day of lecture!
-- Final project demos
+- Final project demos, for anyone who turned in early
+</div>
+<div class="week" markdown="1">
+  <h2>Finals Week</h2>
+### June 12: <span class="label">Final project due</span>
 </div>
