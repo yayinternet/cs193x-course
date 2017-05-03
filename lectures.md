@@ -13,8 +13,8 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
-### May 3: More custom events, `this`, and `bind`; first-class functions
-- **Slides:** [Google slides](https://docs.google.com/presentation/d/1E2CvOxrtxF9clb3xqlyWAVX1x5q0YNk6t08Iteb9W_Y/edit#slide=id.g1ddf57744b_0_410) / [lecture13.pdf](13/lecture13.pdf)
+### May 3: Custom events, `this`, and `bind`; first-class functions
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1B8uwQt5OD-GJ4-OJvWfuqXfvSGKiqhy1Lgnsq9h_tqI/edit) / [lecture14.pdf](14/lecture14.pdf)
   - Custom events example
   - `this` keyword / `bind()`
   - First-class functions
@@ -26,7 +26,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - [Present example](https://codepen.io/bee-arcade/project/editor/XqGzeD/): Communicating between two classes (`Present` to `App`) via callbacks
 
 ### May 1: More ES6 classes; `this` and `bind`
-- **Slides:** [Google slides](https://docs.google.com/presentation/d/1E2CvOxrtxF9clb3xqlyWAVX1x5q0YNk6t08Iteb9W_Y/edit#slide=id.g1ddf57744b_0_410) / [lecture13.pdf](13/lecture13.pdf)
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1E2CvOxrtxF9clb3xqlyWAVX1x5q0YNk6t08Iteb9W_Y/edit) / [lecture13.pdf](13/lecture13.pdf)
   - More ES6 classes
   - `this` keyword / `bind()`
   - Communicating between classes
