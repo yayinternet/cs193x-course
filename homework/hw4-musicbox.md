@@ -17,7 +17,7 @@ This assignment gives you more practice with object-oriented web programming, an
 Note that we will not grade on having good OO design. However, we do expect you to implement HW4 using an object-oriented approach. You must use classes and you can have **at most 2 global variables** in your solution.
 
 <span class="label">Due Date:</span> Wed, May 17, 2017 at 11:59pm _(late cutoff: Fri, May 19, 2017 at 11:59pm)_  
-<span class="label">HW4 Turn-in:</span> [Submission Form]()  
+<span class="label">HW4 Turn-in:</span> [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)  
 
 ---
 
@@ -59,7 +59,7 @@ This homework is inspired by the [see hear party](https://www.chromeexperiments.
 ### 1. Menu HTML and CSS
 {:.no_toc}
 
-**Menu screen**
+**Menu screen:**
 - Open `index.html` in a browser. It should look like the following:
 
 <img src="images/hw4-starter-screen.png" class="screenshot" />
@@ -85,7 +85,7 @@ Method name | Description
 
 (\*As explained in class, all methods of JavaScript classes are technically public, but these are the methods we intend for you to call.)
 
-**Limitations**
+**Limitations:**
 - The `AudioPlayer` is **not perfect** at detecting kicks. Sometimes it will fail to detect a kick in a song, and other times it will detect a kick when none is there. This is because audio processing is an imperfect art that will always have some degree of error. This is not something that you need to fix in your code.
 - Some songs **do not have kick drum sounds in them** and therefore the `kickCallback` set by `setKickCallback` will never fire, or it will fire very rarely. "Toby Fox: Spear of Justice" is an example of such a song.
 
@@ -119,7 +119,9 @@ Modify `App` to create the `MenuScreen` and the `MusicScreen`.
 
 <section class="part" markdown="1">
 
-## 4. Implementation: Menu Screen
+## 4. Implementation: Menu screen
+
+The Menu screen is the first screen the user is shown when they load the page. The `MenuScreen` class should contain the logic to implement the following:
 
 ### Choose a song
 {:.no_toc}
@@ -139,6 +141,7 @@ hardcoded list of predefined themes. ([video](videos/hw4-random-query.mp4))
 
 - In our solution, we choose randomly from one of the following themes: `'candy', 'charlie brown', 'computers', 'dance', 'donuts', 'hello kitty', 'flowers', 'nature', 'turtles', 'space'`
   - You are welcome to use our list or you can make one of your own.
+  - To select a random element from an array, you need to use
 - The user should still be able to delete the suggested text and write their own query.
 
 ### Submitting the form
@@ -151,6 +154,7 @@ When the user submits the form, query the Giphy API with the theme entered.
 - If the query returns less than 2 gifs ([video](videos/hw4-too-few-gifs.mp4)):
   - Show the message "Not enough gifs for this theme. Please try another." This message is already in `index.html` in the `div` with `id="error"`. You can remove the `inactive` class to display it.
   - The message should go away after a user types anything into the input text area.
+  - **Note:** We suggest you implement this **last**.
 
 The form should be submitted if the user clicks the "Go" button **or** if they hit the "enter" button.
 
@@ -160,15 +164,17 @@ The form should be submitted if the user clicks the "Go" button **or** if they h
 
 ## 5. Implementation: Querying the Giphy API
 
-You should load gifs using the [Giphy Search API](https://github.com/Giphy/GiphyAPI#search-endpoint). Use the following parameters:
+You should load gifs using the [Giphy Search API](https://github.com/Giphy/GiphyAPI#search-endpoint).
+
+Use the following parameters:
 - **q**: The search term the user entered, or a randomly chosen theme if the user left the theme blank.
 - **limit**: `25`
 - **rating**: `g`
 - **api_key**: `dc6zaTOxFJmzC`
 
-Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=hot%20chocolate&api_key=dc6zaTOxFJmzC&limit=25&rating=g)
+Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=hot%20chocolate&api_key=dc6zaTOxFJmzC&limit=25&rating=g) / [indented](https://gist.github.com/vrk/3dd93294a4a53970013dbc23ae7008b9)
 
-- The Giphy API has the following format: [indented](https://gist.github.com/vrk/3dd93294a4a53970013dbc23ae7008b9)
+- The Giphy API has the following format:
   - The `data` field is an array of objects, where each object represents a gif.
   - Each object has an `images` property, which is another object that contains several versions of the gif such as `original`, `downsized`, etc. ([rendering options](https://github.com/giphy/Giphyapi#rendition-guide))
   - Use the `downsized` version of the image. The `url` property on the `downsized` object has the URL for the gif.
@@ -184,6 +190,15 @@ Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=h
 
 ## 6. Implementation: Music visualization screen
 
+After the user has entered a valid Giphy query, the `MusicScreen` should **not** be immediately visible.
+- While staying hidden, the `MusicScreen` will tell the `GifDisplay` class begin preloading gifs.
+- When the `GifDisplay` class has preloaded at least 2 gifs, the `GifDisplay` class will notify the `MusicScreen` that it is ready to play.
+- At this point, the `MusicScreen` will show itself.
+  - `MusicScreen` will start playing the selected song via the `AudioPlayer` object.
+  - `MusicScreen` will also notify the `GifDisplay` to update the displayed gif whenever there's a kick in the song.
+
+The rest of this section covers the details of how the `MusicScreen` should work.
+
 ### General layout
 {:.no_toc}
 
@@ -191,42 +206,47 @@ Modify the HTML and CSS to create the Music Screen:
 
 <img src="images/hw4-music-screen-layout.png" class="screenshot" />
 
-- The control bar at the bottom of the screen is set at 70px.
+- The control bar at the bottom of the screen has a height of `70px`.
+  - The play/pause button is `60px` by `60px` and is vertically and horizontally centered within the control bar.
+  - The play button image is `images/play.png` and the pause button image is `images/pause.png`.
 - The gif display area fills up the rest of the viewport space.
-- **Hints:**
-  - This layout is very similar to [this example](https://codepen.io/bee-arcade/pen/2f97b2cdfc04949c2c73dda852f739d7?editors=1100), which was shown in [lecture 4](https://docs.google.com/presentation/d/1-RHZWIQ4kORqgVdXoYqbu2RseSZqznQLqHGXE7C4fk8/edit#slide=id.p) and [lecture 5](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g1d7594117b_0_61).
 
-### Audio playback
-{:.no_toc}
-
-After the user submits the form, the `MusicScreen` should play the song the user chose via the `AudioPlayer` object. Every time the `AudioPlayer` detects a beat, a different gif should be displayed.
-
-When the `AudioPlayer` is paused, the gif being displayed should remain the same.
+**Hints:**
+- This layout is very similar to [this example](https://codepen.io/bee-arcade/pen/2f97b2cdfc04949c2c73dda852f739d7?editors=1100), which was shown in [lecture 4](https://docs.google.com/presentation/d/1-RHZWIQ4kORqgVdXoYqbu2RseSZqznQLqHGXE7C4fk8/edit#slide=id.p) and [lecture 5](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g1d7594117b_0_61).
 
 ### Image preloading
 {:.no_toc}
 
-When you receive the list of gifs from Giphy, you should **preload** all of the images for smoother playback. You can do this by creating offscreen `<img>` elements for each gif that you receive from the Giphy API.  You will not actually render these `<img>` elements, since you should display the gifs using the `background-image` CSS property instead of the `<img>` tag. You are just using the `<img>` tag as vessels to download the image data.
+When you receive the list of gifs from Giphy, you should **preload** all of the images for smoother playback. You can put the image preloading logic in the `GifDisplay` class.
 
-To preload an image, do the following:
-- Create a new `Image` object ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image); creating a `new Image` is the same as calling  `document.createElement('img')`);
+You can preload images by creating offscreen `<img>` elements for each gif that you receive from the Giphy API.  You will not actually render these `<img>` elements, since you should display the gifs using the `background-image` CSS property instead of the `<img>` tag. You are just using the `<img>` tag as vessels to download the image data.
+
+**To preload an image, do the following:**
+- Create a new `Image` object ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image))
 - Set the `src` of this `Image` to the URL of the gif, e.g. `image.src = json.data[0].images.downsized.url;`
 - When the image has finished loading, the `Image` element will fire the `load` event ([mdn](https://developer.mozilla.org/en-US/docs/Web/Events/load)).
-- When the `load` event fires for the `Image`, you can then preload the next gif.
+- When the `load` event fires for the `Image`, you can then preload the next gif by repeating these steps.
 
-You should save your preloaded images in an Array field of a class so that it does not get garbage collected.
+You should save your preloaded `Image`s in a list, then save that list in field of the `GifDisplay` class so that it does not get garbage collected.
+
 
 ### Gif display details
 {:.no_toc}
 
+The `GifDisplay` class should also handle displaying the gifs from the Giphy results. On each kick of the song, your music visualizer should display a different gif.
+
 **Gif layer:**
+
 - A gif should be displayed as a **background image** of a `div`, with the following CSS properties:
   - `background-size: cover;`
   - `background-position: center center;`
   - `background-repeat: no-repeat;``
 - You should render the gif as a `background-image` of a `div` instead of an `img` element because of the handy `background-size: cover` property. (The equivalent of `background-size` for `<img>` is `object-fit`, but Edge [does not support it yet](http://caniuse.com/#search=object-fit). We are going to use `background-image` until it does.)
+- **Hints:**
+  - The `background-*` CSS properties were covered in [lecture 6](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g20680a093f_0_671). They were also used in HW1.
 
 **Double buffering:**
+
 To display the gifs more smoothly, you should use a double buffering technique, where you store the next image to be displayed in a "back buffer" that is rendered but not visible:
 <img src="images/hw4-display-diagram.png" class="screenshot" />
 
@@ -234,19 +254,70 @@ To display the gifs more smoothly, you should use a double buffering technique, 
   - The foreground `div` is a layer containing the gif currently displayed (as a `background-image`).
   - The background `div` is a layer containing the _next_ gif that will be displayed.
   - Each `div` should be absolutely positioned on top of each other so that only the gif layer on top is visible.
-- When the music visualizer is first loaded, you should fill both the foreground and the background layers with two random gifs.
 - When a kick in the song occurs, you should update the gif being displayed:
   - Swap the positions of the buffers: The background should be shown on top of the foreground.
-  - Update the new background layer (with the previously shown gif) to contain the next gif to be displayed.
+  - Update the new background layer (with the previously shown gif) to contain the next gif to be displayed. This will be a randomly chosen gif from the preloaded images.
+- **Hints**
+  - You will want to use absolute positioning for this. This was covered in [lecture 6](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g20680a093f_0_671).  [This example](http://codepen.io/bee-arcade/pen/54cd4c36b43e4ffd30c5bafc0eb4e9c4?editors=1100) shows an absolutely positioned gray overlay (`#overlay`). You will want to use similar positioning CSS for your gif `div` layers.
+  - You will also want to use `z-index` to dictate the ordering of the layers. ([mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index?v=control))
+  - The CSS styling for HW3's front and back cards are styled in a similar way: the front card is   
 
-You should also make sure that you show a **different gif** on every kick, i.e. you should not show the same gif for two kicks in a row.
-- This means the background layer and the foreground layer should never contain the same image.
+**Randomly chosen gifs:**
+
+On each kick of the song, you should display a random gif from the Giphy results.
+- You should only choose from the images **that have been preloaded**.
+- You should also make sure that you show a **different gif** on every kick, i.e. you should not show the same gif for two kicks in a row.
+  - This means the background layer and the foreground layer should never contain the same image.
+
+### Audio playback
+{:.no_toc}
+
+The `MusicScreen` should play the song the user chose via the `AudioPlayer` object.
+
+- On Kick
+  - Every time the `AudioPlayer` detects a kick, the `MusicScreen` should notify `GifDisplay` to display a different image.
+- Pause and Play
+  - The `PlayButton` class should encapsulate the behavior of the play/pause button.
+    - When the `AudioPlayer` is playing, the `pause.png` button should be displayed.
+    - When the `AudioPlayer` is paused, the `play.png` button should be displayed.
+    - Clicking on the button notifies the `MusicScreen` to toggle the `AudioPlayer`'s state between paused and playing.
 
 </section>
 
 <section class="part" markdown="1">
 
 ## 7. Implementation: Putting it all together
+
+This section explains the interaction between the classes.
+
+### `MenuScreen` load
+{:.no_toc}
+
+The `MenuScreen` should be the first screen that is visible to the user.
+
+However, the menu should not be visible until the song choices are populated in the `<select>` box and the random theme is populated in the text `input` box.
+
+### `MenuScreen` to `MusicScreen` transition
+{:.no_toc}
+
+When the user submits the form on the `MenuScreen` with a valid Giphy query, the following should happen:
+1. `App` should hide the `MenuScreen`
+2. The `MusicScreen` should stay hidden\* as it tells `GifDisplay` to begin preloading images from the Giphy results.
+3. After the `GifDisplay` has preloaded 2 images:
+  - The `GifDisplay` class should set its foreground and background gif layers to the two preloaded images.
+  - The `GifDisplay` class should notify the `MusicScreen` that it is ready for playback.
+  - The `GifDisplay` class should continue preloading the rest of the images from the Giphy results.
+4. When `MusicScreen` is notified by `GifDisplay` that it's ready, the `MusicScreen` should show itself and begin audio playback:
+  - When `AudioPlayer` detects a kick, `MusicScreen` should tell `GifDisplay` to change to a new random background.
+
+\* **Optionally**, you can show a loading screen while the `MusicScreen` is hidden and the web app is still preloading images.
+
+<img src="images/hw4-loading-screen.png" class="screenshot" />
+- The text says "Loading..." and is horizontally and vertically centered to the viewport.
+- The font color is `#e2e2e2`
+- The font size is `2em`
+- The font style is `italic`
+- You can get a small amount of **extra credit** for implementing the loading screen.
 
 </section>
 
@@ -257,6 +328,6 @@ You should also make sure that you show a **different gif** on every kick, i.e. 
 Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}homework/0-welcome).
 
 Turn in the link to your GitHub repository and the link to your completed flashcard web page via this form:
-- [Submission Form]()
+- [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)
 
 </section>
