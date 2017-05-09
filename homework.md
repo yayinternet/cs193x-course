@@ -7,6 +7,11 @@ active: 'homework'
 
 Listed below are the released assignments for CS193X. More will be posted here as the quarter comes out. Go to lecture and check the home page for new homework announcements.
 
+## Homework 4
+- [Homework 4: Music Box](4-musicbox)
+- Due **Mon, May 17 2017** at 11:59pm
+- HW4 Turn-in: [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)
+
 ## Homework 3
 - [Homework 3: Flashcards](3-flashcards)
 - Due **Mon, May 8 2017** at 11:59pm
