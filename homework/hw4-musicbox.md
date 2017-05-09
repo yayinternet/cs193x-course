@@ -12,9 +12,9 @@ active: 'homework'
 
 In this homework, you will be creating a simple music visualizer. You will be querying the [Giphy API](https://github.com/Giphy/GiphyAPI#search-endpoint) to load a different gif on each "kick" of the song.  We have provided an `AudioPlayer` class to help you implement the desired audio behavior.
 
-This assignment gives you more practice with object-oriented web programming, and you will also practice using the `fetch` API. You will be writing most of the classes needed to create this assignment. We are giving suggestions on what classes to create, though you do not need to follow these suggestions. We are **not** telling you what methods / fields / etc you need to add to your classes; that is for you to decide.
+This assignment gives you more practice with object-oriented (OO) web programming, and you will also practice using the `fetch` API. You will be writing most of the classes needed to create this assignment. We are giving suggestions on what classes to create, though you do not need to follow these suggestions. We are **not** telling you what methods / fields / etc you need to add to your classes; that is for you to decide.
 
-Note that we will not grade on having good OO design. However, we do expect you to implement HW4 using an object-oriented approach. You must use classes and you can have **at most 2 global variables** in your solution.
+Note that we will not grade on having good OO design. However, we do expect you to implement HW4 using an object-oriented approach. You must use classes and you **cannot** add any global state variables.
 
 <span class="label">Due Date:</span> Wed, May 17, 2017 at 11:59pm _(late cutoff: Fri, May 19, 2017 at 11:59pm)_  
 <span class="label">HW4 Turn-in:</span> [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)  
@@ -113,8 +113,12 @@ Create 4 new JavaScript classes:
 
 Modify `App` to create the `MenuScreen` and the `MusicScreen`.
 
+### Optional: Using a different class breakdown
+{:.no_toc}
+
 **Note:** The HW4 spec is written with the assumption that you have structured your app in the way that we've recommended above. However, you don't _have_ to follow our recommendation; you can structure your web app however you'd like. If you prefer a different class breakdown, you do not have to follow our suggestions.
-- That said, if you do choose to architect your web app in a way that's different from what we suggesetion, we will grade your object-oriented design more strictly. You will probably lose points if you only make an `App` class and create no other classes, for example.  
+- That said, if you do choose to architect your web app in a way that's different from what we suggestion, we will grade your object-oriented design more strictly. You will probably lose points if you only make an `App` class and create no other classes, for example.  
+- If you choose to use a different class breakdown, we will ask you to include a diagram of the classes you've created. You can use [Google Drawings](https://docs.google.com/drawings) or whatever graphics program of your choice to create a diagram that looks like the one we've included above. Of course, you do **not** have to do this if you've used the class decomposition that we've recommended.
 </section>
 
 <section class="part" markdown="1">
@@ -126,12 +130,14 @@ The Menu screen is the first screen the user is shown when they load the page. T
 ### Choose a song
 {:.no_toc}
 
-You should populate select box with song choices loaded from **URL**.
+You should populate select box with song choices loaded from [https://yayinternet.github.io/hw4-music/songs.json](https://yayinternet.github.io/hw4-music/songs.json).
 
 <video src="videos/hw4-song-options.mp4" controls autoplay loop></video>
 
-- You will need to use the `fetch()` command to load the JSON file.
-- Use JavaScript to populate the `<select id="song-selector">` element in `index.html`.
+- You will need to use the `fetch()` command to load the `songs.json` file.
+  - You should *not* download the `songs.json` file: you should use the full URL (`'https://yayinternet.github.io/hw4-music/songs.json'`) as your parameter to `fetch`.
+  - **Optional:** If you'd like to choose your own playlist, you can write and upload your own `songs.json`, as long as it is the same format as the [provided file](https://yayinternet.github.io/hw4-music/songs.json)
+- Use JavaScript to populate the `<select id="song-selector">` element in `index.html`. See `<select>` and `<option>`: [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
 ### Choose a theme
 {:.no_toc}
@@ -141,8 +147,12 @@ hardcoded list of predefined themes. ([video](videos/hw4-random-query.mp4))
 
 - In our solution, we choose randomly from one of the following themes: `'candy', 'charlie brown', 'computers', 'dance', 'donuts', 'hello kitty', 'flowers', 'nature', 'turtles', 'space'`
   - You are welcome to use our list or you can make one of your own.
-  - To select a random element from an array, you need to use
 - The user should still be able to delete the suggested text and write their own query.
+
+**Hints:**
+  - To select a random element from an array, you need to use `Math.random()` ([mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random))
+    - This was first shown in [lecture 9](https://docs.google.com/presentation/d/1MZ6TMztOyLP000b6VlHjLTVLOAXCPfiCoXPAxZ6q0DQ/edit#slide=id.g1dd384a22c_0_183).
+
 
 ### Submitting the form
 {:.no_toc}
@@ -191,13 +201,13 @@ Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=h
 ## 6. Implementation: Music visualization screen
 
 After the user has entered a valid Giphy query, the `MusicScreen` should **not** be immediately visible.
-- While staying hidden, the `MusicScreen` will tell the `GifDisplay` class begin preloading gifs.
-- When the `GifDisplay` class has preloaded at least 2 gifs, the `GifDisplay` class will notify the `MusicScreen` that it is ready to play.
-- At this point, the `MusicScreen` will show itself.
-  - `MusicScreen` will start playing the selected song via the `AudioPlayer` object.
-  - `MusicScreen` will also notify the `GifDisplay` to update the displayed gif whenever there's a kick in the song.
+- While staying hidden, the `MusicScreen` should tell the `GifDisplay` class to begin preloading gifs. (Preloading is described in detail later in this section.)
+- When the `GifDisplay` class has preloaded at least 2 gifs, the `GifDisplay` class should notify the `MusicScreen` that it is ready to play.
+- At this point, the `MusicScreen` should show itself.
+  - `MusicScreen` should start playing the selected song via the `AudioPlayer` object.
+  - `MusicScreen` should also notify the `GifDisplay` to update the displayed gif whenever there's a kick in the song.
 
-The rest of this section covers the details of how the `MusicScreen` should work.
+The rest of this section covers the details of the music visualization.
 
 ### General layout
 {:.no_toc}
@@ -229,6 +239,8 @@ You can preload images by creating offscreen `<img>` elements for each gif that 
 
 You should save your preloaded `Image`s in a list, then save that list in field of the `GifDisplay` class so that it does not get garbage collected.
 
+- **Hints**
+  - We suggest you implement this **after** getting basic gif display working. See the "Development strategies / Suggested milestones" section for a more detailed guide.
 
 ### Gif display details
 {:.no_toc}
@@ -245,7 +257,8 @@ The `GifDisplay` class should also handle displaying the gifs from the Giphy res
 - **Hints:**
   - The `background-*` CSS properties were covered in [lecture 6](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g20680a093f_0_671). They were also used in HW1.
 
-**Double buffering:**
+### Double buffering
+{:.no_toc}
 
 To display the gifs more smoothly, you should use a double buffering technique, where you store the next image to be displayed in a "back buffer" that is rendered but not visible:
 <img src="images/hw4-display-diagram.png" class="screenshot" />
@@ -258,9 +271,10 @@ To display the gifs more smoothly, you should use a double buffering technique, 
   - Swap the positions of the buffers: The background should be shown on top of the foreground.
   - Update the new background layer (with the previously shown gif) to contain the next gif to be displayed. This will be a randomly chosen gif from the preloaded images.
 - **Hints**
+  - We suggest you implement this **after** getting basic gif display working. See the "Development strategies / suggested milestones" section for a more detailed guide.
   - You will want to use absolute positioning for this. This was covered in [lecture 6](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g20680a093f_0_671).  [This example](http://codepen.io/bee-arcade/pen/54cd4c36b43e4ffd30c5bafc0eb4e9c4?editors=1100) shows an absolutely positioned gray overlay (`#overlay`). You will want to use similar positioning CSS for your gif `div` layers.
   - You will also want to use `z-index` to dictate the ordering of the layers. ([mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index?v=control))
-  - The CSS styling for HW3's front and back cards are styled in a similar way: the front card is   
+  - The CSS styling for HW3's front and back cards are styled in a similar way: the "word" side of the card is absolutely positioned on top of the "definition" side of the card, and when you click on the card, the CSS is just changing the `z-index` for the layers.
 
 **Randomly chosen gifs:**
 
@@ -320,6 +334,62 @@ When the user submits the form on the `MenuScreen` with a valid Giphy query, the
 - You can get a small amount of **extra credit** for implementing the loading screen.
 
 </section>
+<section class="part" markdown="1">
+
+## Help, hints, and style requirements
+
+### Development strategies
+{:.no_toc}
+
+We suggest you follow the tips below when finishing this assignment:
+
+- **Implement one class at a time and test thoroughly before moving on.**
+- For the `MenuScreen`:
+  - Don't implement the "Not enough gifs" error message until you've completed the rest of the assignment.
+- For the `MusicScreen`:
+  - Implement preloading and double-buffering **last**, after you get basic audio playback and gif loading working.
+  - **Suggested milestones:**
+    - Start with getting the HTML and CSS layout right, without worry about the gifs: [screenshot](images/hw4-skeleton-layout.png)
+    - Then implement simple audio playback:
+      - Have `MenuScreen` create the `AudioPlayer` and start playing a song. If you haven't implemented the `MenuScreen` yet, you can give temporarily give it a hard-coded URL to a song.
+      - Implement **`PlayButton`** to play and pause the `AudioPlayer`.
+      - Print a `console.log()` statement on each kick of the song.
+    - Then implement the gif display **without** preloading or double buffering
+      - Fetch images from Giphy
+      - On each song kick, change the `background-image` of the gif display area (i.e. the gray part of [this screenshot](images/hw4-skeleton-layout.png))
+    - Then implement [image preloading](#image-preloading)
+    - Then implement [double-buffering](#double-buffering)
+
+### Helpful examples
+{:.no_toc}
+
+- **HTML and CSS**
+  - [Top and bottom control bars](https://codepen.io/bee-arcade/pen/2f97b2cdfc04949c2c73dda852f739d7?editors=1100)
+  - [Absolutely positioned layers](http://codepen.io/bee-arcade/pen/54cd4c36b43e4ffd30c5bafc0eb4e9c4?editors=1100)
+- **For `AudioPlayer` and detecting kicks:**
+  - [`AudioPlayer` demo](https://yayinternet.github.io/hw4-music/audio-player-demo/index.html): This example shows how to create and use the `AudioPlayer` class.
+- **General OO; communicating between classes:**
+  - [A,B,C buttons events](https://codepen.io/bee-arcade/pen/b0ae765cc6ccf3187c03afda2b2e085c?editors=0010): The `Button` class communicates to the `Menu` via events
+  - [A,B,C buttons callbacks](https://codepen.io/bee-arcade/pen/78575ded5baba8aa15642037c298d9b4?editors=0010): The `Button` class communicates to the `Menu` via callbacks
+  - [Present example callbacks](https://codepen.io/bee-arcade/project/editor/XqGzeD/): The `Present` talks to the `App` class via callbacks
+  - [Object-oriented photo album](https://codepen.io/bee-arcade/project/editor/AbJmLA/) / [live](https://codepen.io/bee-arcade/project/live/AbJmLA/)
+
+### Style requirements
+{:.no_toc}
+
+You will not be graded on OO-design skills, so do not worry too much about having perfectly composed classes.
+
+Here are some more details on what we are looking for in terms of style:
+
+- **One class definition per script file:** You should define one class per file.
+- **No additional global variables:** For full credit, you may **not** add any additional global variables to the Flashcard app, other than the existing `app` variable defined in `main.js` and the `FLASHCARD_DECKS` in `constants.js`.
+- **Use ES6 classes:** To complete this assignment, you do not need to know about other ways of creating objects, such as via `prototype`. You should practice using `class`es as described in lecture.
+- **OO-design:** We are **not** going to grade on object-oriented design. We may award bonus points for particularly well-composed apps, but your main concern should be to get the functionality working.
+- **Comments, variable names, etc.:** We are also **not** grading on general good coding style, such as having comments or using good variable names. However, we encourage you to practice good coding style for your TAs' sake! We will only dock style points if someone's code is so extremely difficult to read that it impedes your TA's ability to grade your assignment.
+
+
+
+</section>
 
 <section class="part" markdown="1">
 
@@ -327,7 +397,7 @@ When the user submits the form on the `MenuScreen` with a valid Giphy query, the
 
 Upload your completed homework to your GitHub repository and publish them, in the same way that you did with [Homework 0]({{relative}}homework/0-welcome).
 
-Turn in the link to your GitHub repository and the link to your completed flashcard web page via this form:
+Turn in the link to your GitHub repository and the link to your completed web page via this form:
 - [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)
 
 </section>

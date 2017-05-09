@@ -13,12 +13,23 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### May 8: Fetch API, JSON, Promises
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/16uIU-dQrX6iBleAB9J_r9KyhUwfucCZF2wRGCi8EIAo/edit#slide=id.p) / [lecture16.pdf](16/lecture16.pdf)
+  - Finish functional JS
+    - Currying
+    - Anonymous functions
+    - Closures
+  - Fetch API
+    - `fetch()`
+    - Promises and `.then()`
+  - JSON
+
+---
 ### May 5: Callbacks; Functional JavaScript
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1bfXbmli-eYiKJPrc1PB-p_WaqggLUIF7oO1KqsjZbKc/edit) / [lecture15.pdf](15/lecture15.pdf)
   - Callbacks
   - Functional JavaScript
     - Closures
-    - Anonymous functions
 - **Code**
   - [Button example](https://codepen.io/bee-arcade/pen/78575ded5baba8aa15642037c298d9b4?editors=0010): Communicating between two classes (`Button` to `Menu`) with callbacks
 
