@@ -71,6 +71,8 @@ This homework is inspired by the [see hear party](https://www.chromeexperiments.
 
 The `AudioPlayer` is a class we're providing to help you implement the audio-related functionality of this assignment. You can give the `AudioPlayer` a URL to an audio file and it will play and pause the song when instructed. You can also give the `AudioPlayer` a callback to fire whenever it has detected a kick drum sound.
 
+Here's a demo of how to use `AudioPlayer`: [link](https://yayinternet.github.io/hw4-music/audio-player-demo/index.html)
+
 We do **not** expect you to modify `AudioPlayer`, but we do expect that you will create one `AudioPlayer` object for your music visualizer. Unlike some of the other classes we have written and used in CS193X, `AudioPlayer` is not associated with a UI element or a DOM element that is visible on the page.
 
 Here are the public\* methods of `AudioPlayer`:
