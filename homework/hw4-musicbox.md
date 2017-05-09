@@ -356,7 +356,7 @@ We suggest you follow the tips below when finishing this assignment:
       - Print a `console.log()` statement on each kick of the song.
     - Then implement the gif display **without** preloading or double buffering
       - Fetch images from Giphy
-      - On each song kick, change the `background-image` of the gif display area (i.e. the gray part of [this screenshot](images/hw4-skeleton-layout.png))
+      - On each song kick, change the `background-image` of the gif display area (i.e. the gray part of [this screenshot](images/hw4-skeleton-layout.png)) to be a random gif from the Giphy results
     - Then implement [image preloading](#image-preloading)
     - Then implement [double-buffering](#double-buffering)
 
