@@ -211,6 +211,8 @@ Modify the HTML and CSS to create the Music screen:
 
 Finally, add functions to your MusicScreen class so that you can show and hide the Music screen from your App class. Test these functions and make sure they work.
 
+</section>
+
 <section class="part" markdown="1">
 
 ## Milestone C: Querying the Giphy API
