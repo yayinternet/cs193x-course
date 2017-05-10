@@ -13,7 +13,19 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
-### May 8: Fetch API, JSON, Promises
+### May 10: Fetch API and JSON; 3rd-party APIs
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1Rim3-IXt6yN7yny_SBv7B5NMBiYbaQEiRMUD5s66uN8/edit#slide=id.g219bfd85d1_1_32) / [lecture17.pdf](17/lecture17.pdf)
+  - Fetch API and JSON
+  - Fetch in a class
+  - 3rd-party APIs
+  - Submitting forms
+- **Code**
+  - [GitHub repo](https://github.com/yayinternet/lecture17) / [live](https://yayinternet.github.io/lecture17/): Several examples of Fetch API
+    - [Fetch from a class](https://github.com/yayinternet/lecture17/tree/master/oo-albums) / [demo](https://yayinternet.github.io/lecture17/oo-albums/discography.html)
+    - [Fetch from Spotify](https://github.com/yayinternet/lecture17/tree/master/spotify-albums) / [demo](https://yayinternet.github.io/lecture17/spotify-albums/spotify-discography.html)
+  - Form elements JS syntax: [select](https://codepen.io/bee-arcade/pen/963ae17d61f828a7b5c321c148b84e40?editors=1011), [textarea](https://codepen.io/bee-arcade/pen/bd301158f62a54e40eea37da1aff0d7a?editors=1011), [checkbox](https://codepen.io/bee-arcade/pen/714933b816bf4f91a6ae4ab8eba6b649?editors=1011)
+
+### May 8: Fetch API, Promises
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/16uIU-dQrX6iBleAB9J_r9KyhUwfucCZF2wRGCi8EIAo/edit#slide=id.p) / [lecture16.pdf](16/lecture16.pdf)
   - Finish functional JS
     - Currying
