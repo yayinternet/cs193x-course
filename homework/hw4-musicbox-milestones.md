@@ -16,8 +16,8 @@ This assignment gives you more practice with object-oriented (OO) web programmin
 
 Note that we will not grade on having good OO design. However, we do expect you to implement HW4 using an object-oriented approach. You must use classes and you **cannot** add any global state variables.
 
-<span class="label">Due Date:</span> Wed, May 17, 2017 at 11:59pm _(late cutoff: Fri, May 19, 2017 at 11:59pm)_  
-<span class="label">HW4 Turn-in:</span> [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)  
+<span class="label">Due Date:</span> Wed, May 17, 2017 at 11:59pm _(late cutoff: Fri, May 19, 2017 at 11:59pm)_
+<span class="label">HW4 Turn-in:</span> [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)
 
 ---
 
@@ -123,7 +123,7 @@ Modify `App` to create the `MenuScreen` and the `MusicScreen`.
 {:.no_toc}
 
 **Note:** The HW4 spec is written with the assumption that you have structured your app in the way that we've recommended above. However, you don't _have_ to follow our recommendation; you can structure your web app however you'd like. If you prefer a different class breakdown, you do not have to follow our suggestions.
-- That said, if you do choose to architect your web app in a way that's different from what we suggestion, we will grade your object-oriented design more strictly. You will probably lose points if you only make an `App` class and create no other classes, for example.  
+- That said, if you do choose to architect your web app in a way that's different from what we suggestion, we will grade your object-oriented design more strictly. You will probably lose points if you only make an `App` class and create no other classes, for example.
 - If you choose to use a different class breakdown, we will ask you to include a diagram of the classes you've created. You can use [Google Drawings](https://docs.google.com/drawings) or whatever graphics program of your choice to create a diagram that looks like the one we've included above. Of course, you do **not** have to do this if you've used the class decomposition that we've recommended.
 </section>
 
@@ -169,13 +169,13 @@ Later on, we will query the Giphy API when the user submits the form. For this m
 - Hide the Menu screen
 - Print out the submitted song value and theme value
 
-<video src="videos/hw4-milestones-menu.mov" controls autoplay loop></video>
+<video src="videos/hw4-milestones-menu-small.mov" controls autoplay loop></video>
 
 </section>
 
 <section class="part" markdown="1">
 
-## Milestone B: Creating the Music screen 
+## Milestone B: Creating the Music screen
 
 Next, create the basic layout for the Music screen. Start with getting the HTML and CSS layout right, without worrying about the gifs: [screenshot](images/hw4-skeleton-layout.png)
 
@@ -209,7 +209,7 @@ Modify the HTML and CSS to create the Music screen:
 ### MusicScreen class
 {:.no_toc}
 
-Finally, add functions to your MusicScreen class so that you can show and hide the Music screen from your App class. Test these functions and make sure they work. 
+Finally, add functions to your MusicScreen class so that you can show and hide the Music screen from your App class. Test these functions and make sure they work.
 
 <section class="part" markdown="1">
 
@@ -243,7 +243,7 @@ Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=h
   - Use the `downsized` version of the image. The `url` property on the `downsized` object has the URL for the gif.
 - Example: `const gifUrl = json.data[i].images.downsized.url;`
 
-At this point, submitting the Menu form should correctly query the Giphy API, store the necessary gif URLs, show the Music screen, and display one random gif. However, there is no audio (yet), and the gif doesn't change (yet). 
+At this point, submitting the Menu form should correctly query the Giphy API, store the necessary gif URLs, show the Music screen, and display one random gif. However, there is no audio (yet), and the gif doesn't change (yet).
 
 <video src="videos/hw4-milestones-gifs-small.mov" controls autoplay loop></video>
 
@@ -255,9 +255,9 @@ At this point, submitting the Menu form should correctly query the Giphy API, st
 
 **todo**(vrk): I changed this from `MenuScreen` to `MusicScreen`, but wanted to check if that is correct?
 
-Now, it's time to add audio and change the gif when the `AudioPlayer` detects a kick. 
+Now, it's time to add audio and change the gif when the `AudioPlayer` detects a kick.
 
-First, `MusicScreen` should create an `AudioPlayer` object. 
+First, `MusicScreen` should create an `AudioPlayer` object.
 
 - Music screen appears
   - The `MusicScreen` should use the `AudioPlayer` object to play the song the user chose.
@@ -274,7 +274,7 @@ First, `MusicScreen` should create an `AudioPlayer` object.
 - [`AudioPlayer` demo](https://yayinternet.github.io/hw4-music/audio-player-demo/index.html): This example shows how to create and use the `AudioPlayer` class.
 - For 'On Kick,' it might help to begin by printing a `console.log()` statement on each kick of the song.
 
-At the end of this milestone, your app has all of the major parts that it needs to work. However, you might notice that the gif transitions are choppy and/or laggy sometimes. In addition, the app doesn't handle special cases, like when the user types in 's;ldfjal;kfj' as a theme. The next section fixes these problems. 
+At the end of this milestone, your app has all of the major parts that it needs to work. However, you might notice that the gif transitions are choppy and/or laggy sometimes. In addition, the app doesn't handle special cases, like when the user types in 's;ldfjal;kfj' as a theme. The next section fixes these problems.
 
 </section>
 
