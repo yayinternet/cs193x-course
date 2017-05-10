@@ -115,6 +115,10 @@ Create 4 new JavaScript classes:
 
 Modify `App` to create the `MenuScreen` and the `MusicScreen`.
 
+**Hints:**
+- When you add new JavaScript files in your project, make sure to include them in your HTML (`<script src="app.js" defer></script>`).
+- To avoid errors, list them in the order of most specific (ie. file for `PlayButton`) to least specific (ie. `app.js`, `script.js`).
+
 ### Optional: Using a different class breakdown
 {:.no_toc}
 
@@ -165,7 +169,7 @@ Later on, we will query the Giphy API when the user submits the form. For this m
 - Hide the Menu screen
 - Print out the submitted song value and theme value
 
-todo(amy): VIDEO GOES HERE
+<video src="videos/hw4-milestones-menu.mov" controls autoplay loop></video>
 
 </section>
 
@@ -173,7 +177,7 @@ todo(amy): VIDEO GOES HERE
 
 ## Milestone B: Creating the Music screen 
 
-Start with getting the HTML and CSS layout right, without worrying about the gifs: [screenshot](images/hw4-skeleton-layout.png)
+Next, create the basic layout for the Music screen. Start with getting the HTML and CSS layout right, without worrying about the gifs: [screenshot](images/hw4-skeleton-layout.png)
 
 ### General layout
 {:.no_toc}
@@ -196,7 +200,7 @@ Modify the HTML and CSS to create the Music screen:
 - Eventually, the gif should be displayed as a **background image** of a `div`, with the following CSS properties:
   - `background-size: cover;`
   - `background-position: center center;`
-  - `background-repeat: no-repeat;``
+  - `background-repeat: no-repeat;`
 - You should render the gif as a `background-image` of a `div` instead of an `img` element because of the handy `background-size: cover` property. (The equivalent of `background-size` for `<img>` is `object-fit`, but Edge [does not support it yet](http://caniuse.com/#search=object-fit). We are going to use `background-image` until it does.)
 
 - **Hints:**
@@ -211,11 +215,11 @@ Finally, add functions to your MusicScreen class so that you can show and hide t
 
 ## Milestone C: Querying the Giphy API
 
-This milestone involves communicating between classes. Before implementing this part, think about what instance variables you might need, where different parts of the code logic will go, and when/how you will communicate between classes.
+This milestone involves communicating between classes. Before implementing this part, think about what instance variables you might need to store, where different parts of the code logic will go, and when/how you will communicate between classes.
 
 - When the user submits the Menu form, hide the Menu screen and query the Giphy API with the entered theme.
   - Use the theme value that you printed out in Milestone A.
-- When the query is completed, show the Music screen and display a random gif from the Giphy results.
+- When that query is completed, show the Music screen and display a random gif from the Giphy results.
   - The `GifDisplay` class should handle displaying the gifs from the Giphy results.
   - Keep in mind that eventually, you will need to show a **different gif** on every kick, i.e. you should not show the same gif for two kicks in a row.
 
@@ -233,11 +237,15 @@ Use the following parameters:
 
 Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=hot%20chocolate&api_key=dc6zaTOxFJmzC&limit=25&rating=g) / [indented](https://gist.github.com/vrk/3dd93294a4a53970013dbc23ae7008b9)
 
-- The Giphy API has the following format:
+- The Giphy API result has the following format:
   - The `data` field is an array of objects, where each object represents a gif.
   - Each object has an `images` property, which is another object that contains several versions of the gif such as `original`, `downsized`, etc. ([rendering options](https://github.com/giphy/Giphyapi#rendition-guide))
   - Use the `downsized` version of the image. The `url` property on the `downsized` object has the URL for the gif.
 - Example: `const gifUrl = json.data[i].images.downsized.url;`
+
+At this point, submitting the Menu form should correctly query the Giphy API, store the necessary gif URLs, show the Music screen, and display one random gif. However, there is no audio (yet), and the gif doesn't change (yet). 
+
+<video src="videos/hw4-milestones-gifs.mov" controls autoplay loop></video>
 
 </section>
 
@@ -245,9 +253,11 @@ Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=h
 
 ## Milestone D: Audio playback and PlayButton
 
-todo(vrk): I changed this from `MenuScreen` to `MusicScreen`, but wanted to check if that is correct?
+**todo**(vrk): I changed this from `MenuScreen` to `MusicScreen`, but wanted to check if that is correct?
 
-`MusicScreen` should create the `AudioPlayer`. 
+Now, it's time to add audio and change the gif when the `AudioPlayer` detects a kick. 
+
+First, `MusicScreen` should create an `AudioPlayer` object. 
 
 - Music screen appears
   - The `MusicScreen` should use the `AudioPlayer` object to play the song the user chose.
@@ -264,18 +274,18 @@ todo(vrk): I changed this from `MenuScreen` to `MusicScreen`, but wanted to chec
 - [`AudioPlayer` demo](https://yayinternet.github.io/hw4-music/audio-player-demo/index.html): This example shows how to create and use the `AudioPlayer` class.
 - For 'On Kick,' it might help to begin by printing a `console.log()` statement on each kick of the song.
 
+At the end of this milestone, your app has all of the major parts that it needs to work. However, you might notice that the gif transitions are choppy and/or laggy sometimes. In addition, the app doesn't handle special cases, like when the user types in 's;ldfjal;kfj' as a theme. The next section fixes these problems. 
+
 </section>
 
 <section class="part" markdown="1">
 
-## Milestone E: Optimization and Better user experience
-
-todo(amy): EXPLAIN why/how these things fit together after finishing this part of assignment
+## Milestone E: Optimization for a better user experience
 
 ### Image preloading
 {:.no_toc}
 
-todo(amy): DELETE THIS COMMENT I am starting to strongly feel that image preloading might be a good candidate for EC
+**todo**(amy): DELETE THIS COMMENT LATER I am starting to strongly feel that image preloading might be a good candidate for EC
 
 When you receive the list of gifs from Giphy, you should **preload** all of the images for smoother playback. You can put the image preloading logic in the `GifDisplay` class.
 
