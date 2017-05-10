@@ -170,7 +170,6 @@ Later on, we will query the Giphy API when the user submits the form. For this m
 - Print out the submitted song value and theme value
 
 <video src="videos/hw4-milestones-menu.mov" controls autoplay loop></video>
-**todo**(vrk): amy says help, video not working?
 
 </section>
 
@@ -246,8 +245,7 @@ Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=h
 
 At this point, submitting the Menu form should correctly query the Giphy API, store the necessary gif URLs, show the Music screen, and display one random gif. However, there is no audio (yet), and the gif doesn't change (yet). 
 
-<video src="videos/hw4-milestones-gifs.mov" controls autoplay loop></video>
-**todo**(vrk): amy says help, video not working?
+<video src="videos/hw4-milestones-gifs-small.mov" controls autoplay loop></video>
 
 </section>
 
@@ -286,8 +284,6 @@ At the end of this milestone, your app has all of the major parts that it needs 
 
 ### Image preloading
 {:.no_toc}
-
-**todo**(amy): DELETE THIS COMMENT LATER I am starting to strongly feel that image preloading might be a good candidate for EC
 
 When you receive the list of gifs from Giphy, you should **preload** all of the images for smoother playback. You can put the image preloading logic in the `GifDisplay` class.
 
@@ -334,6 +330,7 @@ To display the gifs more smoothly, you should use a double buffering technique, 
   - The CSS styling for HW3's front and back cards are styled in a similar way: the "word" side of the card is absolutely positioned on top of the "definition" side of the card, and when you click on the card, the CSS is just changing the `z-index` for the layers.
 
 ### Not enough gifs
+{:.no_toc}
 
 After the user submits the Menu form, check what the query returns before showing the Music screen.
 
