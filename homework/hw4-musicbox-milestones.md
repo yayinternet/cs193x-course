@@ -170,6 +170,7 @@ Later on, we will query the Giphy API when the user submits the form. For this m
 - Print out the submitted song value and theme value
 
 <video src="videos/hw4-milestones-menu.mov" controls autoplay loop></video>
+**todo**(vrk): amy says help, video not working?
 
 </section>
 
@@ -246,6 +247,7 @@ Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=h
 At this point, submitting the Menu form should correctly query the Giphy API, store the necessary gif URLs, show the Music screen, and display one random gif. However, there is no audio (yet), and the gif doesn't change (yet). 
 
 <video src="videos/hw4-milestones-gifs.mov" controls autoplay loop></video>
+**todo**(vrk): amy says help, video not working?
 
 </section>
 
