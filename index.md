@@ -15,7 +15,7 @@ Welcome to CS193X: Web Programming Fundamentals! This is an opinionated introduc
 **CS193X is limited enrollment.** This is the first offering of CS193X, so enrollment is limited and by application only. It will be offered again sometime in the 2017-2018 school year.
 
 ## Announcements
-- [5/10] [Homework 4](homework/4-musicbox) adjustments: Preloading is now extra credit, and the spec is restructured in terms of milestones. See writeup for changes and more details!
+- [5/10] [Homework 4](homework/4-musicbox) adjustments: Preloading is now extra credit, and the spec is restructured in terms of milestones. See [Piazza post](https://piazza.com/class/j0y7gmnuoh167p?cid=114) for more details.
 - [5/8] [Homework 4](homework/4-musicbox) is released and is due **Wed, May 17 at 11:59pm**
 - [5/1] We made some changes to the course logistics, grading, and schedule. See [May 1 lecture slides](https://docs.google.com/presentation/d/1E2CvOxrtxF9clb3xqlyWAVX1x5q0YNk6t08Iteb9W_Y/edit#slide=id.g1ddf57744b_0_260) or [syllabus](syllabus) / [course info](info) for details.
 - [4/28] [Homework 3](homework/3-flashcards) is released and is due **Mon, May 8 at 11:59pm** (<em>was: May 5, but extended to the 8th</em>)
