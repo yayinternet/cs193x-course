@@ -147,7 +147,7 @@ You should populate select box with song choices loaded from [https://yayinterne
 - You will need to use the `fetch()` command to load the `songs.json` file. ([lecture 16](https://docs.google.com/presentation/d/16uIU-dQrX6iBleAB9J_r9KyhUwfucCZF2wRGCi8EIAo/edit#slide=id.g21919ae439_0_681))
   - You should *not* download the `songs.json` file: you should use the full URL (`'https://yayinternet.github.io/hw4-music/songs.json'`) as your parameter to `fetch`.
   - **Optional:** If you'd like to choose your own playlist, you can write and upload your own `songs.json`, as long as it is the same format as the [provided file](https://yayinternet.github.io/hw4-music/songs.json)
-- Use JavaScript to populate the `<select id="song-selector">` element in `index.html`. See `<select>` and `<option>`: [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+- Use JavaScript to populate the `<select id="song-selector">` element in `index.html`. See `<select>` and `<option>`: [select example](https://codepen.io/bee-arcade/pen/963ae17d61f828a7b5c321c148b84e40?editors=1011) / [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
 ### Choose a theme
 {:.no_toc}
@@ -167,7 +167,7 @@ hardcoded list of predefined themes. ([video](videos/hw4-random-query.mp4))
 ### Submitting the form
 {:.no_toc}
 
-The form should be submitted if the user clicks the "Go" button **or** if they hit the "enter" button.
+The form should be submitted if the user clicks the "Go" button **or** if they hit the "enter" button. See  the [examples in the help section](#helpful-examples-and-style-requirements) of this spec for examples of how to use form elements.
 
 Later on, we will query the Giphy API when the user submits the form. For this milestone, when the user submits the form, you should:
 - Hide the Menu screen
