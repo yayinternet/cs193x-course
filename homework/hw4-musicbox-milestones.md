@@ -2,7 +2,7 @@
 layout: article-nosidebar
 title: 'Music Box'
 subtitle: 'Homework 4'
-permalink: /homework/4-musicbox-milestones
+permalink: /homework/4-musicbox
 parent: homework
 active: 'homework'
 ---
@@ -16,8 +16,11 @@ This assignment gives you more practice with object-oriented (OO) web programmin
 
 Note that we will not grade on having good OO design. However, we do expect you to implement HW4 using an object-oriented approach. You must use classes and you **cannot** add any global state variables.
 
-<span class="label">Due Date:</span> Wed, May 17, 2017 at 11:59pm _(late cutoff: Fri, May 19, 2017 at 11:59pm)_
+<span class="label">Due Date:</span> Wed, May 17, 2017 at 11:59pm _(late cutoff: Fri, May 19, 2017 at 11:59pm)_  
 <span class="label">HW4 Turn-in:</span> [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)
+
+
+(**Special thanks to our TA Amy Xu** for her enormous help milestone-ifying the HW4 write-up!)
 
 ---
 
@@ -93,9 +96,9 @@ Method name | Description
 
  The `AudioPlayer` class uses an [Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) for audio playback and the [dancer.js](https://github.com/jsantell/dancer.js) library to detect kicks in the song. Dancer.js is built natively in the browser using the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
-### 3. `App` and `script.js`
+### 3. Class stubs and `script.js`
 {:.no_toc}
- We have created a stub `App` class that represents the entire music visualizer, similar to how the `App` class represented the entire Flashcard app in HW3. We also provide a `script.js` that creates an instance of the `App` class.
+ We have created stub classes for all the classes we expect you write write: see [Class Decomposition](#class-decomposition) for details. We also provide a `script.js` that creates an instance of the `App` class.
 
 </section>
 
@@ -107,17 +110,14 @@ We recommend you architect your program in the following way:
 
 <img src="images/hw4-class-architecture.png" class="screenshot" />
 
-Create 4 new JavaScript classes:
-- `MenuScreen` Represents the menu screen that you see when you first load the music visualizer.
-- `MusicScreen`: Represents the music visualizer screen, i.e. the screen that you see after you select a song. Creates the `AudioPlayer` as well as the classes below:
-  - `GifDisplay:` Represents the gif display area. Keeps track of which gif is being shown and can select a new random gif to be shown.
-  - `PlayButton:` Represents the play button. Clicking on it toggles audio playback.
+We have given you stubs for the following classes that we'd like you fill out:
+- `App:` Represent the music visualizer as a whole, similar to the role that the `App` class played in HW3. Creates and owns the `MenuScreen` and `MusicScreen`.
+  - `MenuScreen:` Represents the menu screen that you see when you first load the music visualizer.
+  - `MusicScreen:` Represents the music visualizer screen, i.e. the screen that you see after you select a song. Creates the `AudioPlayer` as well as the classes below:
+    - `GifDisplay:` Represents the gif display area. Keeps track of which gif is being shown and can select a new random gif to be shown.
+    - `PlayButton:` Represents the play button. Clicking on it toggles audio playback.
 
-Modify `App` to create the `MenuScreen` and the `MusicScreen`.
-
-**Hints:**
-- When you add new JavaScript files in your project, make sure to include them in your HTML (`<script src="app.js" defer></script>`).
-- To avoid errors, list them in the order of most specific (ie. file for `PlayButton`) to least specific (ie. `app.js`, `script.js`).
+**Note:** If you accepted your HW4 assignment from GitHub before 5/10 at 6:30pm, you did not receive stubs for these classes. You can see the updated starter code here: [hw4-starter](https://github.com/yayinternet/hw4-starter) (you're not missing much.)
 
 ### Optional: Using a different class breakdown
 {:.no_toc}
@@ -125,6 +125,10 @@ Modify `App` to create the `MenuScreen` and the `MusicScreen`.
 **Note:** The HW4 spec is written with the assumption that you have structured your app in the way that we've recommended above. However, you don't _have_ to follow our recommendation; you can structure your web app however you'd like. If you prefer a different class breakdown, you do not have to follow our suggestions.
 - That said, if you do choose to architect your web app in a way that's different from what we suggestion, we will grade your object-oriented design more strictly. You will probably lose points if you only make an `App` class and create no other classes, for example.
 - If you choose to use a different class breakdown, we will ask you to include a diagram of the classes you've created. You can use [Google Drawings](https://docs.google.com/drawings) or whatever graphics program of your choice to create a diagram that looks like the one we've included above. Of course, you do **not** have to do this if you've used the class decomposition that we've recommended.
+
+**Hints:**
+- If you add new JavaScript files in your project, make sure to include them in your HTML (`<script src="new-class.js" defer></script>`).
+
 </section>
 
 <section class="part" markdown="1">
@@ -206,10 +210,10 @@ Modify the HTML and CSS to create the Music screen:
 - **Hints:**
   - The `background-*` CSS properties were covered in [lecture 6](https://docs.google.com/presentation/d/1C1_y51AGjiH1k76pxpkYYwh3E9Ah7fm_8SvySpoBvhs/edit#slide=id.g20680a093f_0_671). They were also used in HW1.
 
-### MusicScreen class
+### `MusicScreen` class
 {:.no_toc}
 
-Finally, add functions to your MusicScreen class so that you can show and hide the Music screen from your App class. Test these functions and make sure they work.
+Finally, add functions to your `MusicScreen` class so that you can show and hide the Music screen from your `App` class. Test these functions and make sure they work.
 
 </section>
 
@@ -235,7 +239,7 @@ Use the following parameters:
 
 **Hints:**
 - Use `encodeURIComponent()` to escape the characters in the query for use in a URL. ([mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent))
-- Use the `fetch()` API to load the JSON results from Giphy ([lecture 16](https://docs.google.com/presentation/d/16uIU-dQrX6iBleAB9J_r9KyhUwfucCZF2wRGCi8EIAo/edit#slide=id.g21919ae439_0_681))
+- Use the `fetch()` API to load the JSON results from Giphy ([lecture 16](https://docs.google.com/presentation/d/16uIU-dQrX6iBleAB9J_r9KyhUwfucCZF2wRGCi8EIAo/edit#slide=id.g21919ae439_0_681) and [lecture 17](https://docs.google.com/presentation/d/1Rim3-IXt6yN7yny_SBv7B5NMBiYbaQEiRMUD5s66uN8/edit#slide=id.g219bfd85d1_1_32))
 
 Here is a sample query: [hot+chocolate](https://api.giphy.com/v1/gifs/search?q=hot%20chocolate&api_key=dc6zaTOxFJmzC&limit=25&rating=g) / [indented](https://gist.github.com/vrk/3dd93294a4a53970013dbc23ae7008b9)
 
@@ -253,9 +257,7 @@ At this point, submitting the Menu form should correctly query the Giphy API, st
 
 <section class="part" markdown="1">
 
-## Milestone D: Audio playback and PlayButton
-
-**todo**(vrk): I changed this from `MenuScreen` to `MusicScreen`, but wanted to check if that is correct?
+## Milestone D: Audio playback and `PlayButton`
 
 Now, it's time to add audio and change the gif when the `AudioPlayer` detects a kick.
 
@@ -283,34 +285,6 @@ At the end of this milestone, your app has all of the major parts that it needs 
 <section class="part" markdown="1">
 
 ## Milestone E: Optimization for a better user experience
-
-### Image preloading
-{:.no_toc}
-
-When you receive the list of gifs from Giphy, you should **preload** all of the images for smoother playback. You can put the image preloading logic in the `GifDisplay` class.
-
-You can preload images by creating offscreen `<img>` elements for each gif that you receive from the Giphy API.  You will not actually render these `<img>` elements, since you should display the gifs using the `background-image` CSS property instead of the `<img>` tag. You are just using the `<img>` tag as vessels to download the image data.
-
-**To preload an image, do the following:**
-- Create a new `Image` object ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image))
-- Set the `src` of this `Image` to the URL of the gif, e.g. `image.src = json.data[0].images.downsized.url;`
-- When the image has finished loading, the `Image` element will fire the `load` event ([mdn](https://developer.mozilla.org/en-US/docs/Web/Events/load)).
-- When the `load` event fires for the `Image`, you can then preload the next gif by repeating these steps.
-
-You should save your preloaded `Image`s in an array, then save that array as an instance variable of the `GifDisplay` class so that it does not get garbage collected.
-- When choosing a random gif to display, you should only choose from the images **that have been preloaded**.
-
-The final **`MenuScreen` to `MusicScreen` transition** should work as follows:
-
-When the user submits the form on the `MenuScreen` with a valid Giphy query:
-1. `App` should hide the `MenuScreen`
-2. The `MusicScreen` should stay hidden[\*](#loading-screen) as it tells `GifDisplay` to begin preloading images from the Giphy results.
-3. After the `GifDisplay` has preloaded 2 images:
-  - The `GifDisplay` class should set its foreground and background gif layers to the two preloaded images.
-  - The `GifDisplay` class should notify the `MusicScreen` that it is ready to begin audio playback.
-4. When `MusicScreen` is notified by `GifDisplay` that it is ready, the `MusicScreen` should show itself and begin audio playback:
-  - When `AudioPlayer` detects a kick, `MusicScreen` should tell `GifDisplay` to change to a new random background.
-5. The `GifDisplay` class should continue preloading the rest of the images from the Giphy results.
 
 ### Double buffering
 {:.no_toc}
@@ -346,6 +320,47 @@ After the user submits the Menu form, check what the query returns before showin
 
 ## Extra Credit
 
+### Image preloading
+{:.no_toc}
+
+If you are not on a very fast internet connection, the transitions between your gifs might still be laggy because don't have enough time to download before they are displayed.
+
+To further improve this experience, you can **preload** all of the images when you receive the list of gifs from Giphy. You can put the image preloading logic in the `GifDisplay` class.
+
+You can preload images by creating offscreen `<img>` elements for each gif that you receive from the Giphy API.  You will not actually render these `<img>` elements, since you should display the gifs using the `background-image` CSS property instead of the `<img>` tag. You are just using the `<img>` tag as vessels to download the image data.
+
+**To preload an image, do the following:**
+- Create a new `Image` object ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image))
+- Set the `src` of this `Image` to the URL of the gif, e.g. `image.src = json.data[0].images.downsized.url;`
+- When the image has finished loading, the `Image` element will fire the `load` event ([mdn](https://developer.mozilla.org/en-US/docs/Web/Events/load)).
+- When the `load` event fires for the `Image`, you can then preload the next gif by repeating these steps.
+
+You should save your preloaded `Image`s in an array, then save that array as an instance variable of the `GifDisplay` class so that it does not get garbage collected.
+- When choosing a random gif to display, you should only choose from the images **that have been preloaded**.
+
+**Random preloaded image**
+- Now when you show a random gif, you should only choose the images you've already preloaded.
+- As you preload more images, you can then include them in the pool of possible images from which you are randomly selecting.
+
+**Testing**
+- You can simulate a weak internet connection via Chrome Web tools: [screenshot](images/hw4-poor-network.png)
+  - Open the Chrome inspector and click the "Network" tab
+  - Click the throttling dropdown menu -- currently set to "No throttling"
+  - Select something like "Regular 4G".
+    - Note: Anything less than 4G will probably take a long time for the audio to begin playing due to the MP3 size, since we are not streaming the audio files.
+
+The final **`MenuScreen` to `MusicScreen` transition** should work as follows:
+
+When the user submits the form on the `MenuScreen` with a valid Giphy query:
+1. `App` should hide the `MenuScreen`
+2. The `MusicScreen` should stay hidden[\*](#loading-screen) as it tells `GifDisplay` to begin preloading images from the Giphy results.
+3. After the `GifDisplay` has preloaded 2 images:
+  - The `GifDisplay` class should set its foreground and background gif layers to the two preloaded images.
+  - The `GifDisplay` class should notify the `MusicScreen` that it is ready to begin audio playback.
+4. When `MusicScreen` is notified by `GifDisplay` that it is ready, the `MusicScreen` should show itself and begin audio playback:
+  - When `AudioPlayer` detects a kick, `MusicScreen` should tell `GifDisplay` to change to a new random background.
+5. The `GifDisplay` class should continue preloading the rest of the images from the Giphy results.
+
 ### Loading screen
 {:.no_toc}
 
@@ -360,12 +375,29 @@ After the user submits the Menu form, check what the query returns before showin
 
 </section>
 
+<section class="part" markdown="1">
+
+## Helpful examples and style requirements
+
 ### Helpful examples
 {:.no_toc}
+
+Here are some examples you may find useful while implementing the assignment:
 
 - **HTML and CSS**
   - [Top and bottom control bars](https://codepen.io/bee-arcade/pen/2f97b2cdfc04949c2c73dda852f739d7?editors=1100)
   - [Absolutely positioned layers](http://codepen.io/bee-arcade/pen/54cd4c36b43e4ffd30c5bafc0eb4e9c4?editors=1100)
+  - Form elements:
+    - [Select box](https://codepen.io/bee-arcade/pen/963ae17d61f828a7b5c321c148b84e40?editors=1011)
+    - [Form submit](https://github.com/yayinternet/lecture17/tree/master/spotify-albums) / [demo](https://yayinternet.github.io/lecture17/spotify-albums/spotify-discography.html)
+      - See also end of [lecture 17](https://docs.google.com/presentation/d/1Rim3-IXt6yN7yny_SBv7B5NMBiYbaQEiRMUD5s66uN8/edit#slide=id.g219bfd85d1_1_32) for explanation for form submit
+- **Fetch API**
+  - [Fetching JSON: simple](https://github.com/yayinternet/lecture17/blob/master/albums/fetch-json.js) / [demo](https://yayinternet.github.io/lecture17/albums/fetch-json.html)
+  - [Fetching JSON: from a class](https://codepen.io/bee-arcade/pen/1169a5760153ee5f6877a8b6f7c30521) / [GitHub](https://github.com/yayinternet/lecture17/tree/master/oo-albums) / [Demo](https://yayinternet.github.io/lecture17/oo-albums/discography.html)
+  - [Fetching JSON: from Spotify](https://github.com/yayinternet/lecture17/tree/master/spotify-albums) / [demo](https://yayinternet.github.io/lecture17/spotify-albums/spotify-discography.html)
+  - Lectures:
+    - [lecture 16](https://docs.google.com/presentation/d/16uIU-dQrX6iBleAB9J_r9KyhUwfucCZF2wRGCi8EIAo/edit#slide=id.p) introduces `fetch()`
+    - [lecture 17](https://docs.google.com/presentation/d/1Rim3-IXt6yN7yny_SBv7B5NMBiYbaQEiRMUD5s66uN8/edit#slide=id.g219bfd85d1_1_32) shows `fetch()` in a class and `fetch()`ing JSON
 - **For `AudioPlayer` and detecting kicks:**
   - [`AudioPlayer` demo](https://yayinternet.github.io/hw4-music/audio-player-demo/index.html): This example shows how to create and use the `AudioPlayer` class.
 - **General OO; communicating between classes:**
@@ -382,8 +414,9 @@ You will not be graded on OO-design skills, so do not worry too much about havin
 Here are some more details on what we are looking for in terms of style:
 
 - **One class definition per script file:** You should define one class per file.
-- **No additional global variables:** For full credit, you may **not** add any additional global variables to the Flashcard app, other than the existing `app` variable defined in `main.js` and the `FLASHCARD_DECKS` in `constants.js`.
+- **No additional global variables:** For full credit, you may **not** add any additional global variables to your Music Box app, other than the existing `app` variable defined in `script.js`.
 - **Use ES6 classes:** To complete this assignment, you do not need to know about other ways of creating objects, such as via `prototype`. You should practice using `class`es as described in lecture.
+- **Use `fetch()`:** You should use the native `fetch()` API for requests as shown in lecture, and you should not use e.g. `XMLHttpRequest` or any jQuery to load files.
 - **OO-design:** We are **not** going to grade on object-oriented design. We may award bonus points for particularly well-composed apps, but your main concern should be to get the functionality working.
 - **Comments, variable names, etc.:** We are also **not** grading on general good coding style, such as having comments or using good variable names. However, we encourage you to practice good coding style for your TAs' sake! We will only dock style points if someone's code is so extremely difficult to read that it impedes your TA's ability to grade your assignment.
 

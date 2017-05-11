@@ -2,7 +2,7 @@
 layout: article-nosidebar
 title: 'Music Box'
 subtitle: 'Homework 4'
-permalink: /homework/4-musicbox
+permalink: /homework/4-musicbox-old-version
 parent: homework
 active: 'homework'
 ---
