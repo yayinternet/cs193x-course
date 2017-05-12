@@ -13,12 +13,25 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 
 ---
+### May 12: More Fetch; JavaScript Event Loop
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1whs6hJ6oBNKfVEwExf7dq8AnD8W4WAqzb5wMcI5GqQQ/edit#slide=id.p) / [lecture18.pdf](18/lecture18.pdf)
+  - More Fetch API:
+    - Querying 3rd-party REST APIs
+    - Submitting forms
+    - CORS
+  - Asynchrony in JavaScript
+  - JavaScript event loop
+- **Code**
+  - [Fetch from Spotify](https://github.com/yayinternet/lecture17/tree/master/spotify-albums) / [demo](https://yayinternet.github.io/lecture17/spotify-albums/spotify-discography.html)
+  - Form elements JS syntax: [select](https://codepen.io/bee-arcade/pen/963ae17d61f828a7b5c321c148b84e40?editors=1011), [textarea](https://codepen.io/bee-arcade/pen/bd301158f62a54e40eea37da1aff0d7a?editors=1011), [checkbox](https://codepen.io/bee-arcade/pen/714933b816bf4f91a6ae4ab8eba6b649?editors=1011)
+
 ### May 10: Fetch API and JSON; 3rd-party APIs
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1Rim3-IXt6yN7yny_SBv7B5NMBiYbaQEiRMUD5s66uN8/edit#slide=id.g219bfd85d1_1_32) / [lecture17.pdf](17/lecture17.pdf)
   - Fetch API and JSON
   - Fetch in a class
-  - 3rd-party APIs
-  - Submitting forms
+  - REST APIs
+    - HTTP Methods: GET
+    - Query parameters
 - **Code**
   - [GitHub repo](https://github.com/yayinternet/lecture17) / [live](https://yayinternet.github.io/lecture17/): Several examples of Fetch API
     - [Fetch from a class](https://github.com/yayinternet/lecture17/tree/master/oo-albums) / [demo](https://yayinternet.github.io/lecture17/oo-albums/discography.html)

@@ -20,7 +20,7 @@ Note that we will not grade on having good OO design. However, we do expect you 
 <span class="label">HW4 Turn-in:</span> [Submission Form](https://goo.gl/forms/9DvS1MGo8J3JLInN2)
 
 
-(**Special thanks to our TA Amy Xu** for her enormous help milestone-ifying the HW4 write-up!)
+(Special thanks to our TA Amy Xu for her enormous help milestone-ifying the HW4 write-up!)
 
 ---
 
