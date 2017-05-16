@@ -11,6 +11,21 @@ active: 'lectures'
 This page will contain the slides, notes, and example code pertaining to lecture.
 
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
+* [NodeJS install instructions](/install-node): Follow these instructions to install NodeJS on your machine.
+
+---
+
+### May 15: Servers, NodeJS and Express
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1OwcbHRnvPR3MRmfdz3jeD6gvjC_3dx8FG-BGgQ_0S_g/edit#slide=id.g1dfc152969_0_553) / [lecture19.pdf](19/lecture19.pdf)
+  - Servers in general
+  - NodeJS
+  - `npm`
+  - Express
+  - fetch() to localhost
+- **Code**
+  - [Lecture 19 GitHub repo](https://github.com/yayinternet/lecture19)
+- **Node Installation**
+  - [Instructions](/install-node): Follow these instructions to install NodeJS on your machine. This will be necessary to run lecture examples, to complete HW5 and to complete the final project. (Thanks to our TA Zach Maurer for writing these awesome instructions!)
 
 ---
 ### May 12: More Fetch; JavaScript Event Loop
