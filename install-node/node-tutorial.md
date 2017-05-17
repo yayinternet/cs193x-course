@@ -1,7 +1,6 @@
 ---
 layout: article-nosidebar
 title: Installing Node
-subtitle: by Zach Maurer
 permalink: /install-node/
 active: 'homework'
 ---
@@ -214,4 +213,11 @@ After installing the above software, you may want to re-enable SIP. Following ro
 * Type `csrutil status`.
 * You should see this message: `System Integrity Protection status: enabled.`
 
+</section>
+<section class="part" markdown="1">
+
+## Credits
+{:.no_toc}
+
+This tutorial was written by our TA Zach Maurer. Thanks, Zach!
 </section>
