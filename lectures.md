@@ -15,6 +15,17 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 ---
 
+### May 17: More Express; `fetch()` and localhost
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1X-tllkD1rsnx80kIzSxCD9N43nr8Hyuca5ukg5EeMkE/edit) / [lecture20.pdf](20/lecture20.pdf)
+  - `npm`
+  - Express
+  - `fetch()` to localhost
+  - `package.json`
+- **Code**
+  - [Lecture 19 GitHub repo](https://github.com/yayinternet/lecture19)
+  - [Lecture 20 GitHub repo](https://github.com/yayinternet/lecture20)
+
+
 ### May 15: Servers, NodeJS and Express
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1OwcbHRnvPR3MRmfdz3jeD6gvjC_3dx8FG-BGgQ_0S_g/edit#slide=id.g1dfc152969_0_553) / [lecture19.pdf](19/lecture19.pdf)
   - Servers in general
