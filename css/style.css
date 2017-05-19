@@ -442,6 +442,13 @@ pre.highlight {
   border-radius: 3px;
 }
 
+section.part:nth-of-type(2n+1) pre.highlight {
+  background-color: white;
+}
+section.part:nth-of-type(2n+1) table tr:nth-child(2n) {
+  background-color: white;
+}
+
 code.highlighter-rouge {
     padding: 0;
     padding-top: 0.2em;
