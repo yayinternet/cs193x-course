@@ -13,11 +13,9 @@ active: 'homework'
 
 In this homework, you will be creating NodeJS server that can read, write, and delete from a Google Spreadsheet.
 
-This assignment involves writing a stripped-down clone of [Sheetsu](https://sheetsu.com/), which is a service that turns Google Spreadsheets into a REST API. Sheetsu charges a pretty obscene price of [$19 to $95 per month](https://sheetsu.com/pricing) for this service. You will be implementing the same service for free.
+You will be writing a stripped-down clone of [Sheetsu](https://sheetsu.com/), which is a service that turns Google Spreadsheets into a REST API. Sheetsu charges a pretty obscene price of [$19 to $95 per month](https://sheetsu.com/pricing) for this service. You will be implementing the same service for free.
 
-This assignment gives you practice writing, running, and deploying a NodeJS+Express server. You will also practice querying another 3rd-party API, the Google Sheets API, through the provided `gsa-sheets` wrapper library.
-
-This assignment involves a lot of non-coding steps. That is because setting up and deploying a backend often involves a lot of non-coding tasks. For example, we walk you through creating a Google Service Account, which you would also need to do to use Google Cloud. To compensate for the tricky setup, though, we tried to streamline the coding requirement: You are only required to complete 3 functions.
+You will notice that this assignment involves a lot more non-coding steps compared to the previous homeworks. That is because setting up and deploying a backend often involves a lot of non-coding tasks. For example, we walk you through creating a Google Service Account, which you would also need to do to use Google Cloud. To compensate for the tricky setup, though, we tried to streamline the coding requirement: You are only required to complete 3 functions.
 
 **This assignment requires a fair amount of setup.** Please try to get through the steps marked "SETUP:" by **May 26** so that the course staff can assist you in person before the holiday weekend if necessary.
 
@@ -274,7 +272,7 @@ Method name | Description
 
 
 **Bugs?**
-- If you believe there is a bug in any of the `gsa-sheets` library, post to Piazza.
+- If you believe there is a bug in the `gsa-sheets` library, post to Piazza.
 
 
 </section>
