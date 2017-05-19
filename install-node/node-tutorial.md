@@ -19,23 +19,26 @@ If you have any trouble installing Node, please [post to Piazza](http://piazza.c
 
 ## Installing Node.js
 
-### 1) Download Installer
+### 1) Download Installer for Node 7.10.0
 {:.no_toc}
 
 * Navigate to [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 * Select and download the installer for your operating system.
   * Most contemporary laptops will use a 64-bit distribution.
-* Download the LTS version (stable) instead of the current (bleeding edge)
+* **Click "Current"**: Latest features to download Node version 7. Do **not** download LTS.
+  * **NOTE:** This is different from what we said in an earlier version of the instructions. If you've already installed LTS, please re-download the Current version and install that instead.
 
-<img src="images/72E3E6FAA09EE81509C12F6F6466C36F.jpg" class="screenshot" />
+<img src="images/node-download.png" class="screenshot" />
 
 ### 2) Follow GUI installation instructions
 {:.no_toc}
 
+* Open the `node-v7.10.0.pkg` file that you downloaded.
+  * **NOTE:** This file needs to start with **`node-v7`**, and not `node-v6`. If you've downloaded a file that starts with `node-v6`, you downloaded the wrong one. Go back to [Step 1 of these instructions](#download-installer-for-node-7100) and remember to click "Current": Don't download LTS.
 * Just follow the prompts.
 * For Macs: If this installation process fails, it is possibly due to the recent System Integrity Protection feature added in El Capitan and subsequent versions of MacOS. Refer to [this section](#node-wont-install-on-mac) to disable SIP and then run the node installer again.
 
-<img src="images/AB8329809B5D59BD8A7D43DBF212D721.jpg" class="screenshot" />
+<img src="images/node-installer.png" class="screenshot" />
 
 
 ### 3) Testing Node.js
@@ -46,16 +49,16 @@ If you have any trouble installing Node, please [post to Piazza](http://piazza.c
 * You should get a JavaScript REPL, similar to the console in the Chrome inspector.
 * Try a single line of JavaScript to test it out.
 * Hit Ctrl-C twice to exit the REPL
-* Run `node -v` in terminal and then make sure you have `v6.10.3` installed.
+* Run `node -v` in terminal and then make sure you have `v7.10.0` installed.
 
-<img src="images/BC13B34CBBE9C76F0AE3129E6DA9CE90.jpg" class="screenshot" />
-<img src="images/E4178DA92AE8AE736D2E93580614612A.jpg" class="screenshot" />
+<img src="images/node-repl.png" class="screenshot" />
+<img src="images/node-version.png" class="screenshot" />
 
 
-### 4) Testing NPM
+### 4) Testing `npm`
 {:.no_toc}
 
-`NPM` stands for `Node Package Manager`. Packages are like libraries. The Node runtime has provided a handy way of accessing, installing and managing these libraries.
+`npm` stands for `Node Package Manager`. Packages are like libraries. The Node runtime has provided a handy way of accessing, installing and managing these libraries.
 
 * At the command line, type `npm` after the command prompt and hit Enter
 * You should see the following:
