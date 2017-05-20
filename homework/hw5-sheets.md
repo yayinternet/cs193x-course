@@ -10,8 +10,7 @@ active: 'homework'
 {% assign lvl = page.url | append:'X' | split:'/' | size %}
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
-
-In this homework, you will be creating NodeJS server that can read, write, and delete from a Google Spreadsheet.
+In this homework, you will be creating NodeJS server that can read, write, and delete data from a Google Spreadsheet. These operations are also called [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete), though we are making the "U"/"Update" operation extra credit.
 
 You will be writing a stripped-down clone of [Sheetsu](https://sheetsu.com/), which is a service that turns Google Spreadsheets into a REST API. Sheetsu charges a pretty obscene price of [$19 to $95 per month](https://sheetsu.com/pricing) for this service. You will be implementing the same service for free.
 
@@ -161,7 +160,6 @@ In this section, you will create a special Google spreadsheet to which your Node
   - Title of spreadsheet: Anything you'd like, e.g. "**HW5 spreadsheet**"
   - Enter your email: Your email address (must be a Gmail-enabled account, such as @gmail or @stanford)
 - Afterward the tool will print out "Spreadsheet created" with the URL of your new spreadsheet.
-  - You will also get an email with a link to the spreadsheet.
   - The only people who can access this spreadsheet are you (via the email you entered) and the course staff.
 <a href="images/hw5-spreadsheet-created.png"><img src="images/hw5-spreadsheet-created.png" class="screenshot" /></a>
 
