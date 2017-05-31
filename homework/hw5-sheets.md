@@ -18,7 +18,8 @@ You will notice that this assignment involves a lot more non-coding steps compar
 
 **This assignment requires a fair amount of setup.** Please try to get through the steps marked "SETUP:" by **May 26** so that the course staff can assist you in person before the holiday weekend if necessary.
 
-<span class="label">Due Date:</span> Tue, May 30, 2017 at 11:59pm _(late cutoff: Thu, June 1, 2017 at 11:59pm)_  
+<span class="label">Due Date:</span> Wed, May 31, 2017 at 11:59pm _(late cutoff: Thu, June 1, 2017 at 11:59pm)_  
+**NOTE:** We changed the due date to 5/31, but the late cutoff is still the same (6/1).  
 <span class="label">Setup steps:</span> We strongly suggest you complete the steps marked "SETUP:" by Thursday, May 26, so that we can assist you well ahead of time if you need help. We do not guarantee to be available for troubleshooting setup issues over the holiday weekend.  
 <span class="label">HW5 Turn-in:</span> [Submission Form](https://goo.gl/forms/LuTWdK9S3510x5ys1)
 
@@ -61,6 +62,12 @@ To have our NodeJS server write to a Google Spreadsheet, we need to set up two t
 - A Google Service Account key
 
 This section contains the instructions for obtaining both a Google Service Account and a GSA key, and how to move the key to the HW5 starter code.
+
+### 0. Log into your @gmail account
+{:.no_toc}
+- Sign into your Gmail account.
+  - **Your @stanford account will not work for this part,**  even though you can access Gmail through it. You must use an @gmail.com account. ([see piazza post](https://piazza.com/class/j0y7gmnuoh167p?cid=161))
+  - [Create a Gmail account](https://accounts.google.com/SignUp) for free if you need to.
 
 ### 1. Add the Google Sheets API
 {:.no_toc}
@@ -183,6 +190,8 @@ Also, you must always run `cs193x-sheets` in the same directory as `privateSetti
 
 At last, you are ready to configure the starter code and get working on the assignment!
 
+**Note:** In this assignment, you will not need to modify any of the code in `public/`, including `public/js/script.js`.
+
 ### 1. Set `SPREADSHEET_ID` in `server.js`
 {:.no_toc}
 
@@ -271,6 +280,28 @@ Method name | Description
 
 **Bugs?**
 - If you believe there is a bug in the `gsa-sheets` library, post to Piazza.
+
+
+</section>
+
+<section class="part" markdown="1">
+
+## [5/30] CLARIFICATION: Spreadsheet Columns
+
+In the examples below, we use a spreadsheet with an "email" and a "name" column.
+
+However, you **cannot** assume the spreadsheet has an "email" and a "name"; you must make it work with whatever column names are specified in the spreadsheet.
+
+- You should always treat the first row of the spreadsheet as the names of the columns in the spreadsheet.
+- You may assume that every spreadsheet will have at least one column specified, i.e. you do *not* have to support an empty spreadsheet
+
+Here's an example of another valid spreadsheet:
+
+<a href="images/hw5-another-valid-spreadsheet.png"><img src="images/hw5-another-valid-spreadsheet.png" class="screenshot" /></a>
+
+Because of this late clarification, we are extending the deadline for HW5 for one day, but the late cut-off remains the same:
+- Deadline: 5/31 at 11:59pm
+- Late cutoff: 6/1 at 11:59pm
 
 
 </section>
@@ -499,7 +530,7 @@ For extra credit, make your server support case-insensitive search for:
 - PATCH
 - POST
 
-**TODO(vrk):** Add details.
+The case insensitivity should be on the **column** name.
 
 </section>
 

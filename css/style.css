@@ -335,7 +335,7 @@ div.week {
   }
 }
 
-img.screenshot {
+.screenshot {
   display: block;
   max-width: 100%;
   margin: 0.5em 0;
@@ -345,7 +345,7 @@ img.screenshot {
   box-sizing: border-box;
 }
 @media (min-width: 54em) {
-  img.screenshot {
+  .screenshot {
     max-width: 30em;
   }
 }

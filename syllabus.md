@@ -111,17 +111,16 @@ the further from present the topic is, the more likely it is to change.
 - First-class functions
 - JavaScript application architecture
 
-### May 3: Async JavaScript
-- JSON
-- fetch for JSON files
-- Using Promises
-- Querying 3rd party REST APIs
+### May 3: Custom events, `this`, and `bind`; first-class functions
+- Communicating between classes: Custom events
+- `this` keyword / `bind()`
+- First-class functions
+- Callbacks
 
-### May 5: REST APIs; media
-- Media in JavaScript (preloading images, audio)
-  - `requestAnimationFrame`
-- Creating Promises
-- Using closures
+### May 5: Callbacks; Functional JavaScript
+- Communicating between classes: Callbacks
+- Functional JavaScript
+  - Closures
 </div>
 
 <div class="week" markdown="1">
@@ -135,15 +134,18 @@ the further from present the topic is, the more likely it is to change.
 - Map/filter
 - <span class="label">HW3 DUE</span> **HW3 due at 11:59pm**
 
-###  May 8: Intro to Servers
-- What is a server
-- localhost / ports
-- npm
-- NodeJS + Express
-- Serving static files
-- Compiling JavaScript: Babel; eslint
+###  May 8: Fetch API, Promises
+- Finish functional JS
+  - Currying
+  - Anonymous functions
+  - Closures
+- Fetch API
+  - `fetch()`
+  - `Promise`s and `.then()``
+- JSON
 
-### May 10: GET and POST; CORS
+
+### May 10: Fetch API and JSON; 3rd-party APIs
 - GET and POST
 - Query parameters
 - Generating JSON response
@@ -155,40 +157,49 @@ the further from present the topic is, the more likely it is to change.
 <div class="week" markdown="1">
   <h2>Week 7</h2>
 
-### May 15: Saving data files
-- Forms and validation
-- Writing files to a server
-- Uploading / storing media
+### May 15: Servers, NodeJS and Express
+- Servers in general
+- NodeJS
+- Express
+- `npm`
 
-### May 17: Intro to Databases <span class="label">HW5 assigned</span>
-- What is a database
-- Intro to MongoDb
-- Intro to Mongoose
-- <span class="label">HW4 DUE</span> **HW4 due at 11:59pm**
+### May 17: More Express; `fetch()` and localhost
+- `npm`
+- Express
+- `fetch()` to localhost
 
-### May 19: Routing; `async`/`await`
-- MongoDb single collection writes
-- Routing via Express parameters
-- `async` / `await`
+### May 19: `async`/`await`; more Express; more `fetch()`
+- `async / await`
+- Sending data to the server
+- Returning JSON from Express
 
 </div>
 
 <div class="week" markdown="1">
   <h2>Week 8</h2>
 
-### May 22: Authentication; users
+### May 22: Saving data: Intro to MongoDB
+- Saving data
+- POST body
+- `body-parser`
+- Saving to a file: `fs`
+- MongoDB: Saving to a database
+  - System overview`
+  - `mongod`
+  - `mongo`
+  - `MongoClient`
+
+### May 24: More MongoDB; server-side rendering
+- MongoDB: Fetching from a database
+  - Queries
+- Server-side rendering
+  - Template engine: Handlebars?
+
+
+### May 26: Authentication; users <span class="label">FINAL PROJECT ASSIGNED</span>
 - OAuth2
 - Creating users
-
-### May 24: Testing and type checking
-- Testing backends
-- Flow and TypeScript
-
-### May 26: Realtime <span class="label">FINAL PROJECT ASSIGNED</span>
-- Sockets / DataChannel
-- Signaling
-- WebRTC
-- <span class="label">HW5 DUE</span> **HW5 due at 11:59pm**
+- Saving users
 
 </div>
 
@@ -198,28 +209,32 @@ the further from present the topic is, the more likely it is to change.
 ### May 29: NO CLASS
 - Memorial Day
 
-### May 31: JavaScript prototype
-- Prototype chains
-- Function objects
-- True data encapsulation
+### May 30: <span class="label">HW5 DUE</span>
 
-### June 2: Web components
-- Shadow DOM
-- Custom elements
+### May 31: Server polish
+- Routing
+- Middleware
+- Testing and type checking
+- Testing backends
+- Flow and TypeScript
+
+### June 2: TBA
+- Might be overflow if we don't finish other stuff
+- Otherwise, I'll poll the class
 </div>
 
 <div class="week" markdown="1">
   <h2>Week 10</h2>
 
-### June 5: JavaScript frameworks
+### June 5: LAST DAY OF LECTURE: JavaScript frameworks
 - An opinionated tour of the passé and trendy frameworks
 - Passé: JQuery, Bootstrap
 - Trendy: ReactJS
 - In-between: Ruby on Rails; Angular; Polymer
 
-### June 7: Wrap-up
-- Last day of lecture!
-- Final project demos, for anyone who turned in early
+### June 7: NO LECTURE
+- Work-time for final project
+- Study for your finals in other classes!
 </div>
 <div class="week" markdown="1">
   <h2>Finals Week</h2>

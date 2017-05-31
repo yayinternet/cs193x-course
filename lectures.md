@@ -12,15 +12,49 @@ This page will contain the slides, notes, and example code pertaining to lecture
 
 * [Tentative Course Schedule]({{ relative }}syllabus): See the roadmap for the quarter.
 * [NodeJS install instructions]({{ relative }}install-node): Follow these instructions to install NodeJS on your machine.
+* [MongoDB install instructions]({{ relative }}install-mongodb): Follow these instructions to install MongoDb on your machine.
 
 ---
+### May 26: MongoDB and NodeJS
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1gbWIwZl0cMyU2u5pEm-_ny148fgcbmxofpuh0gnKkfg/edit) / [lecture24.pdf](24/lecture24.pdf)
+  - MongoDB and NodeJS
+    - insert, find, delete, update, upsert
+    - `ObjectID`
+  - Web application architecture
+    - Multi-page web apps (server-side rendering)
+    - Single-page web apps
+- **Code**
+  - [MongoDB examples repo](https://github.com/yayinternet/mongodb-examples)
+- [Final Project]({{ relative }}final-project) <span class="label">FINAL PROJECT ASSIGNED</span>
+
+### May 24: MongoDB and NodeJS
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1MzDFD7cqtSZVXIRS43LLMZmBPuCPaf0UC9WJVbzFcxE/edit) / [lecture23.pdf](23/lecture23.pdf)
+  - MongoDB
+    - `mongo` / `mongod`
+    - CRUD operations
+  - MongoDB and NodeJS
+- **Code**
+  - [MongoDB examples repo](https://github.com/yayinternet/mongodb-examples)
+- **MongoDB Installation**
+  - [Instructions]({{ relative }}install-mongodb): Follow these instructions to install MongoDB on your machine. This will be necessary to run lecture examples.
+
+### May 22: Saving data; MongoDB intro
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/1fFRruBk95sMSK5n-XUtoxGxvWKz4rdWIC0xmTUEiZPg/edit) / [lecture22.pdf](22/lecture22.pdf)
+  - Saving data
+    - POST body
+    - `body-parser`
+  - Saving to a file
+  - MongoDB: Saving to a database
+- **Code**
+  - [MongoDB examples repo](https://github.com/yayinternet/mongodb-examples)
+  - [Lecture 21 GitHub repo](https://github.com/yayinternet/lecture21)
+  - [Lecture 20 GitHub repo](https://github.com/yayinternet/lecture20)
 
 ### May 19: `async / await`; more Express; more `fetch()`
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1rRqvb3F77Cmqb6FS0LmqSLkzH9S8Q8hRrUdZw_oybb0/edit) / [lecture21.pdf](21/lecture21.pdf)
   - `async / await`
   - Sending data to the server
   - Returning JSON from Express
-  - `package.json`
 - **Code**
   - [Lecture 21 GitHub repo](https://github.com/yayinternet/lecture21)
   - [Lecture 20 GitHub repo](https://github.com/yayinternet/lecture20)
