@@ -15,6 +15,25 @@ This page will contain the slides, notes, and example code pertaining to lecture
 * [MongoDB install instructions]({{ relative }}install-mongodb): Follow these instructions to install MongoDb on your machine.
 
 ---
+
+### May 31: Templates, Modules, and Routers
+- **Slides:** [Google slides](https://docs.google.com/presentation/d/12ReR7wEcABB6uYm027hlEisiGfEHFm_dHBlkFTlKf84/edit#slide=id.p) / [lecture25.pdf](25/lecture25.pdf)
+  - Web application architecture
+    - Multi-page web apps (server-side rendering)
+    - Templates with Handlebars
+  - NodeJS Modules
+  - Express Router
+  - Express Middleware
+  - Single-page web apps
+- **Code**
+  - [MongoDB examples repo](https://github.com/yayinternet/mongodb-examples)
+  - [Modules and Routes](https://github.com/yayinternet/module-examples)
+
+### May 29: NO LECTURE
+
+---
+
+
 ### May 26: MongoDB and NodeJS
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1gbWIwZl0cMyU2u5pEm-_ny148fgcbmxofpuh0gnKkfg/edit) / [lecture24.pdf](24/lecture24.pdf)
   - MongoDB and NodeJS
@@ -27,7 +46,7 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - [MongoDB examples repo](https://github.com/yayinternet/mongodb-examples)
 - [Final Project]({{ relative }}final-project) <span class="label">FINAL PROJECT ASSIGNED</span>
 
-### May 24: MongoDB and NodeJS
+### May 24: MongoDB
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1MzDFD7cqtSZVXIRS43LLMZmBPuCPaf0UC9WJVbzFcxE/edit) / [lecture23.pdf](23/lecture23.pdf)
   - MongoDB
     - `mongo` / `mongod`
@@ -49,6 +68,8 @@ This page will contain the slides, notes, and example code pertaining to lecture
   - [MongoDB examples repo](https://github.com/yayinternet/mongodb-examples)
   - [Lecture 21 GitHub repo](https://github.com/yayinternet/lecture21)
   - [Lecture 20 GitHub repo](https://github.com/yayinternet/lecture20)
+
+---
 
 ### May 19: `async / await`; more Express; more `fetch()`
 - **Slides:** [Google slides](https://docs.google.com/presentation/d/1rRqvb3F77Cmqb6FS0LmqSLkzH9S8Q8hRrUdZw_oybb0/edit) / [lecture21.pdf](21/lecture21.pdf)
